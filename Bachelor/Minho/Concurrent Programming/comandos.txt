@@ -1,0 +1,9 @@
+Server:
+(compilar)
+erlc -o server/ server/NAME.erl
+
+-> CMD;
+-> erl;
+cd("C:\\Users\\ruben\\Desktop\\Minho\\PC\\Projeto\\server\\").
+c(server).
+server:start(12345).
