@@ -1,0 +1,13 @@
+---
+- name: Include role variables 
+  include_vars: "{{ role_path }}/vars/env.yml"
+
+- name: Include deployment tasks for Moonshot
+  include_tasks: deploy.yml
+  no_log: true
+  when: operation == "deploy"
+
+- name: Include undeployment tasks for Moonshot
+  include_tasks: undeploy.yml
+  no_log: true
+  when: operation == "undeploy"

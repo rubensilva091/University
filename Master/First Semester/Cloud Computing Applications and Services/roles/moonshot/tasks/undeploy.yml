@@ -1,0 +1,19 @@
+---
+- name: Remove Moonshot Service
+  kubernetes.core.k8s:
+    state: absent
+    definition: "{{ lookup('template', '{{ role_path }}/templates/moonshot-service.yml') }}"
+
+- name: Remove Moonshot Application
+  kubernetes.core.k8s:
+    state: absent
+    definition: "{{ lookup('template', '{{ role_path }}/templates/moonshot-deploy.yml') }}"
+
+- name: Wait till all resources are deleted
+  kubernetes.core.k8s_info:
+    kind: [Deployment, Service]
+    namespace: default
+  register: k8s_info
+  until: k8s_info.resources | length == 0
+  retries: 10
+  delay: 5

@@ -1,0 +1,16 @@
+---
+- name: Execute PostgreSQL Deployment
+  hosts: localhost
+  gather_facts: false
+  roles:
+    - role: postgres
+      vars:
+        operation: "deploy"
+        
+- name: Execute Moonshot Deployment
+  hosts: localhost
+  gather_facts: false
+  roles:
+    - role: moonshot
+      vars:
+        operation: "deploy"

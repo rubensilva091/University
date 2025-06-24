@@ -1,0 +1,38 @@
+---
+
+- name: Remove PostgreSQL Service
+  kubernetes.core.k8s:
+    state: absent
+    definition: "{{ lookup('template', '{{ role_path }}/templates/postgres-service.yml') }}"
+
+- name: Remove PostgreSQL Application
+  kubernetes.core.k8s:
+    state: absent
+    definition: "{{ lookup('template', '{{ role_path }}/templates/postgres-deployment.yml') }}"
+
+- name: Delete Postgres PersistentVolumeClaim
+  kubernetes.core.k8s:
+    state: absent
+    definition: "{{ lookup('template', '{{ role_path }}/templates/postgres-pvc.yml') }}"
+  when : delete_data is defined and delete_data | bool
+
+- name: Wait till all resources are deleted
+  kubernetes.core.k8s_info:
+    kind: [Deployment, Service]
+    namespace: default
+  register: k8s_info
+  until: k8s_info.resources | length == 0
+  retries: 10
+  delay: 5
+
+- name: Wait till PVC is deleted
+  kubernetes.core.k8s_info:
+    kind: [PersistentVolumeClaim]
+    namespace: default
+  register: pvc_info
+  until: pvc_info.resources | length == 0
+  retries: 10
+  delay: 5
+  when : delete_data is defined and delete_data | bool
+
+

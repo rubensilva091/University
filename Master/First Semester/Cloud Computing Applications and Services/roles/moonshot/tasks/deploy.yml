@@ -1,0 +1,79 @@
+---
+- name: Deploy Moonshot Application
+  kubernetes.core.k8s:
+    state: present
+    definition: "{{ lookup('template', '{{ role_path }}/templates/moonshot-deploy.yml') }}"
+
+- name: Expose Moonshot Service
+  kubernetes.core.k8s:
+    state: present
+    definition: "{{ lookup('template', '{{ role_path }}/templates/moonshot-service.yml') }}"    
+
+- name: Debug service info
+  debug:
+    var: service_info
+    
+- name: Wait till Moonshot pod is successfully created
+  kubernetes.core.k8s_info:
+    kind: Pod
+    namespace: default
+    label_selectors:
+      - app=moonshot
+    wait: true
+    wait_sleep: 5
+    wait_timeout: 18100
+  register: moonshot_pod_info
+
+- name: Wait for LoadBalancer IP to be assigned
+  kubernetes.core.k8s_info:
+    kind: Service
+    namespace: default
+    label_selectors:
+      - "app=moonshot"
+  register: service_info
+  until: service_info.resources[0].status.loadBalancer | length > 0
+  retries: 30
+  delay: 5
+
+- name: Set app_ip variable
+  set_fact:
+    app_ip: "{{ service_info.resources[0].status.loadBalancer.ingress[0].ip }}"
+  when: service_info.resources[0].status.loadBalancer.ingress[0].ip is defined
+
+- name: Print the Moonshot external IP
+  debug:
+    msg: "The external IP of Moonshot service is: {{ app_ip }}"
+
+- name: Set App IP in Inventory
+  lineinfile:
+     path: inventory/gcp.yml
+     regexp: '^\s*app_ip:.*'
+     line: "    app_ip: {{ app_ip }}"
+     state: present
+  when: app_ip != ""
+
+- name: Wait for Moonshot to be Ready
+  command: kubectl rollout status deployment/moonshot 
+
+- name: Apply database migrations
+  shell: |
+    kubectl exec $(kubectl get pods -l app=moonshot -o jsonpath='{.items[0].metadata.name}') -- python /app/moonshot/manage.py migrate
+  register: migrate_result
+  retries: 5
+  delay: 10
+  until: migrate_result.rc == 0
+  args:
+    executable: /bin/bash
+  when: seed_database | bool
+
+- name: Seed the Database
+  shell: |
+    kubectl exec $(kubectl get pods -l app=moonshot -o jsonpath='{.items[0].metadata.name}') -- python /app/moonshot/seed.py
+  register: seed_db_result
+  retries: 10
+  delay: 10
+  until: seed_db_result.rc == 0
+  args:
+    executable: /bin/bash
+  when: seed_database | bool
+

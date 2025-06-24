@@ -1,0 +1,70 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: moonshot
+  namespace: default
+  labels:
+    app: moonshot
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: moonshot
+  template:
+    metadata:
+      labels:
+        app: moonshot
+    spec:
+      containers:
+      - name: moonshot
+        image: "{{ moonshot_image }}"
+        ports:
+        - containerPort: {{ moonshot_port }}
+        env:
+        - name: DB_HOST
+          value: "{{ db_host }}"
+        - name: DB_PORT
+          value: "{{ db_port }}"
+        - name: DB_USER
+          value: "{{ db_user }}"
+        - name: DB_PASSWORD
+          value: "{{ db_password }}"
+        - name: DB_NAME
+          value: "{{ db_name }}"
+        - name: SEED
+          value: "{{ seed_database | default('false') }}"
+        resources:
+          requests:
+            cpu: "200m"
+            memory: "256Mi"
+          limits:
+            cpu: "500m"
+            memory: "512Mi"
+
+---
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: moonshot-app-hpa
+  namespace: default
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: moonshot
+  minReplicas: 1
+  maxReplicas: 5
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 80
+  - type: Resource
+    resource:
+      name: memory
+      target:
+        type: Utilization
+        averageUtilization: 70

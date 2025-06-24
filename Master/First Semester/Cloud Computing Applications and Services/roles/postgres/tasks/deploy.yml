@@ -1,0 +1,30 @@
+---
+- name: Create a PVC for Postgres
+  kubernetes.core.k8s:
+    definition: "{{ lookup('template', '{{ role_path }}/templates/postgres-pvc.yml') }}"
+    state: present
+    wait: true
+
+- name: Deploy PostgreSQL Application
+  kubernetes.core.k8s:
+    state: present
+    definition: "{{ lookup('template', '{{ role_path }}/templates/postgres-deployment.yml') }}"
+
+- name: Expose PostgreSQL Service
+  kubernetes.core.k8s:
+    state: present
+    definition: "{{ lookup('template', '{{ role_path }}/templates/postgres-service.yml') }}"
+    
+- name: Wait till Postgres pod is created
+  kubernetes.core.k8s_info:
+    kind: Pod
+    namespace: default
+    label_selectors:
+      - app=postgres
+    wait: true
+    wait_sleep: 5
+    wait_timeout: 180
+  register: postgres_pod_info
+
+- name: Wait for Postgres to be Ready
+  command: kubectl rollout status deployment/postgres

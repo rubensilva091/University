@@ -1,0 +1,14 @@
+---
+- name: Include role variables
+  include_vars:
+    file: "{{ role_path }}/vars/env.yml"
+    
+- name: Include deployment tasks for PostgreSQL
+  include_tasks: deploy.yml
+  no_log: true
+  when: operation == "deploy"
+
+- name: Include undeployment tasks for PostgreSQL
+  include_tasks: undeploy.yml
+  no_log: true
+  when: operation == "undeploy"
