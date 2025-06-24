@@ -1,0 +1,630 @@
+<world>
+    <window width="1200" height="750" />
+    <camera> 
+	    <position x="700" y="40" z="40" />
+	    <lookAt x="0" y="0" z="0" />
+	    <up x="0" y="1" z="0" /> 
+        <projection fov="60" near="1" far="10000" />
+        <mode draw="1"/>
+        <catmull orbit="0"/>
+    </camera>
+    <group>
+        <models>
+            <model file="sun.3d" />
+        </models>
+        <settings>
+            <color c1="0.96" c2="0.62" c3="0.07" />
+        </settings>
+        <group>
+            <transform>
+                <rotate time="3" x="0" y="1" z="0" />  <!-- Translação-->
+                <translate x="73.6225" y="0" z="0" />
+                <rotate angle="-0.03" x="1" y="0" z="0"/>
+                <rotate time="468.8" x="0" y="1" z="0"/>  <!-- Rotação-->
+            </transform>
+            <models>
+                <model file="mercury.3d" />
+            </models>
+            <settings>
+                <color c1="0.72" c2="0.72" c3="0.72" />
+            </settings>
+        </group>
+        <group>
+            <transform>
+                <rotate time="7.66" x="0" y="1" z="0" />
+                <translate x="79.1564" y="0" z="0" />
+                <rotate angle="-177.4" x="1" y="0" z="0"/>
+                <rotate time="1944" x="0" y="1" z="0" />
+            </transform>
+            <models>
+                <model file="venus.3d" />
+            </models>
+            <settings>
+                <color c1="0.83" c2="0.44" c3="0.14" />
+            </settings>
+        </group>
+        <group>
+            <transform>
+                <rotate time="12.44" x="0" y="1" z="0" />
+                <translate x="83.9015" y="0" z="0" />
+                <rotate angle="-16.72" x="1" y="0" z="0"/>
+                <rotate time="8" x="0" y="1" z="0" />
+            </transform>
+            <models>
+                <model file="earth.3d" />
+            </models>
+            <settings>
+                <color c1="0.1" c2="0.16" c3="0.35" />
+            </settings>
+            <group>
+                <transform>
+                    <rotate time="1" x="0" y="1" z="0" />
+                    <translate x="0" y="0" z="2" />
+                    <rotate angle="23.4" x="1" y="0" z="0"/>
+                    <rotate time="236" x="0" y="1" z="0" />
+                </transform>
+                <models>
+                    <model file="moon_earth.3d" />
+                </models>
+                <settings>
+                    <color c1="0.5" c2="0.5" c3="0.5" />
+                </settings>
+            </group>
+        </group>
+        <group>
+            <transform>
+                <rotate time="23.4" x="0" y="1" z="0" />
+                <translate x="92.3726" y="0" z="0" />
+                <rotate angle="-25.2" x="1" y="0" z="0"/>
+                <rotate time="8.24" x="0" y="1" z="0" />
+            </transform>
+            <models>
+                <model file="mars.3d" />
+            </models>
+            <settings>
+                    <color c1="0.63" c2="0.15" c3="0.11" />
+            </settings>
+        </group>
+        <group>
+            <transform>
+                <rotate time="73.813" x="0" y="1" z="0"/> 
+                <translate x="147.7505" y="0" z="0" />
+                <rotate angle="-3.1" x="1" y="0" z="0"/>
+                <rotate time="3.28" x="0" y="1" z="0" />
+            </transform>
+            <models>
+                <model file="jupiter.3d" />
+            </models>
+            <settings>
+                    <color c1="0.74" c2="0.69" c3="0.7" />
+            </settings>
+        </group>
+        <group>
+            <transform>
+                <rotate time="183.35" x="0" y="1" z="0"/> 
+                <translate x="219.3686" y="0" z="0" />
+                <rotate angle="-26.7" x="1" y="0" z="0"/>
+                <rotate time="3.6" x="0" y="1" z="0" />
+            </transform>
+            <models>
+                <model file="saturn.3d" />
+                <model file="ring_saturn2.3d" />
+            </models>
+            <settings>
+                    <color c1="0.8" c2="0.63" c3="0.34" />
+            </settings>
+            <group>
+                <transform>
+                    <translate x="0" y="0.3" z="0" />
+                </transform>
+                <models>
+                    <model file="ring_saturn1.3d" />
+                    <model file="ring_saturn3.3d" />
+                </models>
+                <settings>
+                    <color c1="0.6" c2="0.29" c3="0.22" />
+                </settings>
+            </group>
+        </group>
+        <group>
+            <transform>
+                <rotate time="522.85" x="0" y="1" z="0"/> 
+                <translate x="370.0868" y="0" z="0" />
+                <rotate angle="-97.8" x="1" y="0" z="0"/>
+                <rotate time="5.76" x="0" y="1" z="0" />
+            </transform>
+            <models>
+                <model file="uranus.3d" />
+            </models>
+            <settings>
+                    <color c1="0.31" c2="0.82" c3="0.91" />
+            </settings>
+            <group>
+                <transform>
+                    <translate x="0" y="0.2" z="0" />
+                </transform>
+                <models>
+                    <model file="ring_uranus.3d" />
+                </models>
+                <settings>
+                    <color c1="1" c2="1" c3="0.65" />
+                </settings>
+            </group>
+        </group>
+        <group>
+            <transform>
+                <rotate time="1025.6" x="0" y="1" z="0"/> 
+                <translate x="535.368" y="0" z="0" />
+                <rotate angle="-28.3" x="1" y="0" z="0"/>
+                <rotate time="5.36" x="0" y="1" z="0" />
+            </transform>
+            <models>
+                <model file="neptune.3d" />
+            </models>
+            <settings>
+                    <color c1="0.29" c2="0.44" c3="0.87" />
+            </settings>
+        </group>
+        <group> 
+
+
+        <!--TEAPOT Cometa-->
+		<group>
+			<transform>
+                <rotate time="30" x="0" y="1" z="1" />
+				<translate time = "10" align="true">
+					<point x = "85" y = "0" z = "30" />
+					<point x = "500" y = "0" z = "150" />
+					<point x = "600" y = "20" z = "300" />
+					<point x = "400" y = "-100" z = "250" />
+				</translate>
+				<rotate angle="-90" x="1" y="0" z="0" />
+				<scale x="1.5" y="1.5" z="1.5" />
+			</transform>
+			<models> 
+				<model file="bezier_10.3d" />
+			</models>
+		    </group>
+ 	    </group>
+    <!--Chase route-->
+    <group>
+            <transform>
+            <translate time = "20" align="true">
+                <point x="750" y="40" z="40"/>
+                <point x="400" y="60" z="60"/>
+                <point x="0" y="200" z="100"/>
+                <point x="0" y="100" z="400"/>
+                <point x="350" y="40" z="400"/>
+                <point x="-200" y="60" z="200"/>
+                <point x="-400" y="-50" z="100"/>
+                <point x="-200" y="-100" z="-200"/>
+            </translate>
+        </transform> 
+    <group>
+
+     <!-- TieFighter 3-->
+    <group>
+        <transform>
+            <rotate time="2" x="1" y="0" z="1" />
+            <translate x="-20" y="40" z="-40"/>
+        </transform> 
+        <models> 
+            <model file="tie_fighter_ship.3d" /> <!-- Nave -->
+        </models>
+        <settings>
+                    <color c1="0.6" c2="0.6" c3="0.6" />
+        </settings>
+        <group>
+            <transform>
+                <rotate angle ="90" x="1" y="0" z="0" />
+                <translate x="0" y="1" z="0" />
+                <scale x="0.33" y="0.6" z="0.5" />
+            </transform>
+            <settings>
+                    <color c1="0.8" c2="0.8" c3="0.8" />
+            </settings>
+            <models> 
+                <model file="tie_fighter_arm.3d" /> <!-- Braço esquerdo -->
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate angle ="-90" x="1" y="0" z="0" />
+                <translate x="0" y="1" z="0" />
+                <scale x="0.33" y="0.6" z="0.5" />
+            </transform>
+            <settings>
+                    <color c1="0.8" c2="0.8" c3="0.8" />
+            </settings>
+            <models> 
+                <model file="tie_fighter_arm.3d" /> <!-- Braço direito -->
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate angle ="-90" x="0" y="0" z="1" />
+                <translate x="0" y="1" z="0" />
+                <scale x="0.75" y="0.75" z="0.75" />
+            </transform>
+            <models>
+                <model file="tie_fighter_visor.3d" />  <!-- Visor -->
+            </models>
+            <settings>
+                    <color c1="0.3" c2="0.3" c3="0.3" />
+            </settings>
+        </group>
+        <group>
+            <transform>
+                <rotate angle ="90" x="0" y="0" z="1" />
+                <translate x="0" y="0" z="-2.8" />
+                <scale x="1.5" y="3.5" z="0.75" />
+            </transform>
+            <models>
+                <model file="tie_fighter_wing.3d" />  <!-- Asa Direita -->
+            </models>
+            <settings>
+                    <color c1="0.2" c2="0.2" c3="0.2" />
+            </settings>
+        </group>
+        <group>
+            <transform>
+                <rotate angle ="90" x="0" y="0" z="1" />
+                <translate x="0" y="0" z="2.8" />
+                <scale x="1.5" y="3.5" z="0.75" />
+            </transform>
+            <models>
+                <model file="tie_fighter_wing.3d" />   <!-- Asa Esquerda -->
+            </models>
+            <settings>
+                    <color c1="0.2" c2="0.2" c3="0.2" />
+            </settings>
+        </group>
+    </group>
+
+    <!-- TieFighter 2-->
+    <group>
+        <transform>
+            <rotate time="5" x="1" y="0" z="0" />
+            <translate x="-30" y="-30" z="-30"/>
+        </transform> 
+        <models> 
+            <model file="tie_fighter_ship.3d" /> <!-- Nave -->
+        </models>
+        <settings>
+                    <color c1="0.6" c2="0.6" c3="0.6" />
+        </settings>
+        <group>
+            <transform>
+                <rotate angle ="90" x="1" y="0" z="0" />
+                <translate x="0" y="1" z="0" />
+                <scale x="0.33" y="0.6" z="0.5" />
+            </transform>
+            <settings>
+                    <color c1="0.8" c2="0.8" c3="0.8" />
+            </settings>
+            <models> 
+                <model file="tie_fighter_arm.3d" /> <!-- Braço esquerdo -->
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate angle ="-90" x="1" y="0" z="0" />
+                <translate x="0" y="1" z="0" />
+                <scale x="0.33" y="0.6" z="0.5" />
+            </transform>
+            <settings>
+                    <color c1="0.8" c2="0.8" c3="0.8" />
+            </settings>
+            <models> 
+                <model file="tie_fighter_arm.3d" /> <!-- Braço direito -->
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate angle ="-90" x="0" y="0" z="1" />
+                <translate x="0" y="1" z="0" />
+                <scale x="0.75" y="0.75" z="0.75" />
+            </transform>
+            <models>
+                <model file="tie_fighter_visor.3d" />  <!-- Visor -->
+            </models>
+            <settings>
+                    <color c1="0.3" c2="0.3" c3="0.3" />
+            </settings>
+        </group>
+        <group>
+            <transform>
+                <rotate angle ="90" x="0" y="0" z="1" />
+                <translate x="0" y="0" z="-2.8" />
+                <scale x="1.5" y="3.5" z="0.75" />
+            </transform>
+            <models>
+                <model file="tie_fighter_wing.3d" />  <!-- Asa Direita -->
+            </models>
+            <settings>
+                    <color c1="0.2" c2="0.2" c3="0.2" />
+            </settings>
+        </group>
+        <group>
+            <transform>
+                <rotate angle ="90" x="0" y="0" z="1" />
+                <translate x="0" y="0" z="2.8" />
+                <scale x="1.5" y="3.5" z="0.75" />
+            </transform>
+            <models>
+                <model file="tie_fighter_wing.3d" />   <!-- Asa Esquerda -->
+            </models>
+            <settings>
+                    <color c1="0.2" c2="0.2" c3="0.2" />
+            </settings>
+        </group>
+    </group>
+<!-- TieFighter 1-->
+    <group>
+        <transform>
+            <rotate time="5" x="0" y="0" z="1" />
+            <translate x="30" y="30" z="30"/>
+        </transform> 
+        <models> 
+            <model file="tie_fighter_ship.3d" /> <!-- Nave -->
+        </models>
+        <settings>
+                    <color c1="0.6" c2="0.6" c3="0.6" />
+        </settings>
+        <group>
+            <transform>
+                <rotate angle ="90" x="1" y="0" z="0" />
+                <translate x="0" y="1" z="0" />
+                <scale x="0.33" y="0.6" z="0.5" />
+            </transform>
+            <settings>
+                    <color c1="0.8" c2="0.8" c3="0.8" />
+            </settings>
+            <models> 
+                <model file="tie_fighter_arm.3d" /> <!-- Braço esquerdo -->
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate angle ="-90" x="1" y="0" z="0" />
+                <translate x="0" y="1" z="0" />
+                <scale x="0.33" y="0.6" z="0.5" />
+            </transform>
+            <settings>
+                    <color c1="0.8" c2="0.8" c3="0.8" />
+            </settings>
+            <models> 
+                <model file="tie_fighter_arm.3d" /> <!-- Braço direito -->
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate angle ="-90" x="0" y="0" z="1" />
+                <translate x="0" y="1" z="0" />
+                <scale x="0.75" y="0.75" z="0.75" />
+            </transform>
+            <models>
+                <model file="tie_fighter_visor.3d" />  <!-- Visor -->
+            </models>
+            <settings>
+                    <color c1="0.3" c2="0.3" c3="0.3" />
+            </settings>
+        </group>
+        <group>
+            <transform>
+                <rotate angle ="90" x="0" y="0" z="1" />
+                <translate x="0" y="0" z="-2.8" />
+                <scale x="1.5" y="3.5" z="0.75" />
+            </transform>
+            <models>
+                <model file="tie_fighter_wing.3d" />  <!-- Asa Direita -->
+            </models>
+            <settings>
+                    <color c1="0.2" c2="0.2" c3="0.2" />
+            </settings>
+        </group>
+        <group>
+            <transform>
+                <rotate angle ="90" x="0" y="0" z="1" />
+                <translate x="0" y="0" z="2.8" />
+                <scale x="1.5" y="3.5" z="0.75" />
+            </transform>
+            <models>
+                <model file="tie_fighter_wing.3d" />   <!-- Asa Esquerda -->
+            </models>
+            <settings>
+                    <color c1="0.2" c2="0.2" c3="0.2" />
+            </settings>
+        </group>
+    </group>
+    <!--x-wing-->
+        <group>
+            <transform>
+                <rotate angle="-90" x="0" y="0" z="1" />
+                <rotate angle="45" x="0" y="1" z="0" />
+                <scale x="1" y="2" z="1" />
+            </transform>
+            <models> 
+                <model file="x_wing_cabin_frente.3d" /> <!-- cabin Frente -->
+            </models>
+            <settings>
+                <color c1="1" c2="0.5" c3="0.1" />
+            </settings>
+        </group>
+        <group>
+            <transform>
+                <rotate angle="90" x="0" y="0" z="1" />
+                <rotate angle="45" x="0" y="1" z="0" />
+                <scale x="1" y="0.65" z="1" />
+            </transform>
+            <models> 
+                <model file="x_wing_cabin_tras.3d" /> <!-- cabin Tras -->
+            </models>
+            <settings>
+                <color c1="0.5" c2="0.5" c3="0.5" />
+            </settings>
+        </group>
+        <group>
+            <transform>
+                <translate x="-1" y="1.5" z="-3.5"/>
+                <rotate angle="90" x="0" y="0" z="1" />
+                <rotate angle="70" x="0" y="1" z="0" />
+                <scale x="1.5" y="2" z="1" />
+            </transform>
+            <models> 
+                <model file="x_wing_wing.3d" /> <!-- asa direita superior -->
+            </models>
+            <settings>
+                <color c1="1" c2="0.5" c3="0.1" />
+            </settings>
+        </group>
+        <group>
+            <transform>
+                <translate x="-1" y="1.5" z="3.5"/>
+                <rotate angle="90" x="0" y="0" z="1" />
+                <rotate angle="-70" x="0" y="1" z="0" />
+                <scale x="1.5" y="2" z="1" />
+            </transform>
+            <models> 
+                <model file="x_wing_wing.3d" /> <!-- asa esquerda superior -->
+            </models>
+            <settings>
+                <color c1="1" c2="0.5" c3="0.1" />
+            </settings>
+        </group>
+        <group>
+            <transform>
+                <translate x="-1" y="-1" z="-3.5"/>
+                <rotate angle="90" x="0" y="0" z="1" />
+                <rotate angle="-70" x="0" y="1" z="0" />
+                <scale x="1.5" y="2" z="1" />
+            </transform>
+            <models> 
+                <model file="x_wing_wing.3d" /> <!-- asa direita inferior -->
+            </models>
+            <settings>
+                <color c1="1" c2="0.5" c3="0.1" />
+            </settings>
+        </group>
+        <group>
+            <transform>
+                <translate x="-1" y="-1" z="3.5"/>
+                <rotate angle="90" x="0" y="0" z="1" />
+                <rotate angle="70" x="0" y="1" z="0" />
+                <scale x="1.5" y="2" z="1" />
+            </transform>
+            <models> 
+                <model file="x_wing_wing.3d" /> <!-- asa esquerda inferior -->
+            </models>
+            <settings>
+                <color c1="1" c2="0.5" c3="0.1" />
+            </settings>
+        </group>
+        <group>
+            <transform>
+                <rotate angle="90" x="0" y="0" z="1"/>
+                <translate x="2.61" y="-1" z="5.7" />
+                <scale x="0.35" y="0.7" z="0.35" />
+            </transform>
+            <models> 
+                <model file="x_wing_propulsor.3d" /> <!-- propulsor arma esquerda superior -->
+            </models>
+            <settings>
+                <color c1="0.5" c2="0.5" c3="0.5" />
+            </settings>
+        </group>
+        <group>
+            <transform>
+                <rotate angle="90" x="0" y="0" z="1"/>
+                <translate x="2.61" y="-1" z="-5.7" />
+                <scale x="0.35" y="0.7" z="0.35" />
+            </transform>
+            <models> 
+                <model file="x_wing_propulsor.3d" /> <!-- propulsor arma direita superior -->
+            </models>
+            <settings>
+                <color c1="0.5" c2="0.5" c3="0.5" />
+            </settings>
+        </group>
+        <group>
+            <transform>
+                <rotate angle="90" x="0" y="0" z="1"/>
+                <translate x="-2.2" y="-1" z="5.7" />
+                <scale x="0.35" y="0.7" z="0.35" />
+            </transform>
+            <models> 
+                <model file="x_wing_propulsor.3d" /> <!-- propulsor arma esquerda inferior -->
+            </models>
+            <settings>
+                <color c1="0.5" c2="0.5" c3="0.5" />
+            </settings>
+        </group>
+        <group>
+            <transform>
+                <rotate angle="90" x="0" y="0" z="1"/>
+                <translate x="-2.2" y="-1" z="-5.7" />
+                <scale x="0.35" y="0.7" z="0.35" />
+            </transform>
+            <models> 
+                <model file="x_wing_propulsor.3d" /> <!-- propulsor arma direita inferior -->
+            </models>
+            <settings>
+                <color c1="0.5" c2="0.5" c3="0.5" />
+            </settings>
+        </group>
+        <group>
+            <transform>
+                <rotate angle="90" x="0" y="0" z="1"/>
+                <translate x="1.1" y="0" z="1" />
+                <scale x="0.5" y="0.7" z="0.5" />
+            </transform>
+            <models> 
+                <model file="x_wing_propulsor.3d" /> <!-- propulsor cabin esquerda superior -->
+            </models>
+            <settings>
+                <color c1="0.3" c2="0.3" c3="0.3" />
+            </settings>
+        </group>
+        <group>
+            <transform>
+                <rotate angle="90" x="0" y="0" z="1"/>
+                <translate x="1.1" y="0" z="-1" />
+                <scale x="0.5" y="0.7" z="0.5" />
+            </transform>
+            <models> 
+                <model file="x_wing_propulsor.3d" /> <!-- propulsor cabin direita superior -->
+            </models>
+            <settings>
+                <color c1="0.3" c2="0.3" c3="0.3" />
+            </settings>
+        </group>
+        <group>
+            <transform>
+                <rotate angle="90" x="0" y="0" z="1"/>
+                <translate x="-0.65" y="0" z="1.1" />
+                <scale x="0.5" y="0.7" z="0.5" />
+            </transform>
+            <models> 
+                <model file="x_wing_propulsor.3d" /> <!-- propulsor cabin esquerda inferior -->
+            </models>
+            <settings>
+                <color c1="0.3" c2="0.3" c3="0.3" />
+            </settings>
+        </group>
+        <group>
+            <transform>
+                <rotate angle="90" x="0" y="0" z="1"/>
+                <translate x="-0.65" y="0" z="-1.1" />
+                <scale x="0.5" y="0.7" z="0.5" />
+            </transform>
+            <models> 
+                <model file="x_wing_propulsor.3d" /> <!-- propulsor cabin direita inferior -->
+            </models>
+            <settings>
+                <color c1="0.3" c2="0.3" c3="0.3" />
+            </settings>
+        </group>
+    </group>
+    </group>
+    </group>
+</world>
