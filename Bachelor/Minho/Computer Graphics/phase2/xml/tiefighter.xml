@@ -1,0 +1,84 @@
+<world>
+    <window width="512" height="512" />
+    <camera> 
+	    <position x="10" y="3" z="10" />
+	    <lookAt x="0" y="0" z="0" />
+	    <up x="0" y="1" z="0" /> 
+        <projection fov="60" near="1" far="1000" /> 
+        <mode draw="1" />
+    </camera>
+
+    <group> 
+        <models> 
+            <model file="tie_fighter_ship.3d" /> <!-- Nave -->
+        </models>
+        <settings>
+                    <color c1="0.6" c2="0.6" c3="0.6" />
+        </settings>
+        <group>
+            <transform>
+                <rotate angle ="90" x="1" y="0" z="0" />
+                <translate x="0" y="1" z="0" />
+                <scale x="0.33" y="0.6" z="0.5" />
+            </transform>
+            <settings>
+                    <color c1="0.8" c2="0.8" c3="0.8" />
+            </settings>
+            <models> 
+                <model file="tie_fighter_arm.3d" /> <!-- Braço esquerdo -->
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate angle ="-90" x="1" y="0" z="0" />
+                <translate x="0" y="1" z="0" />
+                <scale x="0.33" y="0.6" z="0.5" />
+            </transform>
+            <settings>
+                    <color c1="0.8" c2="0.8" c3="0.8" />
+            </settings>
+            <models> 
+                <model file="tie_fighter_arm.3d" /> <!-- Braço direito -->
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate angle ="-90" x="0" y="0" z="1" />
+                <translate x="0" y="1" z="0" />
+                <scale x="0.75" y="0.75" z="0.75" />
+            </transform>
+            <models>
+                <model file="tie_fighter_visor.3d" />  <!-- Visor -->
+            </models>
+            <settings>
+                    <color c1="0.3" c2="0.3" c3="0.3" />
+            </settings>
+        </group>
+        <group>
+            <transform>
+                <rotate angle ="90" x="0" y="0" z="1" />
+                <translate x="0" y="0" z="-2.8" />
+                <scale x="1.5" y="3.5" z="0.75" />
+            </transform>
+            <models>
+                <model file="tie_fighter_wing.3d" />  <!-- Asa Direita -->
+            </models>
+            <settings>
+                    <color c1="0.2" c2="0.2" c3="0.2" />
+            </settings>
+        </group>
+        <group>
+            <transform>
+                <rotate angle ="90" x="0" y="0" z="1" />
+                <translate x="0" y="0" z="2.8" />
+                <scale x="1.5" y="3.5" z="0.75" />
+            </transform>
+            <models>
+                <model file="tie_fighter_wing.3d" />   <!-- Asa Esquerda -->
+            </models>
+            <settings>
+                    <color c1="0.2" c2="0.2" c3="0.2" />
+            </settings>
+        </group>
+    </group>
+</world>

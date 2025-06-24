@@ -1,0 +1,15 @@
+<world> 
+    <window width="512" height="512" />
+    <camera> 
+	    <position x="5" y="5" z="5" />
+	    <lookAt x="0" y="0" z="0" />
+	    <up x="0" y="1" z="0" />
+        <projection fov="90" near="1" far="1000" /> 
+    </camera>
+	<group> 
+  		<models> 
+			<model file="cylinder_2_4_10_10.3d" /> <!-- generator cylinder 2 4 10 10 cylinder_2_4_10_10.3d -->
+			<model file="torus_2_4_10_10.3d" /> <!-- generator torus 2 4 10 10 torus_2_4_10_10.3d -->
+ 		</models>
+ 	</group>
+</world>
