@@ -1,0 +1,16 @@
+[
+    {
+      "id": "visit_1",
+      "title": "Primeira visita",
+      "description": "Visitaste o teu primeiro edifício!",
+      "icon": "📍",
+      "required": 1
+    },
+    {
+      "id": "visit_3",
+      "title": "Explorador Sénior",
+      "description": "Visitaste 3 edifícios!",
+      "icon": "🎖️",
+      "required": 3
+    }
+]
