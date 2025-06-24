@@ -1,0 +1,825 @@
+<world>
+    <window width="1200" height="750" />
+    <camera> 
+	    <position x="-300" y="200" z="300" />
+	    <lookAt x="0" y="0" z="0" />
+	    <up x="0" y="1" z="0" /> 
+        <projection fov="60" near="1" far="10000" />
+        <mode draw="1"/>
+        <catmull orbit="0"/>
+    </camera>
+    <lights> 
+		<light type="point" posx="0" posy="0" posz="0" />
+	</lights>
+    <group>
+        <models>
+            <model file="sun.3d">
+                <texture file="sun.jpg"/>
+                <color>
+                    <emissive R="255" G="255" B="255"/>
+                </color>
+            </model>
+        </models>
+        <transform>
+                <rotate time="216" x="0" y="1" z="0"/>
+        </transform>
+    </group>
+        <group>
+            <transform>
+                <rotate time="3" x="0" y="1" z="0" />  <!-- Translação-->
+                <translate x="73.6225" y="0" z="0" />
+                <rotate angle="-0.03" x="1" y="0" z="0"/>
+                <rotate time="468.8" x="0" y="1" z="0"/>  <!-- Rotação-->
+            </transform>
+            <models>
+                <model file="mercury.3d">
+                    <texture file = "mercury.jpg" />
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate time="7.66" x="0" y="1" z="0" />
+                <translate x="79.1564" y="0" z="0" />
+                <rotate angle="-177.4" x="1" y="0" z="0"/>
+                <rotate time="1944" x="0" y="1" z="0" />
+            </transform>
+            <models>
+                <model file="venus.3d">
+                    <texture file="venus.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate time="12.44" x="0" y="1" z="0" />
+                <translate x="83.9015" y="0" z="0" />
+                <rotate angle="-16.72" x="1" y="0" z="0"/>
+                <rotate time="8" x="0" y="1" z="0" />
+            </transform>
+            <models>
+                <model file="earth.3d" >
+                    <texture file="earth2.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+            <group>
+                <transform>
+                    <rotate time="1" x="0" y="1" z="0" />
+                    <translate x="0" y="0" z="2" />
+                    <rotate angle="23.4" x="1" y="0" z="0"/>
+                    <rotate time="236" x="0" y="1" z="0" />
+                </transform>
+                <models>
+                    <model file="moon_earth.3d">
+                        <texture file="moon.jpg"/>
+                    <color>
+                        <specular R="50" G="50" B="50"/>
+                        <ambient R="100" G="100" B="100"/>
+                        <shininess value="128"/>
+                    </color>
+                    </model>
+                </models>
+            </group>
+        </group>
+        <group>
+            <transform>
+                <rotate time="23.4" x="0" y="1" z="0" />
+                <translate x="92.3726" y="0" z="0" />
+                <rotate angle="-25.2" x="1" y="0" z="0"/>
+                <rotate time="8.24" x="0" y="1" z="0" />
+            </transform>
+            <models>
+                <model file="mars.3d">
+                    <texture file="mars.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate time="73.813" x="0" y="1" z="0"/> 
+                <translate x="147.7505" y="0" z="0" />
+                <rotate angle="-3.1" x="1" y="0" z="0"/>
+                <rotate time="3.28" x="0" y="1" z="0" />
+            </transform>
+            <models>
+                <model file="jupiter.3d">
+                    <texture file="jupiter.jpg"/>
+                 <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate time="183.35" x="0" y="1" z="0"/> 
+                <translate x="219.3686" y="0" z="0" />
+                <rotate angle="-26.7" x="1" y="0" z="0"/>
+                <rotate time="3.6" x="0" y="1" z="0" />
+            </transform>
+            <models>
+                <model file="saturn.3d">
+                    <texture file="saturn.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+                <model file="ring_saturn2.3d">
+                    <texture file="saturn_ring.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+            <group>
+                <transform>
+                    <translate x="0" y="0.3" z="0" />
+                </transform>
+                <models>
+                    <model file="ring_saturn1.3d" >
+                        <texture file="saturn_ring.jpg"/>
+                    <color>
+                        <specular R="50" G="50" B="50"/>
+                        <ambient R="100" G="100" B="100"/>
+                        <shininess value="128"/>
+                    </color>
+                    </model>
+                    <model file="ring_saturn3.3d" >
+                        <texture file="saturn_ring.jpg"/>
+                    <color>
+                        <specular R="50" G="50" B="50"/>
+                        <ambient R="100" G="100" B="100"/>
+                        <shininess value="128"/>
+                    </color>
+                    </model>
+                </models>
+            </group>
+        </group>
+        <group>
+            <transform>
+                <rotate time="522.85" x="0" y="1" z="0"/> 
+                <translate x="370.0868" y="0" z="0" />
+                <rotate angle="-97.8" x="1" y="0" z="0"/>
+                <rotate time="5.76" x="0" y="1" z="0" />
+            </transform>
+            <models>
+                <model file="uranus.3d" >
+                    <texture file="uranus.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+            <group>
+                <transform>
+                    <translate x="0" y="0.2" z="0" />
+                </transform>
+                <models>
+                    <model file="ring_uranus.3d">
+                        <texture file="saturn_ring.jpg"/>
+                    <color>
+                        <specular R="50" G="50" B="50"/>
+                        <ambient R="100" G="100" B="100"/>
+                        <shininess value="128"/>
+                    </color>
+                    </model>
+                </models>
+            </group>
+        </group>
+        <group>
+            <transform>
+                <rotate time="1025.6" x="0" y="1" z="0"/> 
+                <translate x="535.368" y="0" z="0" />
+                <rotate angle="-28.3" x="1" y="0" z="0"/>
+                <rotate time="5.36" x="0" y="1" z="0" />
+            </transform>
+            <models>
+                <model file="neptune.3d">
+                    <texture file="neptune.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group> 
+
+        <!--TEAPOT Cometa-->
+		<group>
+			<transform>
+                <rotate time="30" x="0" y="1" z="1" />
+				<translate time = "10" align="true">
+					<point x = "85" y = "0" z = "30" />
+					<point x = "500" y = "0" z = "150" />
+					<point x = "600" y = "20" z = "300" />
+					<point x = "400" y = "-100" z = "250" />
+				</translate>
+				<rotate angle="-90" x="1" y="0" z="0" />
+				<scale x="1.5" y="1.5" z="1.5" />
+			</transform>
+			<models> 
+				<model file="bezier_10.3d" >
+                    <texture file="teapot.jpg"/>
+                </model>
+			</models>
+		    </group>
+ 	    </group>
+    <!--Chase route-->
+    <group>
+            <transform>
+            <translate time = "20" align="true">
+                <point x="750" y="40" z="40"/>
+                <point x="400" y="60" z="60"/>
+                <point x="0" y="200" z="100"/>
+                <point x="0" y="100" z="400"/>
+                <point x="350" y="40" z="400"/>
+                <point x="-200" y="60" z="200"/>
+                <point x="-400" y="-50" z="100"/>
+                <point x="-200" y="-100" z="-200"/>
+            </translate>
+        </transform> 
+    <group>
+
+     <!-- TieFighter 3-->
+    <group>
+        <transform>
+            <rotate time="2" x="1" y="0" z="1" />
+            <translate x="-20" y="40" z="-40"/>
+        </transform> 
+        <models> 
+            <model file="tie_fighter_ship.3d"> <!-- Nave -->
+                <texture file="mid_metal.jpg"/>
+            <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+            </color>
+            </model>
+        </models>
+        <group>
+            <transform>
+                <rotate angle ="90" x="1" y="0" z="0" />
+                <translate x="0" y="1" z="0" />
+                <scale x="0.33" y="0.6" z="0.5" />
+            </transform>
+            <models> 
+                <model file="tie_fighter_arm.3d"> <!-- Braço esquerdo -->
+                <texture file="light_metal.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate angle ="-90" x="1" y="0" z="0" />
+                <translate x="0" y="1" z="0" />
+                <scale x="0.33" y="0.6" z="0.5" />
+            </transform>
+            <models> 
+                <model file="tie_fighter_arm.3d"> <!-- Braço direito -->
+                <texture file="light_metal.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate angle ="-90" x="0" y="0" z="1" />
+                <translate x="0" y="1" z="0" />
+                <scale x="0.75" y="0.75" z="0.75" />
+            </transform>
+            <models>
+                <model file="tie_fighter_visor.3d">  <!-- Visor -->
+                <texture file="dark_metal.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate angle ="90" x="0" y="0" z="1" />
+                <translate x="0" y="0" z="-2.8" />
+                <scale x="1.5" y="3.5" z="0.75" />
+            </transform>
+            <models>
+                <model file="tie_fighter_wing.3d">  <!-- Asa Direita -->
+                <texture file="dark_metal.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate angle ="90" x="0" y="0" z="1" />
+                <translate x="0" y="0" z="2.8" />
+                <scale x="1.5" y="3.5" z="0.75" />
+            </transform>
+            <models>
+                <model file="tie_fighter_wing.3d">   <!-- Asa Esquerda -->
+                <texture file="dark_metal.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+    </group>
+
+    <!-- TieFighter 2-->
+        <group>
+        <transform>
+            <rotate time="5" x="1" y="0" z="" />
+            <translate x="-30" y="30" z="-30"/>
+        </transform> 
+        <models> 
+            <model file="tie_fighter_ship.3d"> <!-- Nave -->
+                <texture file="mid_metal.jpg"/>
+            <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+            </color>
+            </model>
+        </models>
+        <group>
+            <transform>
+                <rotate angle ="90" x="1" y="0" z="0" />
+                <translate x="0" y="1" z="0" />
+                <scale x="0.33" y="0.6" z="0.5" />
+            </transform>
+            <models> 
+                <model file="tie_fighter_arm.3d"> <!-- Braço esquerdo -->
+                <texture file="light_metal.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate angle ="-90" x="1" y="0" z="0" />
+                <translate x="0" y="1" z="0" />
+                <scale x="0.33" y="0.6" z="0.5" />
+            </transform>
+            <models> 
+                <model file="tie_fighter_arm.3d"> <!-- Braço direito -->
+                <texture file="light_metal.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate angle ="-90" x="0" y="0" z="1" />
+                <translate x="0" y="1" z="0" />
+                <scale x="0.75" y="0.75" z="0.75" />
+            </transform>
+            <models>
+                <model file="tie_fighter_visor.3d">  <!-- Visor -->
+                <texture file="dark_metal.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate angle ="90" x="0" y="0" z="1" />
+                <translate x="0" y="0" z="-2.8" />
+                <scale x="1.5" y="3.5" z="0.75" />
+            </transform>
+            <models>
+                <model file="tie_fighter_wing.3d">  <!-- Asa Direita -->
+                <texture file="dark_metal.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate angle ="90" x="0" y="0" z="1" />
+                <translate x="0" y="0" z="2.8" />
+                <scale x="1.5" y="3.5" z="0.75" />
+            </transform>
+            <models>
+                <model file="tie_fighter_wing.3d">   <!-- Asa Esquerda -->
+                <texture file="dark_metal.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+    </group>
+<!-- TieFighter 1-->
+        <group>
+        <transform>
+            <rotate time="5" x="0" y="0" z="1" />
+            <translate x="30" y="30" z="30"/>
+        </transform> 
+        <models> 
+            <model file="tie_fighter_ship.3d"> <!-- Nave -->
+                <texture file="mid_metal.jpg"/>
+            <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+            </color>
+            </model>
+        </models>
+        <group>
+            <transform>
+                <rotate angle ="90" x="1" y="0" z="0" />
+                <translate x="0" y="1" z="0" />
+                <scale x="0.33" y="0.6" z="0.5" />
+            </transform>
+            <models> 
+                <model file="tie_fighter_arm.3d"> <!-- Braço esquerdo -->
+                <texture file="light_metal.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate angle ="-90" x="1" y="0" z="0" />
+                <translate x="0" y="1" z="0" />
+                <scale x="0.33" y="0.6" z="0.5" />
+            </transform>
+            <models> 
+                <model file="tie_fighter_arm.3d"> <!-- Braço direito -->
+                <texture file="light_metal.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate angle ="-90" x="0" y="0" z="1" />
+                <translate x="0" y="1" z="0" />
+                <scale x="0.75" y="0.75" z="0.75" />
+            </transform>
+            <models>
+                <model file="tie_fighter_visor.3d">  <!-- Visor -->
+                <texture file="dark_metal.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate angle ="90" x="0" y="0" z="1" />
+                <translate x="0" y="0" z="-2.8" />
+                <scale x="1.5" y="3.5" z="0.75" />
+            </transform>
+            <models>
+                <model file="tie_fighter_wing.3d">  <!-- Asa Direita -->
+                <texture file="dark_metal.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate angle ="90" x="0" y="0" z="1" />
+                <translate x="0" y="0" z="2.8" />
+                <scale x="1.5" y="3.5" z="0.75" />
+            </transform>
+            <models>
+                <model file="tie_fighter_wing.3d">   <!-- Asa Esquerda -->
+                <texture file="dark_metal.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+    </group>
+    <!--x-wing-->
+        <group>
+            <transform>
+                <rotate angle="-90" x="0" y="0" z="1" />
+                <rotate angle="45" x="0" y="1" z="0" />
+                <scale x="1" y="2" z="1" />
+            </transform>
+            <models> 
+                <model file="x_wing_cabin_frente.3d"> <!-- cabin Frente -->
+                <texture file="orange_metal.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate angle="90" x="0" y="0" z="1" />
+                <rotate angle="45" x="0" y="1" z="0" />
+                <scale x="1" y="0.65" z="1" />
+            </transform>
+            <models> 
+                <model file="x_wing_cabin_tras.3d"> <!-- cabin Tras -->
+                <texture file="mid_metal.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <translate x="-1" y="1.5" z="-3.5"/>
+                <rotate angle="90" x="0" y="0" z="1" />
+                <rotate angle="70" x="0" y="1" z="0" />
+                <scale x="1.5" y="2" z="1" />
+            </transform>
+            <models> 
+                <model file="x_wing_wing.3d"> <!-- asa direita superior -->
+                <texture file="orange_metal.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <translate x="-1" y="1.5" z="3.5"/>
+                <rotate angle="90" x="0" y="0" z="1" />
+                <rotate angle="-70" x="0" y="1" z="0" />
+                <scale x="1.5" y="2" z="1" />
+            </transform>
+            <models> 
+                <model file="x_wing_wing.3d"> <!-- asa esquerda superior -->
+                <texture file="orange_metal.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <translate x="-1" y="-1" z="-3.5"/>
+                <rotate angle="90" x="0" y="0" z="1" />
+                <rotate angle="-70" x="0" y="1" z="0" />
+                <scale x="1.5" y="2" z="1" />
+            </transform>
+            <models> 
+                <model file="x_wing_wing.3d"> <!-- asa direita inferior -->
+                <texture file="orange_metal.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <translate x="-1" y="-1" z="3.5"/>
+                <rotate angle="90" x="0" y="0" z="1" />
+                <rotate angle="70" x="0" y="1" z="0" />
+                <scale x="1.5" y="2" z="1" />
+            </transform>
+            <models> 
+                <model file="x_wing_wing.3d"> <!-- asa esquerda inferior -->
+                <texture file="orange_metal.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate angle="90" x="0" y="0" z="1"/>
+                <translate x="2.61" y="-1" z="5.7" />
+                <scale x="0.35" y="0.7" z="0.35" />
+            </transform>
+            <models> 
+                <model file="x_wing_propulsor.3d"> <!-- propulsor arma esquerda superior -->
+                <texture file="orange_metal.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate angle="90" x="0" y="0" z="1"/>
+                <translate x="2.61" y="-1" z="-5.7" />
+                <scale x="0.35" y="0.7" z="0.35" />
+            </transform>
+            <models> 
+                <model file="x_wing_propulsor.3d"> <!-- propulsor arma direita superior -->
+                <texture file="mid_metal.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate angle="90" x="0" y="0" z="1"/>
+                <translate x="-2.2" y="-1" z="5.7" />
+                <scale x="0.35" y="0.7" z="0.35" />
+            </transform>
+            <models> 
+                <model file="x_wing_propulsor.3d"> <!-- propulsor arma esquerda inferior -->
+                <texture file="mid_metal.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate angle="90" x="0" y="0" z="1"/>
+                <translate x="-2.2" y="-1" z="-5.7" />
+                <scale x="0.35" y="0.7" z="0.35" />
+            </transform>
+            <models> 
+                <model file="x_wing_propulsor.3d"> <!-- propulsor arma direita inferior -->
+                <texture file="mid_metal.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate angle="90" x="0" y="0" z="1"/>
+                <translate x="1.1" y="0" z="1" />
+                <scale x="0.5" y="0.7" z="0.5" />
+            </transform>
+            <models> 
+                <model file="x_wing_propulsor.3d" > <!-- propulsor cabin esquerda superior -->
+                <texture file="dark_metal.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate angle="90" x="0" y="0" z="1"/>
+                <translate x="1.1" y="0" z="-1" />
+                <scale x="0.5" y="0.7" z="0.5" />
+            </transform>
+            <models> 
+                <model file="x_wing_propulsor.3d" > <!-- propulsor cabin direita superior -->
+                <texture file="dark_metal.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate angle="90" x="0" y="0" z="1"/>
+                <translate x="-0.65" y="0" z="1.1" />
+                <scale x="0.5" y="0.7" z="0.5" />
+            </transform>
+            <models> 
+                <model file="x_wing_propulsor.3d" > <!-- propulsor cabin esquerda inferior -->
+                <texture file="dark_metal.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate angle="90" x="0" y="0" z="1"/>
+                <translate x="-0.65" y="0" z="-1.1" />
+                <scale x="0.5" y="0.7" z="0.5" />
+            </transform>
+            <models> 
+                <model file="x_wing_propulsor.3d"> <!-- propulsor cabin direita inferior -->
+                <texture file="dark_metal.jpg"/>
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+    </group>
+    </group>
+</world>
