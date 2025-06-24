@@ -1,0 +1,19 @@
+----- Dataset Números -----
+
+Task             Best Accuracy             
+Tarefa 1 (MLP) -> 77%
+
+Tarefa 2 (CNN) -> 98%
+
+
+----- Dataset Fashion -----
+
+Task
+Tarefa 3 (MLP) -> 48%
+	 (CNN) -> 90%
+
+Tarefa 4 (MLP) -> 85%
+	 (CNN) -> (não consegui encontrar melhor do que 90%)
+
+Tarefa 5 (MLP) -> (A minha primeira versão não tinha normalização, logo é igual)
+	 (CNN) -> 90%
