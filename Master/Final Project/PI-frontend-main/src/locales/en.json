@@ -1,0 +1,265 @@
+{
+  "translation": {
+    "header": "Our Header!!!!!!!!!!!!!!",
+    "footer": "Footer {{year}}",
+    "table": {
+      "quotes": {
+        "date": "Start Date",
+        "finalDate": "End Date",
+        "value": "Value",
+        "invoice": "Invoice",
+        "buttonPay": "Pay",
+        "buttonCancel": "Cancel",
+        "noInvoice": "Available Soon",
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "showMore": "Show more"
+      },
+      "title": "Payment History"
+    },
+    "adminDashboard": {
+      "validSubs": "associates with a current valid subscriptions",
+      "expiredSubs": "associates with a current expired subscriptions",
+      "usersGraphTitle": "User registrations to the app per month",
+      "incomeGraphTitle": "Income per month",
+      "historicPayersGraphTitle": "Associates Historic Payments",
+      "amountPayers": "associates that have paid at least 1 subscription",
+      "amountNotPayers": "associates that have never paid",
+      "historicPayers": "Associates historic payers",
+      "currentPayers": "Current subscription status",
+      "totalVerifiedAssociates": "Total number of associates"
+    },
+    "associatesTable": {
+      "associate": {
+        "id": "ID",
+        "email": "Email",
+        "name": "Name",
+        "accountStatus": "Account Status",
+        "subscriptionStatus": "Subscription Status",
+        "endDate": "Subscription End Date",
+        "disableAccount": "Delete ",
+        "userDetails": "Details",
+        "export": "Export"
+      },
+      "exportAll": "Export All",
+      "edit": "Edit",
+      "status": {
+        "disabled": "Disabled",
+        "pending": "Pending",
+        "verified": "Verified",
+        "other": "Other",
+        "all": "All"
+      },
+      "subStatus": {
+        "expired": "Expired",
+        "valid": "Valid"
+      },
+      "alert": {
+        "disable": "Do you want to disable account ",
+        "verify": "Do you want to verify account ",
+        "body": "Are you sure you want to disable this associates account? It will remove its permits for any use in this application.",
+        "yes": "Yes",
+        "no": "No",
+        "deleteConfirm": "Are you sure you want to delete this payment option?"
+      },
+      "title": "Associates",
+      "noAssociates": "No associates in database",
+      "noSubscription": "No Subscription",
+      "inexistent": "Non-existent",
+      "searchBar": "Search Bar",
+      "invoice": "Invoice Nº",
+      "dateOfIssue": "Date of issue",
+      "period": "Period",
+      "value": "Value",
+      "deadline": "Deadline",
+      "paymentDate": "Payment date",
+      "linkInvoice": "Invoice",
+      "inMonths": "Subscription length in months",
+      "invoiceUrl": "Invoice URL",
+      "urlToInvoice": "URL of the invoice document"
+    },
+    "paymentCategories": {
+      "memberCategory": " Category",
+      "junior": "Junior",
+      "youth": "Youth",
+      "senior": "Senior",
+      "period": "Period",
+      "sixMonths": "6 months",
+      "twelveMonths": "12 months",
+      "value": "Value",
+      "months": "months"
+    },
+    "associateData": {
+      "alert": {
+        "role": "Are you sure? This will change the users permits on the app",
+        "profile": "Submit changes to "
+      },
+      "name": "Name",
+      "associate": "Associate nº",
+      "dateOfLoyalty": "Loyalty Period",
+      "email": "Email",
+      "phoneNumber": "Phone Number",
+      "nif": "NIF",
+      "header": "Associate Details",
+      "helper": "Since account creation"
+    },
+    "payment": {
+      "methodOfPayment": "Choose the method of payment",
+      "title": "Payments",
+      "paymentPeriod": "Select payment period",
+      "subtitleToNumberPhone": "Enter your phone number",
+      "subtitleMbButton": "Click to get the Multibanco reference",
+      "phoneNumberError": "Check if the number is correct",
+      "buttonSubmit": "Send",
+      "buttonMb": "Generate Reference",
+      "buttonMbOpen": "Show Reference",
+      "buttonMbway": "Pay",
+      "buttonMbwayOpen": "Open",
+      "total": "Total"
+    },
+    "paymentReference": {
+      "title": "Payment Details",
+      "reference": "Reference",
+      "orderID": "Order ID",
+      "entity": "Entity",
+      "amount": "Amount",
+      "expiryDate": "Expires on",
+      "countdown": "Expires in",
+      "expired": "Expired",
+      "phoneNumber": "Phone Number",
+      "helperTextMB": "The Multibanco reference payment can be made through your online banking or at an ATM.",
+      "helperTextMBway": "You will receive a notification in the MB Way app to confirm the payment.",
+      "clipboard": "Copy to clipboard.",
+      "copied": "Copied!!!"
+    },
+    "paymentsTable": {
+      "category": "Category",
+      "period": "Period",
+      "price": "Price",
+      "delete": "Delete"
+    },
+    "sideBar": {
+      "name": "Name",
+      "email": "Email",
+      "associate": "Associates",
+      "logout": "Logout",
+      "payment": "Pay",
+      "dashboard": "Dashboard",
+      "quotas": "Quotas",
+      "paymentSettings": "Payment Settings"
+    },
+    "register": {
+      "createAccount": "Register",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "nif": "NIF",
+      "phoneNumber": "Phone Number",
+      "email": "Email",
+      "category": "Category",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "Submit": "Register",
+      "cancelButton": "Cancel",
+      "signInQuestion": "Have an account?",
+      "signInButton": "Sign In",
+      "separator": "Or",
+      "next": "Next",
+      "back": "Back"
+    },
+    "language": {
+      "english": "English",
+      "portuguese": "Portuguese",
+      "language": "Language"
+    },
+    "login": {
+      "login": "Sign In",
+      "email": "Email",
+      "createAccountQuestion": "Don't have an account?",
+      "createAccountButton": "Register",
+      "createAccount": "Create an account",
+      "separator": "Or"
+    },
+    "loginMagicLink": {
+      "helperText": "We will send a login link to your email.",
+      "buttonSubmit": "Send Magic Link",
+      "buttonPassword": "Switch to Password",
+      "buttonClock": "Try again in"
+    },
+    "loginPassword": {
+      "password": "Password",
+      "passwordRecoveryQuestion": "Forgot your password?",
+      "passwordRecoveryButton": "Reset it",
+      "buttonSubmit": "Sign In",
+      "buttonMagicLink": "Switch to Magic Link"
+    },
+    "dashboard": {
+      "title": "Dashboard",
+      "learnMore": "Learn more",
+      "hello": "Hello",
+      "trueSentence": "Payment of quotas is regularized",
+      "falseSentence": "Payment of quotas to be adjusted",
+      "validUntil": "Valid until",
+      "name": "Name",
+      "id": "ID"
+    },
+    "error": {
+      "start": "Error ",
+      "end": "try again later ..."
+    },
+    "toasts": {
+      "emailOk": "An email has been sent to you with your login url",
+      "emailFail": "Error sending email!",
+      "login404": "Your account could not be found!",
+      "login403": "Invalid credentials! Please try again.",
+      "registerTrue": "An email has been sent to you with a verification url",
+      "registerFalse": "Registration Failed",
+      "profileTrue": "Profile changed successfully!",
+      "profileFail": "Profile change failed",
+      "invalidEmail": "Inserted email is invalid",
+      "addPrice": "Payment option successfully added!",
+      "addPriceFail": "Payment option insertion failed",
+      "deletePrice": "Payment option successfully deleted!",
+      "deletePriceFail": "Payment option deletion failed",
+      "successSub": "Subscription added successfully",
+      "failedSub": "Subscription addition failed"
+    },
+    "blank": {
+      "login": "Sign In",
+      "home": "Dashboard",
+      "401": "Your session has expired. Please Login again",
+      "404": "This content could not be found. Please go back to the Dashboard",
+      "500": "There was a server error. Please try again later",
+      "createAccount": "Your account was successfully created!",
+      "createAccountError": "Your account could not be confirmed, please retry!",
+      "reconfirm": "Request email",
+      "resendEmail": "Verification email sent. If it did not appear, you can resend the verification email to ",
+      "successEmail": "Email resent",
+      "failedEmail": "Email resent failed",
+      "loginfailed": "The Signin failed. Please try again",
+      "signin": "Sign in",
+      "oldAccount": "There is a pending account with this email.\nClick the following button to resend the email verification to "
+    },
+    "validation": {
+      "required": "This field is required",
+      "length": "Wrong length",
+      "email": "Invalid email format",
+      "emailUnique": "Email address is already being used",
+      "nifUnique": "NIF is already being used",
+      "phoneNumber": "Invalid phone number",
+      "nifLenght": "NIF must be 9 digits",
+      "match": "Passwords do not match",
+      "passwordLength": "Password must contain at least 8 characters",
+      "passwordNumber": "Password must contain at least one number",
+      "passwordChar": "Password must contain at least one letter"
+    },
+    "quotas": {
+      "msgStatus": "You don't have payments made. Please click below to go to the payments page."
+    },
+    "paymentSettings": {
+      "title": "Payment Options",
+      "subtitle": "Add new payment option",
+      "button": "Add",
+      "manualSubscription": "Add Subscription"
+    }
+  }
+}

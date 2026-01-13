@@ -1,0 +1,9 @@
+{
+  auto_https disable_redirects
+}
+
+:80 {
+  root * /app
+  try_files {path} /index.html
+  file_server
+}

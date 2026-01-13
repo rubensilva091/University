@@ -1,0 +1,265 @@
+{
+  "translation": {
+    "header": "Cabeçalho",
+    "footer": "Rodape {{year}}",
+    "table": {
+      "quotes": {
+        "date": "Início",
+        "finalDate": "Fim",
+        "value": "Valor",
+        "invoice": "Fatura",
+        "buttonPay": "Pagar",
+        "buttonCancel": "Cancelar",
+        "noInvoice": "Disponível em Breve",
+        "submit": "Submeter",
+        "cancel": "Cancelar",
+        "showMore": "Ver mais"
+      },
+      "title": "Histórico de Pagamentos"
+    },
+    "adminDashboard": {
+      "validSubs": "associados com subcrição válida",
+      "expiredSubs": "associados com subscrição expirada",
+      "usersGraphTitle": "Número de registos por mês",
+      "incomeGraphTitle": "Valor faturado por mês",
+      "historicPayersGraphTitle": "Histórico de pagamentos",
+      "amountPayers": "associados que já fizeram pagamentos",
+      "amountNotPayers": "associados que nunca pagaram",
+      "historicPayers": "Associados com histórico de pagamento",
+      "currentPayers": "Status atual da subscrição",
+      "totalVerifiedAssociates": "Número total de associados"
+    },
+    "associatesTable": {
+      "associate": {
+        "id": "ID",
+        "email": "Email",
+        "name": "Nome",
+        "accountStatus": "Estado da Conta",
+        "subscriptionStatus": "Estado de inscrição",
+        "endDate": "Data de expiração ",
+        "disableAccount": "Eliminar",
+        "userDetails": "Detalhes",
+        "export": "Exportar"
+      },
+      "exportAll": "Exportar Tudo",
+      "edit": "Editar",
+      "status": {
+        "disabled": "Desativado",
+        "pending": "Pendente",
+        "verified": "Verificado",
+        "other": "Outro",
+        "all": "Todos"
+      },
+      "subStatus": {
+        "expired": "Expirado",
+        "valid": "Válido"
+      },
+      "alert": {
+        "disable": "Deseja desativar a conta de ",
+        "verify": "Deseja verificar a conta ",
+        "body": "Tem a certeza que pretende desativar esta conta? O utilzador perderá acesso ao portal",
+        "yes": "Sim",
+        "no": "Não",
+        "deleteConfirm": "Tem a certeza que pretende eliminar esta opção de pagamento?"
+      },
+      "title": "Associados",
+      "noAssociates": "Nenhum associado na base de dados",
+      "noSubscription": "Sem Assinatura",
+      "inexistent": "Inexistente",
+      "searchBar": "Barra de Pesquisa",
+      "invoice": "Factura Nº",
+      "dateOfIssue": "Data de emissão",
+      "period": "Período",
+      "value": "Valor",
+      "deadline": "Data limite de pagamento",
+      "paymentDate": "Data de pagamento",
+      "linkInvoice": "Factura",
+      "inMonths": "Duração da assinatura em meses",
+      "invoiceUrl": "URL da fatura",
+      "urlToInvoice": "URL do documento da fatura"
+    },
+    "paymentCategories": {
+      "memberCategory": "Categoria",
+      "junior": "Júnior",
+      "youth": "Adulto",
+      "senior": "Sénior",
+      "period": "Período",
+      "sixMonths": "6 meses",
+      "twelveMonths": "12 meses",
+      "value": "Valor",
+      "months": "meses"
+    },
+    "associateData": {
+      "alert": {
+        "role": "Tem certeza? Vai mudar as permissões do utilizador na aplicação",
+        "profile": "Quer enviar as alterações do "
+      },
+      "name": "Nome",
+      "associate": "Associado nº",
+      "dateOfLoyalty": "Data de fidelização",
+      "email": "Email",
+      "phoneNumber": "Número de telefone",
+      "nif": "NIF",
+      "header": "Detalhes do associado",
+      "helper": "Desde a criação da conta"
+    },
+    "payment": {
+      "methodOfPayment": "Selecione o método de pagamento",
+      "title": "Pagamentos",
+      "paymentPeriod": "Selecione o período a pagar",
+      "subtitleToNumberPhone": "Insira o seu número de telemóvel",
+      "subtitleMbButton": "Clique para obter a referência Multibanco",
+      "phoneNumberError": "Verifique se o número está correto",
+      "buttonSubmit": "Enviar",
+      "buttonMb": "Gerar Referência",
+      "buttonMbOpen": "Ver Referência",
+      "buttonMbway": "Pagar",
+      "buttonMbwayOpen": "Ver",
+      "total": "Total"
+    },
+    "paymentReference": {
+      "title": "Dados de pagamento",
+      "reference": "Referência",
+      "orderID": "ID do pedido",
+      "entity": "Entidade",
+      "amount": "Valor",
+      "expiricyDate": "Expira em",
+      "countdown": "Expira em",
+      "expired": "Expirado",
+      "phoneNumber": "Telemóvel",
+      "helperTextMB": "O pagamento da referência do Multibanco pode ser feita no seu homebanking ou numa caixa multibanco.",
+      "helperTextMBway": "Receberá uma notificação na aplicação MB Way para que confirme o pagamento.",
+      "clipboard": "Copiar texto.",
+      "copied": "Copiado!"
+    },
+    "paymentsTable": {
+      "category": "Categoria",
+      "period": "Período",
+      "price": "Preço",
+      "delete": "Eliminar"
+    },
+    "sideBar": {
+      "name": "Nome",
+      "email": "Email",
+      "associate": "Associados",
+      "logout": "Sair",
+      "payment": "Pagamentos",
+      "dashboard": "Dashboard",
+      "quotas": "Quotas",
+      "paymentSettings": "Definições de Pagamento"
+    },
+    "register": {
+      "createAccount": "Registar",
+      "firstName": "Primeiro nome",
+      "lastName": "Último nome",
+      "nif": "NIF",
+      "phoneNumber": "Número de telefone",
+      "email": "Email",
+      "category": "Categoria",
+      "password": "Senha",
+      "confirmPassword": "Confirme a senha",
+      "submit": "Registar",
+      "cancelButton": "Cancelar",
+      "signInQuestion": "Já tem uma conta?",
+      "signInButton": "Entrar",
+      "separator": "Ou",
+      "next": "Seguinte",
+      "back": "Voltar"
+    },
+    "language": {
+      "english": "Inglês",
+      "portuguese": "Português",
+      "language": "Idioma"
+    },
+    "login": {
+      "login": "Entrar",
+      "email": "Email",
+      "createAccountQuestion": "Ainda não tem uma conta?",
+      "createAccountButton": "Registar",
+      "createAccount": "Criar registo",
+      "separator": "Ou"
+    },
+    "loginMagicLink": {
+      "helperText": "Vamos enviar um link de acesso para o seu email.",
+      "buttonSubmit": "Enviar Link Mágico",
+      "buttonPassword": "Mudar para Palavra-passe",
+      "buttonClock": "Tenta outra vez em"
+    },
+    "loginPassword": {
+      "password": "Palavra-passe",
+      "passwordRecoveryQuestion": "Esqueceu-se da sua senha?",
+      "passwordRecoveryButton": "Redefinir",
+      "buttonSubmit": "Entrar",
+      "buttonMagicLink": "Mudar para Link Mágico"
+    },
+    "dashboard": {
+      "title": "Painel",
+      "learnMore": "Saber mais",
+      "hello": "Olá",
+      "trueSentence": "As suas quotas estão em dia",
+      "falseSentence": "As quotas estão por regularizar",
+      "validUntil": "Válido até",
+      "name": "Nome",
+      "id": "ID"
+    },
+    "error": {
+      "start": "Erro ",
+      "end": "tente novamente mais tarde ..."
+    },
+    "toasts": {
+      "emailOk": "Foi-lhe enviado um e-mail com um URL para fazer login",
+      "emailFail": "Erro ao enviar o e-mail!",
+      "login404": "Não conseguimos encontrar a sua conta!",
+      "login403": "Credenciais inválidas! Verifique e tente novamente.",
+      "registerTrue": "Foi-lhe enviado em e-mail com um URL para verificar a conta",
+      "registerFalse": "Registo falhou",
+      "profileTrue": "Perfil alterado com sucesso!",
+      "profileFail": "Falha na alteração do perfil",
+      "invalidEmail": "O e-mail inserido não é válido",
+      "addPrice": "Opção de pagamento adicionada com sucesso!",
+      "addPriceFail": "Opção de pagamento não foi adicionada!",
+      "deletePrice": "Opção de pagamento eliminada com success!",
+      "deletePriceFail": "Opção de pagamento falhou ao ser eliminada",
+      "successSub": "Assinatura adicionada com sucesso",
+      "failedSub": "Falha ao adicionar assinatura"
+    },
+    "blank": {
+      "login": "Entrar",
+      "home": "Dashboard",
+      "401": "A sua sessão expirou. Volte a fazer SignIn",
+      "404": "Este conteúdo não foi encontrado. Volte para a Dashboard",
+      "500": "Houve um erro no nosso servidor. Volte a tentar mais tarde.",
+      "createAccount": "A sua conta foi confirmada com sucesso!",
+      "createAccountError": "A sua conta não foi confirmada. Por favor, tente de novo.",
+      "reconfirm": "Pedir e-mail",
+      "resendEmail": "E-mail de verificação enviado. Se não aparecer, pode reenviar o e-mail de verificação para ",
+      "successEmail": "E-mail reenviado",
+      "failedEmail": "Falha ao reenviar e-mail",
+      "loginfailed": "O início de sessão falhou. Tente novamente",
+      "signin": "Iniciar sessão",
+      "oldAccount": "Já existe uma conta pendente com este e-mail.\nClique no botão seguinte para reenviar a verificação por e-mail para "
+    },
+    "validation": {
+      "required": "Campo obrigatório",
+      "length": "Número incorreto de carateres",
+      "email": "Formato de email inválido",
+      "emailUnique": "Este e-mail já está a ser utilizado",
+      "nifUnique": "Este NIF já está a ser utilizado",
+      "phoneNumber": "Número de telemovel inválido",
+      "nifLenght": "NIF deve conter 9 dígitos",
+      "match": "As senhas não coincidem",
+      "passwordLength": "A senha deve conter pelo menos 8 caracteres",
+      "passwordNumber": "A senha deve conter pelo menos um número",
+      "passwordChar": "A senha deve conter pelo menos uma letra"
+    },
+    "quotas": {
+      "msgStatus": "Não tem pagamentos feitos. Por favor, clique abaixo para ir para a página de pagamentos."
+    },
+    "paymentSettings": {
+      "title": "Opções de Pagamento",
+      "subtitle": "Adicionar nova opção de pagamento",
+      "button": "Adicionar",
+      "manualSubscription": "Adicionar Subscrição"
+    }
+  }
+}
