@@ -59,9 +59,6 @@ Ensure a PostgreSQL instance is running. The backend is designed to handle migra
 ### 2. Backend Setup
 Navigate to the backend directory:
 
-bash
-```cd PI-backend-main```
-
 **Configuration:**
 Locate the `etc/npadmin.config` file to understand the required environment variables. You will need to configure:
 * **Database Connection:** Set your PostgreSQL DSN (e.g., `host=localhost user=postgres password=...`).
