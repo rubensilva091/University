@@ -1,0 +1,7 @@
+.cardMBGrid {
+  display: grid;
+  grid-template-columns: max-content auto;
+  align-items: center;
+  row-gap: 0px;
+  column-gap: 10px;
+}
