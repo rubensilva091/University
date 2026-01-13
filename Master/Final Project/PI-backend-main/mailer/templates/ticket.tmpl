@@ -1,0 +1,42 @@
+{{define "subject"}}O teu Bilhete para {{.EventName}}{{end}}
+
+{{define "plain"}}
+Olá {{.PurchaserName}},
+
+Obrigado pela tua compra!
+
+Aqui estão os detalhes do teu bilhete:
+Evento: {{.EventName}}
+Data: {{.EventDate}}
+Local: {{.EventLocation}}
+Bilhete ID: #{{.TicketID}}
+
+O teu bilhete oficial segue em anexo (PDF). Por favor, apresenta-o à entrada no dia do evento.
+
+Atenciosamente,
+A Organização
+{{end}}
+
+{{define "html"}}
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+    <p>Olá {{.PurchaserName}},</p>
+    <p><strong>Obrigado pela tua compra!</strong></p>
+    <p>Aqui estão os detalhes do teu bilhete:</p>
+    <ul>
+      <li><strong>Evento:</strong> {{.EventName}}</li>
+      <li><strong>Data:</strong> {{.EventDate}}</li>
+      <li><strong>Local:</strong> {{.EventLocation}}</li>
+      <li><strong>Bilhete ID:</strong> #{{.TicketID}}</li>
+    </ul>
+    <p>O teu bilhete oficial segue em <strong>anexo (PDF)</strong>. Por favor, apresenta-o à entrada no dia do evento.</p>
+    <br>
+    <p>Atenciosamente,<br>A Organização</p>
+  </body>
+</html>
+{{end}}

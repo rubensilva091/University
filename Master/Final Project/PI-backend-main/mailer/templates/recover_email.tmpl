@@ -1,0 +1,12 @@
+{{define "subject"}}NPAdmin Email Update{{end}}
+{{define "plain"}}
+  {{.Account.Email}}
+  {{.Endpoint}}
+{{end}}
+
+{{define "html"}}
+  <h1>Email Reset</h1>
+  <h2>Reset your NPAdmin email </h2>
+  {{.Account.Email}}
+  <a href="{{.Endpoint}}">{{.Endpoint}}</a>
+{{end}}

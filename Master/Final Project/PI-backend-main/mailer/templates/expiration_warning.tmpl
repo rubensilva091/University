@@ -1,0 +1,41 @@
+{{define "subject"}}Aviso: A sua quota está a expirar{{end}}
+
+{{define "plain"}}
+Olá,
+
+Gostaríamos de o informar que a sua quota irá expirar no dia {{.EndDate}}.
+
+Para garantir que continua a usufruir de todos os benefícios, por favor dirija-se à sua área de associado para renovar a subscrição.
+
+Aceda aqui: {{.DashboardURL}}
+
+Cumprimentos,
+A Direção
+{{end}}
+
+{{define "html"}}
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+        body { font-family: sans-serif; font-size: 14px; line-height: 1.6; }
+        .btn { display: inline-block; padding: 10px 20px; color: #fff; background-color: #007bff; text-decoration: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <p>Olá,</p>
+    
+    <p>Gostaríamos de o informar que a sua quota irá expirar no dia <strong>{{.EndDate}}</strong>.</p>
+    
+    <p>Para garantir que continua a usufruir de todos os benefícios, por favor dirija-se à sua área de associado para renovar a subscrição.</p>
+    
+    <p>
+        <a href="{{.DashboardURL}}" class="btn">Ir para a Área de Associado</a>
+    </p>
+    
+    <p>Cumprimentos,<br>A Direção</p>
+</body>
+</html>
+{{end}}

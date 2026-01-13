@@ -1,0 +1,12 @@
+{{define "subject"}}Email change notification{{end}}
+{{define "plain"}}
+  Activation Link
+  {{.Endpoint}}
+{{end}}
+
+{{define "html"}}
+  <h1>Email Change</h1>
+  <h2>Activation Link: </h2>
+  {{.Account.Email}}
+  <a href="{{.Endpoint}}">{{.Endpoint}}</a>
+{{end}}
