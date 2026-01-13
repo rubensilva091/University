@@ -2,62 +2,76 @@
 
 **Master's Final Project**
 
-This repository contains the source code for a comprehensive **Association Management System**. Designed to modernize administrative processes for clubs and associations, this full-stack web application bridges the gap between administrators and members through digitization.
+This repository contains the source code for an Association Management System, developed as part of a Master's degree curriculum. The project aims to digitize administrative processes for associations, providing a unified platform for member management, financial administration, and event organization.
 
-## 📋 Project Overview
+## Project Overview
 
-The platform provides a centralized solution for managing members, processing payments, and organizing events. It replaces manual paperwork with a responsive web interface and a robust backend API.
+The solution consists of a full-stack web application designed to replace manual record-keeping with a centralized digital system. It features a responsive frontend for members and administrators, supported by a microservices-ready backend.
 
-### Key Features
+### Core Functionality
 
-* **👥 Member Management:**
-    * User registration and profile updates.
-    * Digital Membership Card generation.
-    * Role-based access (Administrator vs. Member).
-* **💰 Financial Management:**
-    * **Quotas:** Automated calculation and tracking of member dues.
-    * **Payments:** Integration with Portuguese payment gateways (**Multibanco** and **MB WAY**).
-    * Real-time payment history and status tracking.
-* **🎟️ Event Management:**
-    * Event creation and publishing.
-    * Ticket generation (PDF) with unique **QR Codes**.
-    * **Access Control:** built-in scanner feature to validate tickets at the door.
-* **📧 Notifications:** Automated emails for registration, payments, and tickets.
+* **Membership Management:**
+    * User registration, profile management, and data validation.
+    * Role-based access control (Administrators and Standard Members).
+    * Generation of digital membership cards.
+* **Financial Administration:**
+    * Automated calculation of membership quotas/dues.
+    * Integration with Portuguese payment gateways (Multibanco and MB WAY).
+    * Real-time payment status tracking and history logs.
+* **Event Management:**
+    * Event creation, publishing, and capacity management.
+    * Ticket generation via PDF with unique QR Codes.
+    * Ticket validation system (QR scanning) for event access control.
+* **System Notifications:**
+    * Automated transactional emails for account recovery, payment confirmations, and ticket delivery.
 
-## 🛠 Tech Stack
+## Technical Architecture
 
-The project is built using a microservices-ready architecture:
+The project is structured as a monorepo containing two main components:
 
 ### Backend
-* **Language:** Go (Golang)
+* **Language:** Go (Golang 1.19+)
 * **Framework:** Gin Gonic
 * **Database:** PostgreSQL
-* **Auth:** JWT (JSON Web Tokens) with RSA encryption
-* **Key Libs:** `pgx` (Database driver), PDF generation, SMTP mailer.
+* **Authentication:** JWT (JSON Web Tokens) using RSA encryption.
+* **Key Libraries:** `pgx` (Database driver), `gofpdf` (PDF generation), native SMTP implementation.
 
 ### Frontend
 * **Framework:** React.js
 * **State Management:** Redux & Redux-Saga
-* **Styling:** CSS Modules & Custom Components
-* **Server:** Caddy (for production serving)
+* **Styling:** CSS Modules
+* **Server:** Caddy (configured for production serving)
 
-## 🚀 Getting Started
+## Prerequisites
 
-Follow these instructions to set up the project locally for development.
+Before running the project, ensure you have the following installed:
 
-### Prerequisites
-* [Go](https://go.dev/) (v1.19+)
-* [Node.js](https://nodejs.org/) (v16+) & npm
-* [PostgreSQL](https://www.postgresql.org/)
-* [Docker](https://www.docker.com/) (Optional)
+* Go (version 1.19 or higher)
+* Node.js (version 16 or higher) and npm
+* PostgreSQL
+* Docker (optional, for containerized execution)
 
-### Installation
+## Installation and Setup
 
-#### 1. Database Setup
-Ensure you have a PostgreSQL instance running. Create a database for the project.
+### 1. Database Configuration
+Ensure a PostgreSQL instance is running. The backend is designed to handle migrations, but the database schema must be initialized.
 
-#### 2. Backend Setup
+### 2. Backend Setup
 Navigate to the backend directory:
 
+bash
+```cd PI-backend-main```
+
+**Configuration:**
+Locate the `etc/npadmin.config` file to understand the required environment variables. You will need to configure:
+* **Database Connection:** Set your PostgreSQL DSN (e.g., `host=localhost user=postgres password=...`).
+* **SMTP Settings:** Credentials for the email service to handle notifications.
+* **Security Keys:** Ensure the RSA keys (public/private) for JWT signing are present in the defined paths.
+
+**Run the service:**
 ```bash
-cd PI-backend-main
+# Download Go modules
+go mod download
+
+# Run the application
+go run cmd/app/main.go
