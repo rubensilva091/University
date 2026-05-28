@@ -1,0 +1,18 @@
+testMode: property
+testLimit: 50000
+seqLen: 100
+shrinkLimit: 5000
+corpusDir: corpus/echidna
+
+# Solidity compiler
+solcVersion: "0.8.20"
+
+# Initial ETH (in wei — integer, NOT hex string)
+balanceAddr: 100000000000000000000
+balanceContract: 100000000000000000000
+
+# Call functions on all deployed contracts (needed for access-control tests)
+allContracts: true
+
+# Coverage-guided
+coverage: true
