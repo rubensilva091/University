@@ -1,0 +1,1285 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.2.20)  18 MAY 2026 21:56
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2022/01/26 3.70 The Babel package
+\babel@savecnt=\count193
+\U@D=\dimen139
+\l@unhyphenated=\language3
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count194
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'british' set to \l@english
+(babel)             (\language0). Reported on input line 82.
+Package babel Info: Hyphen rules for 'UKenglish' set to \l@english
+(babel)             (\language0). Reported on input line 83.
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@english
+(babel)             (\language0). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@english
+(babel)             (\language0). Reported on input line 108.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count195
+\Gm@cntv=\count196
+\c@Gm@tempcnt=\count197
+\Gm@bindingoffset=\dimen140
+\Gm@wd@mp=\dimen141
+\Gm@odd@mp=\dimen142
+\Gm@even@mp=\dimen143
+\Gm@layoutwidth=\dimen144
+\Gm@layoutheight=\dimen145
+\Gm@layouthoffset=\dimen146
+\Gm@layoutvoffset=\dimen147
+\Gm@dimlist=\toks19
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen148
+\Gin@req@width=\dimen149
+)
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
+
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count198
+)
+\csq@reset=\count199
+\csq@gtype=\count266
+\csq@glevel=\count267
+\csq@qlevel=\count268
+\csq@maxlvl=\count269
+\csq@tshold=\count270
+\csq@ltx@everypar=\toks20
+
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2021-02-22 v5.2l csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+))
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2022/02/02 v3.17 programmable bibliographies (PK/MW)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count271
+
+(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count272
+\c@listtotal=\count273
+\c@listcount=\count274
+\c@liststart=\count275
+\c@liststop=\count276
+\c@citecount=\count277
+\c@citetotal=\count278
+\c@multicitecount=\count279
+\c@multicitetotal=\count280
+\c@instcount=\count281
+\c@maxnames=\count282
+\c@minnames=\count283
+\c@maxitems=\count284
+\c@minitems=\count285
+\c@citecounter=\count286
+\c@maxcitecounter=\count287
+\c@savedcitecounter=\count288
+\c@uniquelist=\count289
+\c@uniquename=\count290
+\c@refsection=\count291
+\c@refsegment=\count292
+\c@maxextratitle=\count293
+\c@maxextratitleyear=\count294
+\c@maxextraname=\count295
+\c@maxextradate=\count296
+\c@maxextraalpha=\count297
+\c@abbrvpenalty=\count298
+\c@highnamepenalty=\count299
+\c@lownamepenalty=\count300
+\c@maxparens=\count301
+\c@parenlevel=\count302
+\blx@tempcnta=\count303
+\blx@tempcntb=\count304
+\blx@tempcntc=\count305
+\c@blx@maxsection=\count306
+\c@blx@maxsegment@0=\count307
+\blx@notetype=\count308
+\blx@parenlevel@text=\count309
+\blx@parenlevel@foot=\count310
+\c@blx@sectionciteorder@0=\count311
+\blx@entrysetcounter=\count312
+\blx@biblioinstance=\count313
+\labelnumberwidth=\skip49
+\labelalphawidth=\skip50
+\biblabelsep=\skip51
+\bibitemsep=\skip52
+\bibnamesep=\skip53
+\bibinitsep=\skip54
+\bibparsep=\skip55
+\bibhang=\skip56
+\blx@bcfin=\read3
+\blx@bcfout=\write3
+\blx@langwohyphens=\language4
+\c@mincomprange=\count314
+\c@maxcomprange=\count315
+\c@mincompwidth=\count316
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2022/02/02 v3.17 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'ieee.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count317
+\c@savedafterword=\count318
+\c@annotator=\count319
+\c@savedannotator=\count320
+\c@author=\count321
+\c@savedauthor=\count322
+\c@bookauthor=\count323
+\c@savedbookauthor=\count324
+\c@commentator=\count325
+\c@savedcommentator=\count326
+\c@editor=\count327
+\c@savededitor=\count328
+\c@editora=\count329
+\c@savededitora=\count330
+\c@editorb=\count331
+\c@savededitorb=\count332
+\c@editorc=\count333
+\c@savededitorc=\count334
+\c@foreword=\count335
+\c@savedforeword=\count336
+\c@holder=\count337
+\c@savedholder=\count338
+\c@introduction=\count339
+\c@savedintroduction=\count340
+\c@namea=\count341
+\c@savednamea=\count342
+\c@nameb=\count343
+\c@savednameb=\count344
+\c@namec=\count345
+\c@savednamec=\count346
+\c@translator=\count347
+\c@savedtranslator=\count348
+\c@shortauthor=\count349
+\c@savedshortauthor=\count350
+\c@shorteditor=\count351
+\c@savedshorteditor=\count352
+\c@labelname=\count353
+\c@savedlabelname=\count354
+\c@institution=\count355
+\c@savedinstitution=\count356
+\c@lista=\count357
+\c@savedlista=\count358
+\c@listb=\count359
+\c@savedlistb=\count360
+\c@listc=\count361
+\c@savedlistc=\count362
+\c@listd=\count363
+\c@savedlistd=\count364
+\c@liste=\count365
+\c@savedliste=\count366
+\c@listf=\count367
+\c@savedlistf=\count368
+\c@location=\count369
+\c@savedlocation=\count370
+\c@organization=\count371
+\c@savedorganization=\count372
+\c@origlocation=\count373
+\c@savedoriglocation=\count374
+\c@origpublisher=\count375
+\c@savedorigpublisher=\count376
+\c@publisher=\count377
+\c@savedpublisher=\count378
+\c@language=\count379
+\c@savedlanguage=\count380
+\c@origlanguage=\count381
+\c@savedoriglanguage=\count382
+\c@pageref=\count383
+\c@savedpageref=\count384
+\shorthandwidth=\skip57
+\shortjournalwidth=\skip58
+\shortserieswidth=\skip59
+\shorttitlewidth=\skip60
+\shortauthorwidth=\skip61
+\shorteditorwidth=\skip62
+\locallabelnumberwidth=\skip63
+\locallabelalphawidth=\skip64
+\localshorthandwidth=\skip65
+\localshortjournalwidth=\skip66
+\localshortserieswidth=\skip67
+\localshorttitlewidth=\skip68
+\localshortauthorwidth=\skip69
+\localshorteditorwidth=\skip70
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
+\c@textcitecount=\count385
+\c@textcitetotal=\count386
+\c@textcitemaxnames=\count387
+\c@biburlbigbreakpenalty=\count388
+\c@biburlbreakpenalty=\count389
+\c@biburlnumpenalty=\count390
+\c@biburlucpenalty=\count391
+\c@biburllcpenalty=\count392
+\biburlbigskip=\muskip17
+\biburlnumskip=\muskip18
+\biburlucskip=\muskip19
+\biburllcskip=\muskip20
+\c@smartand=\count393
+)
+Package biblatex Info: Trying to load bibliography style 'ieee'...
+Package biblatex Info: ... file 'ieee.bbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex-ieee/ieee.bbx
+File: ieee.bbx 2021/12/06 v1.3f biblatex bibliography style
+Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.bbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
+File: numeric-comp.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count394
+\c@bbx:relatedtotal=\count395
+))))
+Package biblatex Info: Trying to load citation style 'ieee'...
+Package biblatex Info: ... file 'ieee.cbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex-ieee/ieee.cbx
+File: ieee.cbx 2021/12/06 v1.3f biblatex citation style
+Package biblatex Info: Trying to load citation style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.cbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
+File: numeric-comp.cbx 2022/02/02 v3.17 biblatex citation style (PK/MW)
+\c@cbx@tempcnta=\count396
+\c@cbx@tempcntb=\count397
+\c@cbx@tempcntc=\count398
+\c@cbx@tempcntd=\count399
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\cites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Document encoding is UTF8 ....
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2022-01-21 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count400
+\l__pdf_internal_box=\box50
+))
+Package biblatex Info: ... and expl3
+(biblatex)             2022-01-21 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2022-01-12 L3 Experimental document command parser
+)
+Package: blx-case-expl3 2022/02/02 v3.17 expl3 case changing code for biblatex
+))
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip71
+\multirow@cntb=\count401
+\multirow@dima=\skip72
+\bigstrutjot=\dimen150
+)
+(/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen151
+\lightrulewidth=\dimen152
+\cmidrulewidth=\dimen153
+\belowrulesep=\dimen154
+\belowbottomsep=\dimen155
+\aboverulesep=\dimen156
+\abovetopsep=\dimen157
+\cmidrulesep=\dimen158
+\cmidrulekern=\dimen159
+\defaultaddspace=\dimen160
+\@cmidla=\count402
+\@cmidlb=\count403
+\@aboverulesep=\dimen161
+\@belowrulesep=\dimen162
+\@thisruleclass=\count404
+\@lastruleclass=\count405
+\@thisrulewidth=\dimen163
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count406
+\lst@gtempboxa=\box51
+\lst@token=\toks21
+\lst@length=\count407
+\lst@currlwidth=\dimen164
+\lst@column=\count408
+\lst@pos=\count409
+\lst@lostspace=\dimen165
+\lst@width=\dimen166
+\lst@newlines=\count410
+\lst@lineno=\count411
+\lst@maxwidth=\dimen167
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count412
+\lst@skipnumbers=\count413
+\lst@framebox=\box52
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen168
+\Hy@linkcounter=\count414
+\Hy@pagecounter=\count415
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
+nguages
+)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count416
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count417
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen169
+
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count418
+\Field@Width=\dimen170
+\Fld@charsize=\dimen171
+Package hyperref Info: Hyper figures OFF on input line 6076.
+Package hyperref Info: Link nesting OFF on input line 6081.
+Package hyperref Info: Hyper index ON on input line 6084.
+Package hyperref Info: backreferencing OFF on input line 6091.
+Package hyperref Info: Link coloring OFF on input line 6096.
+Package hyperref Info: Link coloring with OCG OFF on input line 6101.
+Package hyperref Info: PDF/A mode OFF on input line 6106.
+LaTeX Info: Redefining \ref on input line 6146.
+LaTeX Info: Redefining \pageref on input line 6150.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count419
+\c@Item=\count420
+\c@Hfootnote=\count421
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count422
+\c@bookmark@seq@number=\count423
+
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip73
+)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'english'.
+
+(./main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=731.23584pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
+* \columnsep=21.33955pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumntrue
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count424
+\scratchdimen=\dimen172
+\scratchbox=\box53
+\nofMPsegments=\count425
+\nofMParguments=\count426
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count427
+\MPscratchDim=\dimen173
+\MPnumerator=\count428
+\makeMPintoPDFobject=\count429
+\everyMPtoPDFconversion=\toks23
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `main.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'main.bbl' found.
+ (./main.bbl)
+Package biblatex Info: Reference section=0 on input line 89.
+Package biblatex Info: Reference segment=0 on input line 89.
+\c@lstlisting=\count430
+Package hyperref Info: Link coloring OFF on input line 89.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count431
+)
+LaTeX Info: Redefining \ref on input line 89.
+LaTeX Info: Redefining \pageref on input line 89.
+LaTeX Info: Redefining \nameref on input line 89.
+
+(./main.out) (./main.out)
+\@outlinefile=\write4
+\openout4 = `main.out'.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 92.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 92.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 92.
+
+Underfull \hbox (badness 1533) in paragraph at lines 95--96
+\T1/cmr/m/n/10.95 This re-port presents a re-pro-ducible se-cu-rity
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 97.
+
+Underfull \hbox (badness 2626) in paragraph at lines 97--98
+\T1/cmr/m/n/10.95 grep, Sol-hint), sym-bolic and for-mal anal-y-
+ []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 97--98
+\T1/cmr/m/n/10.95 (Echidna, Medusa) and LLM-assisted re-view
+ []
+
+
+Underfull \hbox (badness 1502) in paragraph at lines 97--98
+\T1/cmr/m/n/10.95 (LLaMA-3.3-70B, Gem-ini 2.5 Flash, Qwen3-
+ []
+
+(./capitulos/01_introducao.tex) (./capitulos/02_state_of_the_art.tex
+Underfull \hbox (badness 1565) in paragraph at lines 7--1
+[]\T1/cmr/m/n/10.95 Eleven tools span-ning four paradigms are
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 5
+.
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]) (./capitulos/03_reasons.tex
+Underfull \hbox (badness 1303) in paragraph at lines 9--10
+\T1/cmr/m/n/10.95 in-ci-dent re-ports, al-low-ing the bench-mark to
+ []
+
+
+Underfull \hbox (badness 1442) in paragraph at lines 9--10
+\T1/cmr/m/n/10.95 EVM-level (bytecode-level) and protocol-level
+ []
+
+
+Underfull \hbox (badness 3098) in paragraph at lines 21--22
+\T1/cmr/m/n/10.95 (Mythril), for-mal ver-i-fi-ca-tion (Hal-mos) and
+ []
+
+[2]) (./capitulos/04_familias_vulnerabilidades.tex
+Underfull \hbox (badness 2762) in paragraph at lines 8--9
+\T1/cmr/m/n/10.95 un-pro-tected ini-tial-iza-tion rou-tines, or priv-i-
+ []
+
+
+Underfull \hbox (badness 2735) in paragraph at lines 8--9
+\T1/cmr/m/n/10.95 of \T1/cmtt/m/n/10.95 msg.sender \T1/cmr/m/n/10.95 via del-e-
+gate calls or meta-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+[]\T1/cmr/bx/n/10.95 Mitigation: \T1/cmr/m/n/10.95 Es-tab-lish ro-bust, ex-plic
+it
+ []
+
+
+Underfull \hbox (badness 1472) in paragraph at lines 10--11
+\T1/cmr/m/n/10.95 Role-Based Ac-cess Con-trol (RBAC) uti-liz-ing
+ []
+
+
+Underfull \hbox (badness 7362) in paragraph at lines 10--11
+\T1/cmr/m/n/10.95 battle-tested li-braries (e.g., Open-Zep-pelin's
+ []
+
+
+Underfull \hbox (badness 2213) in paragraph at lines 10--11
+\T1/cmr/m/n/10.95 mod-ules, avoid-ing re-liance on sin-gle Ex-ter-
+ []
+
+
+Underfull \hbox (badness 2503) in paragraph at lines 10--11
+\T1/cmr/m/n/10.95 rou-tines for up-grade-able con-tracts must be
+ []
+
+
+Underfull \hbox (badness 2096) in paragraph at lines 17--18
+\T1/cmr/m/n/10.95 demon-strated in the \T1/cmr/bx/n/10.95 Abra-cadabra money
+ []
+
+
+Underfull \hbox (badness 2103) in paragraph at lines 19--20
+[]\T1/cmr/m/n/10.95 Furthermore, com-plex al-go-rith-mic logic is
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+[]\T1/cmr/bx/n/10.95 Explicit In-vari-ant En-force-ment:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+\T1/cmr/m/n/10.95 Core eco-nomic rules must be hard-
+ []
+
+
+Underfull \hbox (badness 1168) in paragraph at lines 23--24
+\T1/cmr/m/n/10.95 coded and ver-i-fied on ev-ery state tran-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+\T1/cmr/m/n/10.95 si-tion (e.g., \T1/cmtt/m/n/10.95 require(debt[user] <=
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 23--24
+\T1/cmtt/m/n/10.95 maxBorrow(user))\T1/cmr/m/n/10.95 ). In-vari-ants such as
+ []
+
+
+Underfull \hbox (badness 3460) in paragraph at lines 33--34
+[]\T1/cmr/bx/n/10.95 Mitigation Strate-gies: \T1/cmr/m/n/10.95 Pro-to-cols must
+
+ []
+
+
+Underfull \hbox (badness 1107) in paragraph at lines 35--36
+[]\T1/cmr/bx/n/10.95 Decentralized Ag-gre-ga-tion: \T1/cmr/m/n/10.95 In-te-grat
+e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+[]\T1/cmr/bx/n/10.95 Time-Weighted Av-er-age Prices
+ []
+
+
+Underfull \hbox (badness 1337) in paragraph at lines 36--37
+\T1/cmr/m/n/10.95 chrono-log-i-cal win-dows to math-e-mat-i-cally
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+\T1/cmr/m/n/10.95 neu-tral-ize single-block, flash-liquidity
+ []
+
+
+Underfull \hbox (badness 3158) in paragraph at lines 37--38
+[]\T1/cmr/bx/n/10.95 Data Fresh-ness Checks: \T1/cmr/m/n/10.95 Im-ple-ment
+ []
+
+
+Underfull \hbox (badness 6978) in paragraph at lines 37--38
+\T1/cmr/m/n/10.95 strict val-i-da-tion checks on or-a-cle re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[]\T1/cmr/bx/n/12 SC04:2026 - Flash Loan-
+ []
+
+[4]
+Underfull \hbox (badness 1097) in paragraph at lines 48--49
+\T1/cmr/m/n/10.95 where an at-tacker flash-borrowed 3M USDT
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+[]\T1/cmr/bx/n/10.95 Intra-Block Rate Lim-it-ing:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+\T1/cmr/m/n/10.95 Im-ple-ment strict checks (e.g.,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+\T1/cmtt/m/n/10.95 require(lastUpdateBlock !=
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+\T1/cmtt/m/n/10.95 block.number)\T1/cmr/m/n/10.95 ) to pre-vent the same
+ []
+
+
+Underfull \hbox (badness 1400) in paragraph at lines 54--55
+\T1/cmr/m/n/10.95 smart con-tract au-dits must na-tively in-
+ []
+
+
+Underfull \hbox (badness 6978) in paragraph at lines 54--55
+\T1/cmr/m/n/10.95 te-grate flash-loan sim-u-la-tions, uti-liz-ing
+ []
+
+
+Underfull \hbox (badness 2134) in paragraph at lines 59--60
+\T1/cmr/m/n/10.95 i-da-tion oc-curs when a smart con-tract pro-
+ []
+
+
+Underfull \hbox (badness 3068) in paragraph at lines 63--64
+\T1/cmr/m/n/10.95 puts is high-lighted in the \T1/cmr/bx/n/10.95 Ce-tus ex-ploi
+t
+ []
+
+
+Underfull \hbox (badness 1275) in paragraph at lines 65--66
+[]\T1/cmr/bx/n/10.95 Mitigation Strate-gies: \T1/cmr/m/n/10.95 De-vel-op-ers mu
+st
+ []
+
+
+Underfull \hbox (badness 2080) in paragraph at lines 68--69
+\T1/cmr/m/n/10.95 ver-ify all off-chain signed data, en-forc-
+ []
+
+[5]
+Underfull \hbox (badness 1303) in paragraph at lines 69--70
+\T1/cmr/m/n/10.95 fuzzing specif-i-cally de-signed to bom-bard
+ []
+
+
+Underfull \hbox (badness 1275) in paragraph at lines 79--80
+[]\T1/cmr/bx/n/10.95 Mitigation Strate-gies: \T1/cmr/m/n/10.95 De-vel-op-ers mu
+st
+ []
+
+[6]
+Underfull \hbox (badness 1616) in paragraph at lines 100--101
+[]\T1/cmr/m/n/10.95 Inside this fall-back func-tion, the at-tacker
+ []
+
+
+Underfull \hbox (badness 1275) in paragraph at lines 100--101
+\T1/cmr/m/n/10.95 bal-ance^^Vhas not yet been ex-e-cuted. Con-
+ []
+
+
+Underfull \hbox (badness 2486) in paragraph at lines 102--103
+[]\T1/cmr/m/n/10.95 This vec-tor ex-tends be-yond sim-ple with-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+[]\T1/cmr/bx/n/10.95 Mutex Guards: \T1/cmr/m/n/10.95 Im-ple-ment reen-
+ []
+
+
+Underfull \hbox (badness 8056) in paragraph at lines 107--108
+\T1/cmr/m/n/10.95 trancy locks, such as Open-Zep-pelin's
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+\T1/cmtt/m/n/10.95 ReentrancyGuard \T1/cmr/m/n/10.95 (\T1/cmtt/m/n/10.95 nonRee
+ntrant \T1/cmr/m/n/10.95 mod-i-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
+[]\T1/cmr/bx/n/10.95 Read-Only Reen-trancy Aware-ness:
+ []
+
+
+Underfull \hbox (badness 3058) in paragraph at lines 108--109
+\T1/cmr/m/n/10.95 cessed mid-transaction if the pro-to-col's
+ []
+
+[7]
+Underfull \hbox (badness 1412) in paragraph at lines 120--121
+\T1/cmr/m/n/10.95 Sui net-work. The pro-to-col uti-lized a cus-
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
+[]\T1/cmr/bx/n/10.95 Implementation Lock-ing: \T1/cmr/m/n/10.95 De-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
+\T1/cmr/m/n/10.95 vel-op-ers must ex-plic-itly in-voke the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
+\T1/cmtt/m/n/10.95 _disableInitializers() \T1/cmr/m/n/10.95 mech-a-nism
+ []
+
+
+Underfull \hbox (badness 3471) in paragraph at lines 141--142
+\T1/cmr/m/n/10.95 any ex-ter-nal ac-tor from ini-tial-iz-ing or
+ []
+
+) (./capitulos/05_detection_methodologies.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/cmr/bx/n/14.4 Vulnerability De-tec-tion
+ []
+
+
+Underfull \hbox (badness 1057) in paragraph at lines 9--10
+\T1/cmr/m/n/10.95 ^^V for ex-am-ple, a reentrancy-eth find-ing on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+[]\T1/cmr/bx/n/10.95 Tool se-lec-tion\T1/cmr/m/n/10.95 . Se-lec-tion pri-or-i-t
+ized
+ []
+
+
+Underfull \hbox (badness 5302) in paragraph at lines 17--18
+\T1/cmr/m/n/10.95 production-grade an-a-lyz-ers in ac-tive main-
+ []
+
+
+Underfull \hbox (badness 1655) in paragraph at lines 17--18
+\T1/cmr/m/n/10.95 in-com-pat-i-ble en-vi-ron-ments were ex-cluded ^^V
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 17--18
+\T1/cmr/m/n/10.95 Man-ti-core de-pends on pysha3 and has been
+ []
+
+
+Underfull \hbox (badness 6608) in paragraph at lines 17--18
+\T1/cmr/m/n/10.95 un-main-tained since 2022; SmartCheck re-
+ []
+
+
+Underfull \hbox (badness 1789) in paragraph at lines 19--20
+[]\T1/cmr/bx/n/10.95 Reproducibility\T1/cmr/m/n/10.95 . All tool ver-sions and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+\T1/cmr/m/n/10.95 con-fig-u-ra-tion pa-ram-e-ters are pinned in
+ []
+
+
+Underfull \hbox (badness 5133) in paragraph at lines 19--20
+\T1/cmtt/m/n/10.95 config/versions.env \T1/cmr/m/n/10.95 and per-tool con-fig-u
+-
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 44.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+\T1/cmr/m/n/10.95 Hal-mos), property-based fuzzing (Echidna,
+ []
+
+
+Underfull \hbox (badness 1953) in paragraph at lines 49--50
+\T1/cmr/m/n/10.95 Medusa) and LLM-assisted re-view (LLaMA,
+ []
+
+
+Underfull \hbox (badness 1043) in paragraph at lines 59--60
+\T1/cmr/m/n/10.95 before-state-write pat-tern that de-fines CWE-
+ []
+
+
+Underfull \hbox (badness 1454) in paragraph at lines 59--60
+\T1/cmr/m/n/10.95 841. Aderyn's tx-origin de-tec-tor rec-og-nizes
+ []
+
+
+Underfull \hbox (badness 4108) in paragraph at lines 73--74
+\T1/cmr/m/n/10.95 Echidna and Medusa gen-er-ate ran-dom se-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+\T1/cmr/m/n/10.95 one, whether user-defined in-vari-ants still
+ []
+
+
+Underfull \hbox (badness 1014) in paragraph at lines 73--74
+\T1/cmr/m/n/10.95 hold. The in-vari-ants are func-tions pre-fixed
+ []
+
+
+Underfull \hbox (badness 1005) in paragraph at lines 73--74
+\T1/cmr/m/n/10.95 the fuzzer finds a trans-ac-tion se-quence that
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+[]\T1/cmr/bx/n/10.95 Discrimination \T1/cmr/m/n/10.95 ($\OT1/cmr/m/n/10.95 ^^A$
+ \T1/cmr/m/n/10.95 = avg(Fixed) $\OMS/cmsy/m/n/10.95 ^^@$
+ []
+
+
+Underfull \hbox (badness 1917) in paragraph at lines 84--85
+\T1/cmr/m/n/10.95 avg(Vuln)): whether the model as-signs
+ []
+
+
+Underfull \hbox (badness 6428) in paragraph at lines 85--86
+\T1/cmr/m/n/10.95 (SafeERC20, TWAP or-a-cles, sig-na-ture
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+\T1/cmr/m/n/10.95 nonces, \T1/cmtt/m/n/10.95 _disableInitializers\T1/cmr/m/n/10
+.95 ) rather
+ []
+
+) (./capitulos/06_discussion.tex
+Underfull \hbox (badness 1264) in paragraph at lines 4--5
+\T1/cmr/m/n/10.95 This sec-tion re-ports cross-tool mea-sure-ments
+ []
+
+
+Underfull \hbox (badness 2875) in paragraph at lines 8--9
+\T1/cmr/m/n/10.95 Within the static paradigm, the two sub-
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+[]\T1/cmr/m/n/10.95 Both mod-els dis-tin-guished syntactic-
+ []
+
+
+Underfull \hbox (badness 1675) in paragraph at lines 16--17
+\T1/cmr/m/n/10.95 vulnerability cat-e-gories (SC01, SC06, SC09)
+ []
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 16--17
+\T1/cmr/m/n/10.95 from semantic-logic cat-e-gories (SC02, SC03,
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 18--19
+\T1/cmr/m/n/10.95 CEI), SC07-Fixed, SC09-Fixed, SC09-Fixed2,
+ []
+
+
+Underfull \vbox (badness 8189) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 20--21
+\T1/cmr/m/n/10.95 ($\OT1/cmr/m/n/10.95 ^^A$ \T1/cmr/m/n/10.95 +2.9) and is the 
+nat-u-ral fall-back when
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+[]\T1/cmr/bx/n/8 Main Lim-i-ta-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
+[]\T1/cmr/m/n/8 Generic pat-terns
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+[]\T1/cmr/m/n/8 ETH-address
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+[]\T1/cmr/m/n/8 Surface se-cu-rity
+ []
+
+
+Overfull \hbox (3.79874pt too wide) in paragraph at lines 43--44
+[]\T1/cmr/m/n/8 FN:ECDSA(SC05),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
+[]\T1/cmr/m/n/8 Same struc-tural
+ []
+
+
+Overfull \hbox (20.83292pt too wide) in paragraph at lines 28--46
+ [][] 
+ []
+
+
+Underfull \hbox (badness 2828) in paragraph at lines 75--76
+[]\T1/cmr/bx/n/10.95 SC01/SC06 \T1/cmr/m/n/10.95 (ac-cess con-trol, unchecked
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+\T1/cmr/m/n/10.95 calls) were de-tectable by mul-ti-ple
+ []
+
+
+Underfull \hbox (badness 4084) in paragraph at lines 75--76
+\T1/cmr/m/n/10.95 coun-ter-parts in-dis-crim-i-nately, repli-cat-ing
+ []
+
+[12]) (./capitulos/07_conclusao.tex
+Underfull \vbox (badness 1184) has occurred while \output is active []
+
+)
+Underfull \hbox (badness 1122) in paragraph at lines 9--111
+\T1/cmr/m/n/10.95 Gem-ini, likely a prompt-engineering prob-lem
+ []
+
+[13]
+Underfull \hbox (badness 1769) in paragraph at lines 112--112
+[]\T1/cmr/m/n/10.95 D. Liu, J. Zhang, Y. Wang, H. Shen,
+ []
+
+[14] (./main.aux)
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 0D1E82D85FD67DD91CB5BE2CEADD39A2;6448.
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 20300 strings out of 480247
+ 349234 string characters out of 5896151
+ 1222990 words of memory out of 5000000
+ 37923 multiletter control sequences out of 15000+600000
+ 486352 words of font info for 60 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 60i,12n,68p,1375b,1779s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/martim/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1095.60
+0pk> </home/martim/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0600.
+600pk> </home/martim/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx080
+0.600pk> </home/martim/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0
+900.600pk> </home/martim/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecr
+m0600.600pk> </home/martim/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/e
+crm0800.600pk> </home/martim/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec
+/ectt0800.600pk> </home/martim/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/
+ec/ecti1095.600pk> </home/martim/.texlive2021/texmf-var/fonts/pk/ljfour/jknappe
+n/ec/tcrm1095.600pk> </home/martim/.texlive2021/texmf-var/fonts/pk/ljfour/jknap
+pen/ec/ecbx1095.600pk> </home/martim/.texlive2021/texmf-var/fonts/pk/ljfour/jkn
+appen/ec/ecbx1200.600pk> </home/martim/.texlive2021/texmf-var/fonts/pk/ljfour/j
+knappen/ec/ectt1095.600pk> </home/martim/.texlive2021/texmf-var/fonts/pk/ljfour
+/jknappen/ec/ecrm1095.600pk> </home/martim/.texlive2021/texmf-var/fonts/pk/ljfo
+ur/jknappen/ec/ecbx1440.600pk> </home/martim/.texlive2021/texmf-var/fonts/pk/lj
+four/jknappen/ec/ecrm1000.600pk> </home/martim/.texlive2021/texmf-var/fonts/pk/
+ljfour/jknappen/ec/ecrm1200.600pk> </home/martim/.texlive2021/texmf-var/fonts/p
+k/ljfour/jknappen/ec/ecbx1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on main.pdf (14 pages, 301143 bytes).
+PDF statistics:
+ 982 PDF objects out of 1000 (max. 8388607)
+ 342 compressed objects within 4 object streams
+ 74 named destinations out of 1000 (max. 500000)
+ 233 words of extra memory for PDF output out of 10000 (max. 10000000)
+

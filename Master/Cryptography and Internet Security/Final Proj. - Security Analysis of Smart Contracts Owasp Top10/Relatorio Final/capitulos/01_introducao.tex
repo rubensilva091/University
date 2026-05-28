@@ -1,0 +1,7 @@
+\section{Introduction}
+
+Smart contracts are core infrastructure for DeFi and other on-chain systems, but their security model offers zero tolerance for software faults because deployed code is immutable: exploits are irreversible and failures translate directly into financial loss \cite{acm_lifecycle_2025, nature_taxonomic_2024}. 
+
+The OWASP Smart Contract Top 10 \cite{owasp_top10} provides a stable taxonomy for the most consequential failure categories, but the question of how reliably each detection paradigm covers each category — and at what precision cost — remains difficult to quantify. This report addresses that gap on a small but controlled scale. The dataset consists of 30 Solidity contracts organized as Vulnerable/Fixed Minimal Viable Exploit (MVE) pairs, strictly aligned with the OWASP Smart Contract Top 10 \cite{owasp_top10}. This pairing makes both true positives (on Vulnerable contracts) and false positives (on Fixed contracts) directly measurable on the same code surface.
+
+Eleven tools spanning four paradigms are evaluated against this baseline: static analysis, symbolic and formal analysis, property-based fuzzing, and LLM-assisted review. Section 2 reviews the technical landscape of smart-contract vulnerabilities; Section 3 motivates the choice of OWASP and Solidity/EVM; Section 4 details each of the ten OWASP categories; Section 5 defines the detection methodology and per-paradigm metric behavior; Section 6 presents the discussion; Section 7 concludes with practical recommendations.

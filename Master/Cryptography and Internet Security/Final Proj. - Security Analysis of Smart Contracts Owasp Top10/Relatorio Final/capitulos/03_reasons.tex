@@ -1,0 +1,23 @@
+\section{Foundational Choices}
+
+This chapter defines two decisions that structure the benchmark: the vulnerability taxonomy and the execution stack. Section 3.1 motivates OWASP Smart Contract Top 10 as the organizing taxonomy; Section 3.2 justifies restricting the empirical phase to Solidity on the EVM.
+
+\subsection{Why OWASP Smart Contract Top 10}
+
+The OWASP Smart Contract Top 10 is the current industry reference for on-chain risk categorization \cite{owasp_top10}. It is maintained by OWASP and periodically revised using real incident evidence, including major DeFi losses from 2024--2025.
+
+Its adoption in this work is motivated by three properties. First, it provides a stable shared vocabulary already used in audits and incident reports, allowing the benchmark to be read against findings reported in audit literature without translation. Second, its ten categories span language-level (Solidity-specific), EVM-level (bytecode-level) and protocol-level (consensus-dependent) failures. This vertical coverage matches the operational scope of the four detection paradigms evaluated in Section 5. Third, OWASP categories are scoped at the level of attack vector (e.g., price oracle manipulation) rather than implementation pattern (e.g., use of block.timestamp), which aligns with the audit-level granularity at which detection tools report findings.
+
+Alternative references exist but each has a specific limitation: the SWC Registry covers only technical code-level flaws and excludes business-logic vectors and the DASP Top 10 has not received maintenance updates since 2018. OWASP spans both technical and business-logic layers and remains actively maintained, which makes it the most practical taxonomy for a category-level benchmark.
+
+\subsection{Why Solidity/EVM Stack}
+
+The empirical scope is deliberately restricted to Solidity contracts on the EVM for three reasons.
+
+\textbf{Ecosystem dominance}. Ethereum and major EVM-compatible chains concentrate most DeFi TVL, and Solidity is the dominant production language in this environment \cite{sciencedirect_defi_2025}. A benchmark targeting practical relevance should therefore focus on this stack.
+
+\textbf{Taxonomic coverage}. All OWASP categories can be instantiated directly in Solidity/EVM without semantic adaptation. Alternative stacks (e.g., Move on Sui, Rust/Wasm on Solana or NEAR) change exploit mechanics for some categories, which would require artificial mappings to remain category-aligned with OWASP.
+
+\textbf{Tooling maturity}. Solidity is the only contract language where all four detection paradigms have production-grade tooling: semantic static analysis (Slither, Aderyn), symbolic execution (Mythril), formal verification (Halmos) and property-based fuzzing (Echidna, Medusa). Alternative stacks have partial coverage — Move has formal verification (Move Prover), but no mature fuzzer comparable to Echidna; Rust/Wasm has fuzzing harnesses, but no specialized static analyzer with EVM-level domain knowledge. A multi-paradigm benchmark therefore requires Solidity by construction.
+
+Accordingly, the practical benchmark is restricted to Solidity/EVM. Cross-stack incidents are discussed only as contextual evidence in the theoretical framing.

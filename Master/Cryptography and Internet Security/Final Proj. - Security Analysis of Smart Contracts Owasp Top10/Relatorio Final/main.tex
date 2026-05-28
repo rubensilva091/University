@@ -1,0 +1,114 @@
+\documentclass[11pt, a4paper, twocolumn]{article}
+
+% ==========================================
+% PACOTES ESSENCIAIS
+% ==========================================
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel} % O último idioma é o principal
+\usepackage{geometry}
+\geometry{a4paper, margin=2cm, columnsep=0.75cm}
+\usepackage{graphicx}
+
+% ==========================================
+% BIBLIOGRAFIA E CITAÇÕES
+% ==========================================
+\usepackage{csquotes} % Resolve o aviso do biblatex
+\usepackage[style=ieee, sorting=none]{biblatex}
+\addbibresource{referencias.bib}
+
+% Quebra de URLs longas na bibliografia
+\setcounter{biburllcpenalty}{7000}
+\setcounter{biburlucpenalty}{8000}
+
+% ==========================================
+% PACOTES DE CÓDIGO
+% ==========================================
+\usepackage{multirow}
+\usepackage{placeins}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\scriptsize, 
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=mystyle}
+
+% Definição da linguagem Solidity
+\lstdefinelanguage{Solidity}{
+  keywords={contract, library, interface, function, public, private, internal, external, pure, view, payable, returns, mapping, address, uint256, bool, string, memory, calldata, storage, require, revert, assert, emit, event, modifier, constructor, fallback, receive},
+  keywordstyle=\color{magenta}\bfseries,
+  ndkeywords={msg, block, tx, now},
+  ndkeywordstyle=\color{codepurple}\bfseries,
+  identifierstyle=\color{black},
+  sensitive=false,
+  comment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  commentstyle=\color{codegreen}\ttfamily,
+  stringstyle=\color{codepurple}\ttfamily,
+  morestring=[b]',
+  morestring=[b]"
+}
+
+% ==========================================
+% HIPERLIGAÇÕES (Último pacote a carregar)
+% ==========================================
+\usepackage{hyperref}
+
+% ==========================================
+% DADOS DO DOCUMENTO
+% ==========================================
+\title{\vspace{-1.5cm}\textbf{Security Analysis of Smart Contract Languages} \\ \large Project in Cryptography and Information Security}
+\author{Rúben Silva \\ \small Student: pg57900 \and Martim Redondo \\ \small Student: pg57889}
+\date{\today}
+
+% ==========================================
+% CORPO DO DOCUMENTO
+% ==========================================
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+This report presents a reproducible security benchmark for Solidity contracts on the EVM, structured around the OWASP Smart Contract Top 10. Thirty Minimal Viable Exploit (MVE) contracts are organized as Vulnerable/Fixed pairs across the 10 categories, enabling independent measurement of true positives on Vulnerable contracts and false positives on Fixed variants.
+
+Eleven tools spanning four paradigms are evaluated: static analysis (Slither, Aderyn, Semgrep, Solhint), symbolic and formal analysis (Mythril, Halmos), property-based fuzzing (Echidna, Medusa) and LLM-assisted review (LLaMA-3.3-70B, Gemini 2.5 Flash, Qwen3-32B). Fuzzing achieved the highest detection rate among general-purpose tools (10/15), with just one false positives on Fixed variants; Static tools showed moderate recall with high FP rates; Halmos produced formal proofs on the two categories with authored properties; LLM review completed all 30 contracts ($\Delta$ = +3.3 for LLaMA).
+
+This work establishes a version-pinned, tool-agnostic pipeline that quantifies the precision--recall trade-off across security paradigms. By using a controlled MVE baseline, the study demonstrates that no single paradigm is sufficient — the value lies in the strategic composition of the security pipeline.
+
+\end{abstract}
+
+% Certifica-te que os caminhos para os ficheiros estão corretos
+\input{capitulos/01_introducao}
+\input{capitulos/02_state_of_the_art}
+\input{capitulos/03_reasons}
+\input{capitulos/04_familias_vulnerabilidades}
+\input{capitulos/05_detection_methodologies}
+\input{capitulos/06_discussion}
+\input{capitulos/07_conclusao} % Descomenta se este ficheiro existir
+
+\printbibliography[heading=bibintoc, title={References}]
+
+\end{document}

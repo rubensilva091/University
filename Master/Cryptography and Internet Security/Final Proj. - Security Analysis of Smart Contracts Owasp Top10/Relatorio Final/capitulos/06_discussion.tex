@@ -1,0 +1,83 @@
+\section{Discussion}
+\label{chap:discussion}
+
+This section reports cross-tool measurements across all four paradigms, ordered as in 5.2. Section 6.1 summarizes per-tool results; 6.2 examines category-level behavior; 6.3 synthesizes the cross-paradigm picture.
+
+\subsection{Cross-tool analysis}
+
+Within the static paradigm, the two subparadigms behaved as predicted by 5.2. Semantic analyzers (Slither, Aderyn) detected vulnerable variants but flagged Fixed contracts indiscriminately, with Slither providing the strongest signal (7/15) and Aderyn covering fewer categories (3/15). Pattern matchers and linters (Semgrep, Solhint) produced no exploit-level findings — confirming that generic AST templates and style rules cannot substitute for vulnerability-aware detectors.
+
+Mythril improved evidential quality where satisfiable paths were found (6/15 vulnerable cases, 10/15 FP on Fixed), with recurrent SWC-107 noise on reentrancy-adjacent Fixed contracts as the main source of false positives. Halmos demonstrated the formal verification paradigm in the two categories where specific properties were authored (SC01, SC09). In these cases, the tool provided absolute certainty: it produced a symbolic counterexample for each Vulnerable contract and a formal proof for each Fixed variant. The remaining 26 contracts are reported as non-applicable, as Halmos requires manual property specification \texttt{check\_*} and does not operate as an autonomous scanner.
+
+Fuzzing produced the cleanest behavior on Fixed contracts. Echidna and Medusa each detected 10/15 vulnerable cases and maintained strong precision on non-vulnerable variants. Remaining false negatives were concentrated in two structurally constrained categories: SC05 (off-chain ECDSA signatures, which fuzzers cannot generate) and SC08 (cross-contract reentrancy callbacks, which require richer adversarial harnesses than the current setup provides).  
+
+All three LLMs successfully parsed all 30 contracts. LLaMA-3.3-70B achieved the strongest discrimination ($\Delta$ = +3.3), with Vulnerable contracts consistently scoring in the 2–4 range and mitigated contracts in the 6–8 range. Qwen3-32B followed closely ($\Delta$ = +2.9), with a slightly compressed Fixed range (avg 6.2 vs LLaMA's 6.8) suggesting more conservative scoring of mitigated variants.
+
+Both models distinguished syntactic-vulnerability categories (SC01, SC06, SC09) from semantic-logic categories (SC02, SC03, SC04, SC07). The pattern reflects a structural limit of source-only LLM analysis: the models score on what the code says, not on what the code does after execution. Syntactic vulnerabilities (a missing onlyOwner, an unchecked block, a low-level call with ignored return value) are visible in the token stream and the models flag them reliably. Logic vulnerabilities are not. A function that performs token.transfer(user, amount) without a corresponding balances[user] -= amount line reads as a clean, well-formed transfer; the bug — that the user's balance is never debited — exists only as a property of the post-execution state, which the LLM does not reason about. On contracts of this kind in the SC02 family, LLaMA and Qwen assigned low scores (LLaMA 4/10, Qwen 3/10), correctly flagging the drainability of the contract.
+
+Gemini 2.5 Flash failed to discriminate between Vulnerable and Fixed contracts, with $\Delta$ = +1.4. The cause is not under-detection but systematic over-flagging of mitigated contracts. Nine Fixed variants received scores $\leq$3/10 despite implementing the prescribed mitigations: SC03-Fixed (TWAP oracle), SC04-Fixed, SC05-Fixed, SC05-Fixed2, SC06-Fixed (SafeERC20 + CEI), SC07-Fixed, SC09-Fixed, SC09-Fixed2, and SC10-Fixed. Gemini appears to score on residual code complexity (presence of low-level calls, presence of arithmetic blocks, presence of delegatecall) rather than on whether the primary OWASP vector is mitigated — a precision problem, not a recall problem. On SC09-Vuln, Gemini assigned a score of 6/10 — within the band reserved for mitigated contracts ($\geq$6 per §5.1) despite the \texttt{unchecked \{ totalSupply += amount \}} block. This is the only case where Gemini failed to place a Vulnerable contract below the detection threshold; the likely cause is that Gemini relied on the Solidity $\geq$0.8.0 compiler default without re-evaluating the \texttt{unchecked} exception.
+
+The practical implication for an audit pipeline is straightforward: LLaMA-3.3-70B is the safest default for automated triage (highest $\Delta$, fully parseable output, no critical false positives); Qwen3-32B reaches comparable discrimination ($\Delta$ +2.9) and is the natural fallback when LLaMA is unavailable. Gemini is unsuitable for Vuln/Fixed scoring without prompt recalibration but may remain useful for verbose qualitative analysis where over-flagging is tolerable.
+
+\begin{table}[!t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3.0pt}
+\caption{Compact quantitative summary from the unified benchmark report.}
+\label{tab:tool_summary}
+\begin{tabular}{@{}lllccp{2.4cm}@{}}
+\hline
+\textbf{Type} & \textbf{SubType} & \textbf{Tool} & \textbf{TP\textsuperscript{*}} & \textbf{FP\textsuperscript{**}} & \textbf{Main Limitations} \\
+\hline
+\multirow{4}{*}{Static}
+  & Semantic & Slither  & 7/15 & 15/15 & Generic patterns on all Fixed \\
+  & Semantic & Aderyn   & 3/15 & 15/15 & ETH-address noise on all Fixed \\
+  & Patt. match & Semgrep  & 0/15 & 0/15 & No EVM semantics \\
+  & Lint/style & Solhint  & 0/15 & 0/15 & Surface security rules only \\
+\hline
+\multirow{2}{*}{Symbolic}
+  & - & Mythril  & 6/15 & 10/15 & SWC-107 noise on reentrancy \\
+  & - & Halmos & 2/2 & 0/2 & Needs \texttt{check\_*}\\
+\hline
+\multirow{2}{*}{Fuzzing}
+  & - & Echidna  & 10/15 & 0/15 & FN:ECDSA(SC05), callbacks(SC08) \\
+  & - & Medusa   & 10/15 & 0/15 & Same structural blind spots \\
+\hline
+\end{tabular}\\[3pt]
+\parbox{\columnwidth}{\scriptsize\textsuperscript{*} TP = Vulnerable contracts where a finding identified the specific OWASP vector instantiated by the MVE, per the criteria defined in 5.1.}
+\parbox{\columnwidth}{\scriptsize\textsuperscript{**} FP = Fixed contracts that received any finding meeting the severity thresholds defined in 5.1.}
+\end{table}
+
+\begin{table}[!t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3.5pt}
+\caption{LLM security score averages across Vuln and Fixed contracts. \textsuperscript{*}}
+\label{tab:llm_summary}
+\begin{tabular}{@{}lcccc@{}}
+\hline
+\textbf{Model} & \textbf{Vuln avg} & \textbf{Fixed avg} & \textbf{$\Delta$} & \textbf{Parsed} \\
+\hline
+LLaMA-3.3-70B  & 3.5 & 6.8 & +3.3 & 30/30 \\
+Gemini 2.5 Flash & 2.5 & 3.9 & +1.4 & 30/30 \\
+Qwen3-32B      & 3.3 & 6.2 & +2.9 & 30/30 \\
+\hline
+\end{tabular}\\[3pt]
+\parbox{\columnwidth}{\scriptsize%
+\textsuperscript{*} Scale: 1 = critically vulnerable, 10 = perfectly secure. $\Delta$ = avg(Fixed) $-$ avg(Vuln); higher values indicate stronger discrimination between vulnerable and mitigated variants. Parsed = contracts from which a numeric score was successfully extracted.}
+\end{table}
+
+\FloatBarrier
+\subsection{Category-level behavior}
+
+Detection quality varied by vulnerability family:
+\begin{itemize}
+	\item \textbf{SC01/SC06} (access control, unchecked calls) were detectable by multiple paradigms, but only fuzzers achieved this without false positives on the corresponding Fixed variants. Slither and Mythril detected the vulnerabilities but flagged the Fixed counterparts indiscriminately, replicating the precision pattern of §6.1 at category level.
+	\item \textbf{SC09} (integer arithmetic) showed split behavior: Mythril and both fuzzers detected vulnerable variants; static tools produced non-discriminative output (findings on both Vuln and Fixed). Halmos provided formal proof on the SC09 pair where \texttt{check\_*} properties were authored, and was the only paradigm to produce conclusive evidence rather than detection alone.
+	\item \textbf{SC10} (uninitialized proxy) was better captured by fuzzing than by static or symbolic tools — initialization race conditions are runtime properties that source-level pattern matching cannot reach.
+	\item \textbf{SC05} and \textbf{SC08} exposed structural harness limits: off-chain signatures cannot be generated by property-based fuzzers, and cross-contract callbacks require richer adversarial setups than the current harnesses provide. The false negatives on these categories are limitations of harness expressiveness, not of the fuzzers themselves.
+\end{itemize}
+
+\subsection{Cross-paradigm complementarity}
+
+The benchmark confirms the value of paradigm composition. Static tools are effective first-pass filters despite high FP rates; symbolic analysis provides path-level evidence when tractable; fuzzing validates runtime invariants with high practical precision and just one FP on Fixed variants; LLMs support semantic triage without replacing executable verification; when formal properties are authored, Halmos provides conclusive proof rather than probabilistic detection. No single paradigm dominated all categories. Best coverage emerged from paradigm composition: the three-stage pipeline of §7 (Slither $\rightarrow$ Mythril $\rightarrow$ Echidna) covers the OWASP surface where Halmos's \texttt{check\_*} properties were not authored, with each stage compensating for the precision and recall failure modes of the previous one.
