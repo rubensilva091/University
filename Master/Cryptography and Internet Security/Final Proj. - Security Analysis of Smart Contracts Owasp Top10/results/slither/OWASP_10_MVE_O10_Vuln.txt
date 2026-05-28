@@ -1,0 +1,24 @@
+'forge clean' running (wd: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main)
+'forge config --json' running
+'forge build --build-info contracts/OWASP_10/MVE_O10_Vuln.sol' running (wd: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main)
+
+MVE_O10_Vuln.initialize(address,address).newOwner (contracts/OWASP_10/MVE_O10_Vuln.sol#9) lacks a zero-check on :
+		- owner = newOwner (contracts/OWASP_10/MVE_O10_Vuln.sol#11)
+MVE_O10_Vuln.initialize(address,address).initialImpl (contracts/OWASP_10/MVE_O10_Vuln.sol#9) lacks a zero-check on :
+		- implementation = initialImpl (contracts/OWASP_10/MVE_O10_Vuln.sol#12)
+MVE_O10_Vuln.upgradeTo(address).newImpl (contracts/OWASP_10/MVE_O10_Vuln.sol#15) lacks a zero-check on :
+		- implementation = newImpl (contracts/OWASP_10/MVE_O10_Vuln.sol#17)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-zero-address-validation
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (contracts/OWASP_10/MVE_O10_Vuln.sol#2)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Contract MVE_O10_Vuln (contracts/OWASP_10/MVE_O10_Vuln.sol#4-19) is not in CapWords
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_10/MVE_O10_Vuln.sol analyzed (1 contracts with 93 detectors), 5 result(s) found
+INFO:Slither:/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/results/slither/OWASP_10_MVE_O10_Vuln.json exists already, the overwrite is prevented

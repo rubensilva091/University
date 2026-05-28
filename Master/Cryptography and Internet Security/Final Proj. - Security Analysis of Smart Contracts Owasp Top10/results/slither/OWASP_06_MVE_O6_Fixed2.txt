@@ -1,0 +1,18 @@
+'forge clean' running (wd: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main)
+'forge config --json' running
+'forge build --build-info contracts/OWASP_06/MVE_O6_Fixed2.sol' running (wd: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main)
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (contracts/OWASP_06/MVE_O6_Fixed2.sol#2)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Contract MVE_O6_Fixed2 (contracts/OWASP_06/MVE_O6_Fixed2.sol#11-42) is not in CapWords
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+
+MVE_O6_Fixed2.owner (contracts/OWASP_06/MVE_O6_Fixed2.sol#14) should be immutable 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-immutable
+/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_06/MVE_O6_Fixed2.sol analyzed (2 contracts with 93 detectors), 3 result(s) found

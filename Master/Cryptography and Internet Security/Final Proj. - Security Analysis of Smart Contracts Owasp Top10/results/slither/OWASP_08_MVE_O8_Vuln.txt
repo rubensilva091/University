@@ -1,0 +1,31 @@
+'forge clean' running (wd: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main)
+'forge config --json' running
+'forge build --build-info contracts/OWASP_08/MVE_O8_Vuln.sol' running (wd: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main)
+
+Reentrancy in MVE_O8_Vuln.withdraw(uint256) (contracts/OWASP_08/MVE_O8_Vuln.sol#11-19):
+	External calls:
+	- (ok,None) = msg.sender.call{value: amount}() (contracts/OWASP_08/MVE_O8_Vuln.sol#15)
+	State variables written after the call(s):
+	- balanceOf[msg.sender] -= amount (contracts/OWASP_08/MVE_O8_Vuln.sol#18)
+	MVE_O8_Vuln.balanceOf (contracts/OWASP_08/MVE_O8_Vuln.sol#5) can be used in cross function reentrancies:
+	- MVE_O8_Vuln.balanceOf (contracts/OWASP_08/MVE_O8_Vuln.sol#5)
+	- MVE_O8_Vuln.deposit() (contracts/OWASP_08/MVE_O8_Vuln.sol#7-9)
+	- MVE_O8_Vuln.withdraw(uint256) (contracts/OWASP_08/MVE_O8_Vuln.sol#11-19)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (contracts/OWASP_08/MVE_O8_Vuln.sol#2)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in MVE_O8_Vuln.withdraw(uint256) (contracts/OWASP_08/MVE_O8_Vuln.sol#11-19):
+	- (ok,None) = msg.sender.call{value: amount}() (contracts/OWASP_08/MVE_O8_Vuln.sol#15)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+Contract MVE_O8_Vuln (contracts/OWASP_08/MVE_O8_Vuln.sol#4-20) is not in CapWords
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_08/MVE_O8_Vuln.sol analyzed (1 contracts with 93 detectors), 4 result(s) found
+INFO:Slither:/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/results/slither/OWASP_08_MVE_O8_Vuln.json exists already, the overwrite is prevented

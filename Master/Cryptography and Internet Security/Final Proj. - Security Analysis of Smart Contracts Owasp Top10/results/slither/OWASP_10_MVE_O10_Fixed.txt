@@ -1,0 +1,25 @@
+'forge clean' running (wd: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main)
+'forge config --json' running
+'forge build --build-info contracts/OWASP_10/MVE_O10_Fixed.sol' running (wd: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main)
+
+MVE_O10_Fixed.constructor(address).initialImpl (contracts/OWASP_10/MVE_O10_Fixed.sol#10) lacks a zero-check on :
+		- implementation = initialImpl (contracts/OWASP_10/MVE_O10_Fixed.sol#13)
+MVE_O10_Fixed.upgradeTo(address).newImpl (contracts/OWASP_10/MVE_O10_Fixed.sol#16) lacks a zero-check on :
+		- implementation = newImpl (contracts/OWASP_10/MVE_O10_Fixed.sol#18)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-zero-address-validation
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (contracts/OWASP_10/MVE_O10_Fixed.sol#2)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Contract MVE_O10_Fixed (contracts/OWASP_10/MVE_O10_Fixed.sol#4-20) is not in CapWords
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+
+MVE_O10_Fixed.owner (contracts/OWASP_10/MVE_O10_Fixed.sol#5) should be immutable 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-immutable
+/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_10/MVE_O10_Fixed.sol analyzed (1 contracts with 93 detectors), 5 result(s) found
+INFO:Slither:/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/results/slither/OWASP_10_MVE_O10_Fixed.json exists already, the overwrite is prevented

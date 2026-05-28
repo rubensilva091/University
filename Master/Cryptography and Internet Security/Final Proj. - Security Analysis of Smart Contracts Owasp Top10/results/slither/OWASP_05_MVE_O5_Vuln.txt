@@ -1,0 +1,27 @@
+'forge clean' running (wd: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main)
+'forge config --json' running
+'forge build --build-info contracts/OWASP_05/MVE_O5_Vuln.sol' running (wd: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main)
+
+MVE_O5_Vuln.constructor(address).signer (contracts/OWASP_05/MVE_O5_Vuln.sol#8) lacks a zero-check on :
+		- trustedSigner = signer (contracts/OWASP_05/MVE_O5_Vuln.sol#9)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-zero-address-validation
+
+MVE_O5_Vuln._recover(bytes32,bytes) (contracts/OWASP_05/MVE_O5_Vuln.sol#30-44) uses assembly
+	- INLINE ASM (contracts/OWASP_05/MVE_O5_Vuln.sol#37-41)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#assembly-usage
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (contracts/OWASP_05/MVE_O5_Vuln.sol#2)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Contract MVE_O5_Vuln (contracts/OWASP_05/MVE_O5_Vuln.sol#4-45) is not in CapWords
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+
+Redundant expression "deadline (contracts/OWASP_05/MVE_O5_Vuln.sol#25)" inMVE_O5_Vuln (contracts/OWASP_05/MVE_O5_Vuln.sol#4-45)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#redundant-statements
+/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_05/MVE_O5_Vuln.sol analyzed (1 contracts with 93 detectors), 5 result(s) found
+INFO:Slither:/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/results/slither/OWASP_05_MVE_O5_Vuln.json exists already, the overwrite is prevented

@@ -1,0 +1,24 @@
+'forge clean' running (wd: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main)
+'forge config --json' running
+'forge build --build-info contracts/OWASP_07/MVE_O7_Fixed.sol' running (wd: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main)
+
+MVE_O7_Fixed.deposit() (contracts/OWASP_07/MVE_O7_Fixed.sol#8-20) uses a dangerous strict equality:
+	- totalShares == 0 (contracts/OWASP_07/MVE_O7_Fixed.sol#12)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-strict-equalities
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (contracts/OWASP_07/MVE_O7_Fixed.sol#2)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in MVE_O7_Fixed.withdraw(uint256) (contracts/OWASP_07/MVE_O7_Fixed.sol#22-38):
+	- (ok,None) = msg.sender.call{value: assets}() (contracts/OWASP_07/MVE_O7_Fixed.sol#35)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+Contract MVE_O7_Fixed (contracts/OWASP_07/MVE_O7_Fixed.sol#4-39) is not in CapWords
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_07/MVE_O7_Fixed.sol analyzed (1 contracts with 93 detectors), 4 result(s) found
+INFO:Slither:/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/results/slither/OWASP_07_MVE_O7_Fixed.json exists already, the overwrite is prevented

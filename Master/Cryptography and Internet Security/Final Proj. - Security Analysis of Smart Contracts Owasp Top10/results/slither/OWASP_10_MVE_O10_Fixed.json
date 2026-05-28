@@ -1,0 +1,479 @@
+{
+  "success": true,
+  "error": null,
+  "results": {
+    "detectors": [
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "initialImpl",
+            "source_mapping": {
+              "start": 184,
+              "length": 19,
+              "filename_relative": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+              "filename_absolute": "/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_10/MVE_O10_Fixed.sol",
+              "filename_short": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+              "is_dependency": false,
+              "lines": [
+                10
+              ],
+              "starting_column": 17,
+              "ending_column": 36
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "constructor",
+                "source_mapping": {
+                  "start": 172,
+                  "length": 194,
+                  "filename_relative": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+                  "filename_absolute": "/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_10/MVE_O10_Fixed.sol",
+                  "filename_short": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    10,
+                    11,
+                    12,
+                    13,
+                    14
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "MVE_O10_Fixed",
+                    "source_mapping": {
+                      "start": 58,
+                      "length": 454,
+                      "filename_relative": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+                      "filename_absolute": "/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_10/MVE_O10_Fixed.sol",
+                      "filename_short": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "constructor(address)"
+                }
+              }
+            }
+          },
+          {
+            "type": "node",
+            "name": "implementation = initialImpl",
+            "source_mapping": {
+              "start": 331,
+              "length": 28,
+              "filename_relative": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+              "filename_absolute": "/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_10/MVE_O10_Fixed.sol",
+              "filename_short": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+              "is_dependency": false,
+              "lines": [
+                13
+              ],
+              "starting_column": 9,
+              "ending_column": 37
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "constructor",
+                "source_mapping": {
+                  "start": 172,
+                  "length": 194,
+                  "filename_relative": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+                  "filename_absolute": "/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_10/MVE_O10_Fixed.sol",
+                  "filename_short": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    10,
+                    11,
+                    12,
+                    13,
+                    14
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "MVE_O10_Fixed",
+                    "source_mapping": {
+                      "start": 58,
+                      "length": 454,
+                      "filename_relative": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+                      "filename_absolute": "/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_10/MVE_O10_Fixed.sol",
+                      "filename_short": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "constructor(address)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "MVE_O10_Fixed.constructor(address).initialImpl (contracts/OWASP_10/MVE_O10_Fixed.sol#10) lacks a zero-check on :\n\t\t- implementation = initialImpl (contracts/OWASP_10/MVE_O10_Fixed.sol#13)\n",
+        "markdown": "[MVE_O10_Fixed.constructor(address).initialImpl](contracts/OWASP_10/MVE_O10_Fixed.sol#L10) lacks a zero-check on :\n\t\t- [implementation = initialImpl](contracts/OWASP_10/MVE_O10_Fixed.sol#L13)\n",
+        "first_markdown_element": "contracts/OWASP_10/MVE_O10_Fixed.sol#L10",
+        "id": "1c6ca55e815d3c861f79a1cf2920accb63fdcf679b965f66d7f42919547ea07e",
+        "check": "missing-zero-check",
+        "impact": "Low",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "newImpl",
+            "source_mapping": {
+              "start": 391,
+              "length": 15,
+              "filename_relative": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+              "filename_absolute": "/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_10/MVE_O10_Fixed.sol",
+              "filename_short": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+              "is_dependency": false,
+              "lines": [
+                16
+              ],
+              "starting_column": 24,
+              "ending_column": 39
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "upgradeTo",
+                "source_mapping": {
+                  "start": 372,
+                  "length": 138,
+                  "filename_relative": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+                  "filename_absolute": "/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_10/MVE_O10_Fixed.sol",
+                  "filename_short": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    16,
+                    17,
+                    18,
+                    19
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "MVE_O10_Fixed",
+                    "source_mapping": {
+                      "start": 58,
+                      "length": 454,
+                      "filename_relative": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+                      "filename_absolute": "/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_10/MVE_O10_Fixed.sol",
+                      "filename_short": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "upgradeTo(address)"
+                }
+              }
+            }
+          },
+          {
+            "type": "node",
+            "name": "implementation = newImpl",
+            "source_mapping": {
+              "start": 479,
+              "length": 24,
+              "filename_relative": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+              "filename_absolute": "/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_10/MVE_O10_Fixed.sol",
+              "filename_short": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+              "is_dependency": false,
+              "lines": [
+                18
+              ],
+              "starting_column": 9,
+              "ending_column": 33
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "function",
+                "name": "upgradeTo",
+                "source_mapping": {
+                  "start": 372,
+                  "length": 138,
+                  "filename_relative": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+                  "filename_absolute": "/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_10/MVE_O10_Fixed.sol",
+                  "filename_short": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    16,
+                    17,
+                    18,
+                    19
+                  ],
+                  "starting_column": 5,
+                  "ending_column": 6
+                },
+                "type_specific_fields": {
+                  "parent": {
+                    "type": "contract",
+                    "name": "MVE_O10_Fixed",
+                    "source_mapping": {
+                      "start": 58,
+                      "length": 454,
+                      "filename_relative": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+                      "filename_absolute": "/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_10/MVE_O10_Fixed.sol",
+                      "filename_short": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+                      "is_dependency": false,
+                      "lines": [
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20
+                      ],
+                      "starting_column": 1,
+                      "ending_column": 2
+                    }
+                  },
+                  "signature": "upgradeTo(address)"
+                }
+              }
+            }
+          }
+        ],
+        "description": "MVE_O10_Fixed.upgradeTo(address).newImpl (contracts/OWASP_10/MVE_O10_Fixed.sol#16) lacks a zero-check on :\n\t\t- implementation = newImpl (contracts/OWASP_10/MVE_O10_Fixed.sol#18)\n",
+        "markdown": "[MVE_O10_Fixed.upgradeTo(address).newImpl](contracts/OWASP_10/MVE_O10_Fixed.sol#L16) lacks a zero-check on :\n\t\t- [implementation = newImpl](contracts/OWASP_10/MVE_O10_Fixed.sol#L18)\n",
+        "first_markdown_element": "contracts/OWASP_10/MVE_O10_Fixed.sol#L16",
+        "id": "9b1839df29868e0947747a23a7f9bfa39de795d9990967a10e3c776f4619e9d9",
+        "check": "missing-zero-check",
+        "impact": "Low",
+        "confidence": "Medium"
+      },
+      {
+        "elements": [
+          {
+            "type": "pragma",
+            "name": "^0.8.20",
+            "source_mapping": {
+              "start": 32,
+              "length": 24,
+              "filename_relative": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+              "filename_absolute": "/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_10/MVE_O10_Fixed.sol",
+              "filename_short": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+              "is_dependency": false,
+              "lines": [
+                2
+              ],
+              "starting_column": 1,
+              "ending_column": 25
+            },
+            "type_specific_fields": {
+              "directive": [
+                "solidity",
+                "^",
+                "0.8",
+                ".20"
+              ]
+            }
+          }
+        ],
+        "description": "Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)\n\t- VerbatimInvalidDeduplication\n\t- FullInlinerNonExpressionSplitArgumentEvaluationOrder\n\t- MissingSideEffectsOnSelectorAccess.\nIt is used by:\n\t- ^0.8.20 (contracts/OWASP_10/MVE_O10_Fixed.sol#2)\n",
+        "markdown": "Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)\n\t- VerbatimInvalidDeduplication\n\t- FullInlinerNonExpressionSplitArgumentEvaluationOrder\n\t- MissingSideEffectsOnSelectorAccess.\nIt is used by:\n\t- [^0.8.20](contracts/OWASP_10/MVE_O10_Fixed.sol#L2)\n",
+        "first_markdown_element": "contracts/OWASP_10/MVE_O10_Fixed.sol#L2",
+        "id": "1bc74ef14a21bc3a00ae6dda7670368592f01811d7d67973d52586d6094a7200",
+        "check": "solc-version",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "contract",
+            "name": "MVE_O10_Fixed",
+            "source_mapping": {
+              "start": 58,
+              "length": 454,
+              "filename_relative": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+              "filename_absolute": "/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_10/MVE_O10_Fixed.sol",
+              "filename_short": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+              "is_dependency": false,
+              "lines": [
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+              ],
+              "starting_column": 1,
+              "ending_column": 2
+            },
+            "additional_fields": {
+              "target": "contract",
+              "convention": "CapWords"
+            }
+          }
+        ],
+        "description": "Contract MVE_O10_Fixed (contracts/OWASP_10/MVE_O10_Fixed.sol#4-20) is not in CapWords\n",
+        "markdown": "Contract [MVE_O10_Fixed](contracts/OWASP_10/MVE_O10_Fixed.sol#L4-L20) is not in CapWords\n",
+        "first_markdown_element": "contracts/OWASP_10/MVE_O10_Fixed.sol#L4-L20",
+        "id": "1c43fd792abd854a44fcc1d97e9be74587edcf0efec56a124c5a0eed7e5ed80b",
+        "check": "naming-convention",
+        "impact": "Informational",
+        "confidence": "High"
+      },
+      {
+        "elements": [
+          {
+            "type": "variable",
+            "name": "owner",
+            "source_mapping": {
+              "start": 87,
+              "length": 20,
+              "filename_relative": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+              "filename_absolute": "/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_10/MVE_O10_Fixed.sol",
+              "filename_short": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+              "is_dependency": false,
+              "lines": [
+                5
+              ],
+              "starting_column": 5,
+              "ending_column": 25
+            },
+            "type_specific_fields": {
+              "parent": {
+                "type": "contract",
+                "name": "MVE_O10_Fixed",
+                "source_mapping": {
+                  "start": 58,
+                  "length": 454,
+                  "filename_relative": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+                  "filename_absolute": "/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_10/MVE_O10_Fixed.sol",
+                  "filename_short": "contracts/OWASP_10/MVE_O10_Fixed.sol",
+                  "is_dependency": false,
+                  "lines": [
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20
+                  ],
+                  "starting_column": 1,
+                  "ending_column": 2
+                }
+              }
+            }
+          }
+        ],
+        "description": "MVE_O10_Fixed.owner (contracts/OWASP_10/MVE_O10_Fixed.sol#5) should be immutable \n",
+        "markdown": "[MVE_O10_Fixed.owner](contracts/OWASP_10/MVE_O10_Fixed.sol#L5) should be immutable \n",
+        "first_markdown_element": "contracts/OWASP_10/MVE_O10_Fixed.sol#L5",
+        "id": "87fb916f1ba650eb6acb9acd147920180b0d584f8f92b64870606fc3574ceef7",
+        "check": "immutable-states",
+        "impact": "Optimization",
+        "confidence": "High"
+      }
+    ]
+  }
+}

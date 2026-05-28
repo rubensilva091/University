@@ -1,0 +1,20 @@
+'forge clean' running (wd: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main)
+'forge config --json' running
+'forge build --build-info contracts/OWASP_04/MVE_O4_Fixed.sol' running (wd: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main)
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (contracts/OWASP_04/MVE_O4_Fixed.sol#2)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in MVE_O4_Fixed.withdrawAll() (contracts/OWASP_04/MVE_O4_Fixed.sol#20-34):
+	- (ok,None) = msg.sender.call{value: amount}() (contracts/OWASP_04/MVE_O4_Fixed.sol#31)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+Contract MVE_O4_Fixed (contracts/OWASP_04/MVE_O4_Fixed.sol#4-35) is not in CapWords
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_04/MVE_O4_Fixed.sol analyzed (1 contracts with 93 detectors), 3 result(s) found
+INFO:Slither:/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/results/slither/OWASP_04_MVE_O4_Fixed.json exists already, the overwrite is prevented

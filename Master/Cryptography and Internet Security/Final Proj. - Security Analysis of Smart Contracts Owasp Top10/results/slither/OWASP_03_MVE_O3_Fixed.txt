@@ -1,0 +1,32 @@
+'forge clean' running (wd: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main)
+'forge config --json' running
+'forge build --build-info contracts/OWASP_03/MVE_O3_Fixed.sol' running (wd: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main)
+
+MVE_O3_Fixed.updateTwap(uint256) (contracts/OWASP_03/MVE_O3_Fixed.sol#27-30) should emit an event for: 
+	- twapPriceE18 = newTwapPriceE18 (contracts/OWASP_03/MVE_O3_Fixed.sol#28) 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-events-arithmetic
+
+MVE_O3_Fixed.maxBorrow(address) (contracts/OWASP_03/MVE_O3_Fixed.sol#36-41) uses timestamp for comparisons
+	Dangerous comparisons:
+	- block.timestamp > lastPriceUpdate + 3600 (contracts/OWASP_03/MVE_O3_Fixed.sol#38)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (contracts/OWASP_03/MVE_O3_Fixed.sol#2)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in MVE_O3_Fixed.borrow(uint256) (contracts/OWASP_03/MVE_O3_Fixed.sol#43-52):
+	- (ok,None) = msg.sender.call{value: amount}() (contracts/OWASP_03/MVE_O3_Fixed.sol#49)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+Contract MVE_O3_Fixed (contracts/OWASP_03/MVE_O3_Fixed.sol#4-53) is not in CapWords
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+
+MVE_O3_Fixed.owner (contracts/OWASP_03/MVE_O3_Fixed.sol#5) should be immutable 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-immutable
+/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_03/MVE_O3_Fixed.sol analyzed (1 contracts with 93 detectors), 6 result(s) found
+INFO:Slither:/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/results/slither/OWASP_03_MVE_O3_Fixed.json exists already, the overwrite is prevented

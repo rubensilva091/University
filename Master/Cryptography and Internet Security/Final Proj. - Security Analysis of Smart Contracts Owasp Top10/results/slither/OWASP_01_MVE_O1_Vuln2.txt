@@ -1,0 +1,34 @@
+'forge clean' running (wd: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main)
+'forge config --json' running
+'forge build --build-info contracts/OWASP_01/MVE_O1_Vuln2.sol' running (wd: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main)
+
+MVE_O1_Vuln2.withdraw(address,uint256) (contracts/OWASP_01/MVE_O1_Vuln2.sol#20-26) sends eth to arbitrary user
+	Dangerous calls:
+	- (ok,None) = to.call{value: amount}() (contracts/OWASP_01/MVE_O1_Vuln2.sol#24)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#functions-that-send-ether-to-arbitrary-destinations
+
+MVE_O1_Vuln2.withdraw(address,uint256) (contracts/OWASP_01/MVE_O1_Vuln2.sol#20-26) uses tx.origin for authorization: require(bool,string)(tx.origin == owner,not owner) (contracts/OWASP_01/MVE_O1_Vuln2.sol#21)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#dangerous-usage-of-txorigin
+
+MVE_O1_Vuln2.withdraw(address,uint256).to (contracts/OWASP_01/MVE_O1_Vuln2.sol#20) lacks a zero-check on :
+		- (ok,None) = to.call{value: amount}() (contracts/OWASP_01/MVE_O1_Vuln2.sol#24)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-zero-address-validation
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (contracts/OWASP_01/MVE_O1_Vuln2.sol#2)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in MVE_O1_Vuln2.withdraw(address,uint256) (contracts/OWASP_01/MVE_O1_Vuln2.sol#20-26):
+	- (ok,None) = to.call{value: amount}() (contracts/OWASP_01/MVE_O1_Vuln2.sol#24)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+Contract MVE_O1_Vuln2 (contracts/OWASP_01/MVE_O1_Vuln2.sol#9-27) is not in CapWords
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+
+MVE_O1_Vuln2.owner (contracts/OWASP_01/MVE_O1_Vuln2.sol#10) should be immutable 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-immutable
+/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_01/MVE_O1_Vuln2.sol analyzed (1 contracts with 93 detectors), 7 result(s) found

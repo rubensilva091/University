@@ -1,0 +1,29 @@
+'forge clean' running (wd: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main)
+'forge config --json' running
+'forge build --build-info contracts/OWASP_05/MVE_O5_Fixed.sol' running (wd: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main)
+
+MVE_O5_Fixed.constructor(address).signer (contracts/OWASP_05/MVE_O5_Fixed.sol#9) lacks a zero-check on :
+		- trustedSigner = signer (contracts/OWASP_05/MVE_O5_Fixed.sol#10)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-zero-address-validation
+
+MVE_O5_Fixed.claim(address,uint256,uint256,uint256,bytes) (contracts/OWASP_05/MVE_O5_Fixed.sol#13-40) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool,string)(block.timestamp <= deadline,signature expired) (contracts/OWASP_05/MVE_O5_Fixed.sol#25)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+MVE_O5_Fixed._recover(bytes32,bytes) (contracts/OWASP_05/MVE_O5_Fixed.sol#42-56) uses assembly
+	- INLINE ASM (contracts/OWASP_05/MVE_O5_Fixed.sol#49-53)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#assembly-usage
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (contracts/OWASP_05/MVE_O5_Fixed.sol#2)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Contract MVE_O5_Fixed (contracts/OWASP_05/MVE_O5_Fixed.sol#4-57) is not in CapWords
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_05/MVE_O5_Fixed.sol analyzed (1 contracts with 93 detectors), 5 result(s) found
+INFO:Slither:/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/results/slither/OWASP_05_MVE_O5_Fixed.json exists already, the overwrite is prevented

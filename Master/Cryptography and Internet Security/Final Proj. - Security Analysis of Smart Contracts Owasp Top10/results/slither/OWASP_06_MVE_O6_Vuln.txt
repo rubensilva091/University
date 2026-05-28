@@ -1,0 +1,41 @@
+'forge clean' running (wd: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main)
+'forge config --json' running
+'forge build --build-info contracts/OWASP_06/MVE_O6_Vuln.sol' running (wd: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main)
+
+MVE_O6_Vuln.schedulePayment(address,uint256) (contracts/OWASP_06/MVE_O6_Vuln.sol#9-16) sends eth to arbitrary user
+	Dangerous calls:
+	- (ok,None) = to.call{value: amount}() (contracts/OWASP_06/MVE_O6_Vuln.sol#13)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#functions-that-send-ether-to-arbitrary-destinations
+
+MVE_O6_Vuln.schedulePayment(address,uint256).to (contracts/OWASP_06/MVE_O6_Vuln.sol#9) lacks a zero-check on :
+		- (ok,None) = to.call{value: amount}() (contracts/OWASP_06/MVE_O6_Vuln.sol#13)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#missing-zero-address-validation
+
+Reentrancy in MVE_O6_Vuln.schedulePayment(address,uint256) (contracts/OWASP_06/MVE_O6_Vuln.sol#9-16):
+	External calls:
+	- (ok,None) = to.call{value: amount}() (contracts/OWASP_06/MVE_O6_Vuln.sol#13)
+	State variables written after the call(s):
+	- credited[to] += amount (contracts/OWASP_06/MVE_O6_Vuln.sol#15)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#reentrancy-vulnerabilities-2
+
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (contracts/OWASP_06/MVE_O6_Vuln.sol#2)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Low level call in MVE_O6_Vuln.schedulePayment(address,uint256) (contracts/OWASP_06/MVE_O6_Vuln.sol#9-16):
+	- (ok,None) = to.call{value: amount}() (contracts/OWASP_06/MVE_O6_Vuln.sol#13)
+Low level call in MVE_O6_Vuln.rebate() (contracts/OWASP_06/MVE_O6_Vuln.sol#18-26):
+	- (ok,None) = msg.sender.call{value: amount}() (contracts/OWASP_06/MVE_O6_Vuln.sol#23)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+Contract MVE_O6_Vuln (contracts/OWASP_06/MVE_O6_Vuln.sol#4-27) is not in CapWords
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+
+Redundant expression "ok (contracts/OWASP_06/MVE_O6_Vuln.sol#14)" inMVE_O6_Vuln (contracts/OWASP_06/MVE_O6_Vuln.sol#4-27)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#redundant-statements
+/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_06/MVE_O6_Vuln.sol analyzed (1 contracts with 93 detectors), 8 result(s) found
+INFO:Slither:/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/results/slither/OWASP_06_MVE_O6_Vuln.json exists already, the overwrite is prevented
