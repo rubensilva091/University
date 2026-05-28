@@ -1,0 +1,5 @@
+pytest==8.4.1
+pytest-cov==6.2.1
+bandit==1.8.6
+pip-audit==2.9.0
+detect-secrets==1.5.0

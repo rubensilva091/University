@@ -1,0 +1,128 @@
+SETUP (apenas 1x)
+python3 -m venv venv
+source venv/bin/activate
+pip install -r server/requirements.txt
+
+
+SERVER (terminal 1)
+source venv/bin/activate
+export GOOGLE_CLIENT_ID="<google_client_id>"
+uvicorn server.main:app --reload
+
+
+AUTH TOKEN (terminal 2)
+1) Abrir: https://developers.google.com/oauthplayground/
+2) Selecionar escopos Google OAuth2: openid email profile
+3) Autorizar e copiar o id_token (comeca por eyJ...)
+4) Exportar token:
+export API_TOKEN="<oidc_jwt_token>"
+
+
+SMOKE TEST API
+curl -s -H "Authorization: Bearer $API_TOKEN" http://127.0.0.1:8000/users/me
+
+
+TESTE REAL CLI (WEEK 5)
+# 1) Criar ficheiro de teste
+echo "Conteudo de teste para AES-GCM" > segredo.txt
+
+# 2) Upload (sera pedida passphrase do cofre local)
+python cli/main.py upload segredo.txt
+
+# 3) Listar ficheiros e copiar o file_id
+python cli/main.py list
+
+# 4) Partilhar com outro utilizador (opcional, precisa de outro utilizador/terminal)
+python cli/main.py share <file_id> <target_user_id>
+
+# 5) No outro utilizador, importar a chave recebida
+python cli/main.py import-key <file_id> segredo.txt
+
+# 6) Download e desencriptacao (usar file_id copiado)
+python cli/main.py download <file_id> ficheiro_recuperado.txt
+
+# 7) Verificar integridade
+diff -u segredo.txt ficheiro_recuperado.txt
+
+# 8) Criar link anonimo (expira em 7 dias)
+python cli/main.py create-anonymous-link <file_id>
+
+# 9) (Opcional) testar o link anonimo devolvido no comando anterior
+# Nao existe comando CLI para download anonimo; usar curl aqui.
+curl -L -o anon_download.bin "http://127.0.0.1:8000/anon/<link_id>"
+
+# 10) Apagar ficheiro e chave local (cryptographic erasure)
+python cli/main.py delete <file_id>
+
+
+TESTES DE SEGURANCA RAPIDOS
+# Sem token deve falhar
+unset API_TOKEN
+python cli/main.py list
+
+# Token invalido deve falhar
+export API_TOKEN="token_invalido"
+python cli/main.py list
+
+
+NOTAS
+- O comando "update" nao existe no CLI atual.
+- Se existir cofre antigo em texto simples, migrar:
+python cli/main.py migrate-vault
+- Para apagar apenas a chave local:
+python cli/main.py erase-key <file_id>
+
+
+
+---
+
+LITERAL API ENDPOINTS (copiar e colar)
+
+# 1) Criar ficheiro de teste
+echo "Conteudo de teste para AES-GCM" > segredo.txt
+
+# Upload encriptado
+#NAO ENCRIPTA ASSIM
+curl -X POST -H "Authorization: Bearer $API_TOKEN" -F "file=@segredo.txt" http://127.0.0.1:8000/files/
+
+# Listar ficheiros (owned + shared)
+curl -s -H "Authorization: Bearer $API_TOKEN" http://127.0.0.1:8000/files/
+
+# Download de um ficheiro especifico (ciphertext)
+curl -H "Authorization: Bearer $API_TOKEN" -o downloaded.enc http://127.0.0.1:8000/files/<file_id>/download
+
+# Atualizar ficheiro (nova versão)
+curl -X PUT -H "Authorization: Bearer $API_TOKEN" -F "file=@new_version.txt" http://127.0.0.1:8000/files/<file_id>
+
+# Apagar ficheiro + limpeza de metadata
+curl -X DELETE -H "Authorization: Bearer $API_TOKEN" http://127.0.0.1:8000/files/<file_id>
+
+# Ver permissões do ficheiro
+curl -H "Authorization: Bearer $API_TOKEN" http://127.0.0.1:8000/files/<file_id>/permissions
+
+# Alterar permissões do ficheiro
+curl -X PUT -H "Authorization: Bearer $API_TOKEN" -H "Content-Type: application/json" -d '{"permissions":"read"}' http://127.0.0.1:8000/files/<file_id>/permissions
+
+# Partilhar com outro utilizador
+curl -X POST -H "Authorization: Bearer $API_TOKEN" -H "Content-Type: application/json" -d '{"target_user_id":"<target_user_id>"}' http://127.0.0.1:8000/files/<file_id>/share
+
+# Criar link anónimo (TTL protegido)
+curl -X POST -H "Authorization: Bearer $API_TOKEN" http://127.0.0.1:8000/files/<file_id>/anonymous-link
+
+# Download via link anónimo
+curl -L -o anon_download.bin http://127.0.0.1:8000/anon/<link_id>
+
+# Health check (saber se o server esta vivo)
+curl -s http://127.0.0.1:8000/
+
+# Verificar token OIDC autenticado
+curl -s -H "Authorization: Bearer $API_TOKEN" http://127.0.0.1:8000/users/me
+
+
+
+
+source venv/bin/activate
+./venv/bin/python -m pytest -q
+bandit -r server/ cli/
+pip-audit
+detect-secrets scan
