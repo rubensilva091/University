@@ -1,0 +1,121 @@
+image,full_image,default_tag,category,recommended_scan_tag,analysis_focus,notes
+nginx,nginx:latest,latest,Web & Reverse Proxies,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+httpd,httpd:latest,latest,Web & Reverse Proxies,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+caddy,caddy:latest,latest,Web & Reverse Proxies,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+traefik,traefik:latest,latest,Web & Reverse Proxies,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+haproxy,haproxy:latest,latest,Web & Reverse Proxies,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+envoyproxy/envoy,envoyproxy/envoy:latest,latest,Web & Reverse Proxies,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+varnish,varnish:latest,latest,Web & Reverse Proxies,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+tomcat,tomcat:latest,latest,Web & Reverse Proxies,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+jetty,jetty:latest,latest,Web & Reverse Proxies,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+php,php:latest,latest,Web & Reverse Proxies,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+gunicorn,gunicorn:latest,latest,Web & Reverse Proxies,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+uwsgi,uwsgi:latest,latest,Web & Reverse Proxies,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+openresty/openresty,openresty/openresty:latest,latest,Web & Reverse Proxies,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+node,node:latest,latest,Web & Reverse Proxies,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+django,django:latest,latest,Web & Reverse Proxies,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+flask,flask:latest,latest,Web & Reverse Proxies,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+ruby,ruby:latest,latest,Web & Reverse Proxies,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+laravelphp/php-fpm,laravelphp/php-fpm:latest,latest,Web & Reverse Proxies,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+expressjs/express,expressjs/express:latest,latest,Web & Reverse Proxies,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+springboot,springboot:latest,latest,Web & Reverse Proxies,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+mysql,mysql:latest,latest,Databases,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+postgres,postgres:latest,latest,Databases,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+mariadb,mariadb:latest,latest,Databases,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+mongo,mongo:latest,latest,Databases,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+redis,redis:latest,latest,Databases,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+cassandra,cassandra:latest,latest,Databases,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+neo4j,neo4j:latest,latest,Databases,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+couchdb,couchdb:latest,latest,Databases,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+influxdb,influxdb:latest,latest,Databases,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+elasticsearch,elasticsearch:latest,latest,Databases,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+clickhouse/clickhouse-server,clickhouse/clickhouse-server:latest,latest,Databases,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+timescale/timescaledb,timescale/timescaledb:latest,latest,Databases,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+orientdb,orientdb:latest,latest,Databases,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+arangodb,arangodb:latest,latest,Databases,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+memcached,memcached:latest,latest,Databases,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+cockroachdb/cockroach,cockroachdb/cockroach:latest,latest,Databases,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+hbase,hbase:latest,latest,Databases,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+firebird,firebird:latest,latest,Databases,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+solr,solr:latest,latest,Databases,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+amazon/dynamodb-local,amazon/dynamodb-local:latest,latest,Databases,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+jenkins/jenkins,jenkins/jenkins:latest,latest,CI/CD & DevOps,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+gitlab/gitlab-ce,gitlab/gitlab-ce:latest,latest,CI/CD & DevOps,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+sonarqube,sonarqube:latest,latest,CI/CD & DevOps,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+gitea/gitea,gitea/gitea:latest,latest,CI/CD & DevOps,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+drone/drone,drone/drone:latest,latest,CI/CD & DevOps,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+buildkite/agent,buildkite/agent:latest,latest,CI/CD & DevOps,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+jetbrains/teamcity-server,jetbrains/teamcity-server:latest,latest,CI/CD & DevOps,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+spinnaker/spinnaker,spinnaker/spinnaker:latest,latest,CI/CD & DevOps,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+argoproj/argocd,argoproj/argocd:latest,latest,CI/CD & DevOps,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+goharbor/harbor-core,goharbor/harbor-core:latest,latest,CI/CD & DevOps,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+sonatype/nexus3,sonatype/nexus3:latest,latest,CI/CD & DevOps,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+jfrog/artifactory-oss,jfrog/artifactory-oss:latest,latest,CI/CD & DevOps,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+keycloak/keycloak,keycloak/keycloak:latest,latest,CI/CD & DevOps,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+hashicorp/vault,hashicorp/vault:latest,latest,CI/CD & DevOps,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+rundeck/rundeck,rundeck/rundeck:latest,latest,CI/CD & DevOps,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+ansible/awx,ansible/awx:latest,latest,CI/CD & DevOps,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+hashicorp/terraform,hashicorp/terraform:latest,latest,CI/CD & DevOps,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+openfaas/gateway,openfaas/gateway:latest,latest,CI/CD & DevOps,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+apache/superset,apache/superset:latest,latest,CI/CD & DevOps,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+ansible/awx-web,ansible/awx-web:latest,latest,CI/CD & DevOps,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+grafana/grafana,grafana/grafana:latest,latest,Observability,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+prom/prometheus,prom/prometheus:latest,latest,Observability,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+kibana,kibana:latest,latest,Observability,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+docker.elastic.co/elasticsearch/elasticsearch,docker.elastic.co/elasticsearch/elasticsearch:latest,latest,Observability,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+jaegertracing/all-in-one,jaegertracing/all-in-one:latest,latest,Observability,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+openzipkin/zipkin,openzipkin/zipkin:latest,latest,Observability,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+graylog/graylog,graylog/graylog:latest,latest,Observability,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+fluent/fluentd,fluent/fluentd:latest,latest,Observability,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+grafana/loki,grafana/loki:latest,latest,Observability,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+otel/opentelemetry-collector,otel/opentelemetry-collector:latest,latest,Observability,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+netdata/netdata,netdata/netdata:latest,latest,Observability,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+victoriametrics/victoria-metrics,victoriametrics/victoria-metrics:latest,latest,Observability,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+zabbix/zabbix-server-mysql,zabbix/zabbix-server-mysql:latest,latest,Observability,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+thanosio/thanos,thanosio/thanos:latest,latest,Observability,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+signalfx/splunk-otel-collector,signalfx/splunk-otel-collector:latest,latest,Observability,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+instana/agent,instana/agent:latest,latest,Observability,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+elastic/logstash,elastic/logstash:latest,latest,Observability,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+prom/node-exporter,prom/node-exporter:latest,latest,Observability,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+prom/alertmanager,prom/alertmanager:latest,latest,Observability,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+grafana/tempo,grafana/tempo:latest,latest,Observability,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+confluentinc/cp-kafka,confluentinc/cp-kafka:latest,latest,Message Brokers,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+rabbitmq,rabbitmq:latest,latest,Message Brokers,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+rmohr/activemq,rmohr/activemq:latest,latest,Message Brokers,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+nats,nats:latest,latest,Message Brokers,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+apache/pulsar,apache/pulsar:latest,latest,Message Brokers,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+bitnami/kafka,bitnami/kafka:latest,latest,Message Brokers,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+bitnami/rabbitmq,bitnami/rabbitmq:latest,latest,Message Brokers,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+emqx/emqx,emqx/emqx:latest,latest,Message Brokers,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+vernemq/vernemq,vernemq/vernemq:latest,latest,Message Brokers,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+mosquitto,mosquitto:latest,latest,Message Brokers,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+apache/rocketmq,apache/rocketmq:latest,latest,Message Brokers,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+redpanda/redpanda,redpanda/redpanda:latest,latest,Message Brokers,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+nsqio/nsq,nsqio/nsq:latest,latest,Message Brokers,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+lightbend/activemq,lightbend/activemq:latest,latest,Message Brokers,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+cloudamqp/lavinmq,cloudamqp/lavinmq:latest,latest,Message Brokers,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+synadia/nats-server,synadia/nats-server:latest,latest,Message Brokers,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+vectorized/redpanda,vectorized/redpanda:latest,latest,Message Brokers,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+kafka-manager,kafka-manager:latest,latest,Message Brokers,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+spotify/kafka,spotify/kafka:latest,latest,Message Brokers,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+apache/streampark,apache/streampark:latest,latest,Message Brokers,latest,Application-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+python,python:latest,latest,Base Runtime / Supply Chain,latest,OS-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+node,node:latest,latest,Base Runtime / Supply Chain,latest,OS-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+openjdk,openjdk:latest,latest,Base Runtime / Supply Chain,latest,OS-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+golang,golang:latest,latest,Base Runtime / Supply Chain,latest,OS-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+php,php:latest,latest,Base Runtime / Supply Chain,latest,OS-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+perl,perl:latest,latest,Base Runtime / Supply Chain,latest,OS-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+rust,rust:latest,latest,Base Runtime / Supply Chain,latest,OS-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+alpine,alpine:latest,latest,Base Runtime / Supply Chain,latest,OS-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+debian,debian:latest,latest,Base Runtime / Supply Chain,latest,OS-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+ubuntu,ubuntu:latest,latest,Base Runtime / Supply Chain,latest,OS-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+python,python:slim,slim,Base Runtime / Supply Chain,slim,OS-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+node,node:alpine,alpine,Base Runtime / Supply Chain,alpine,OS-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+openjdk,openjdk:17-jdk-slim,17-jdk-slim,Base Runtime / Supply Chain,17-jdk-slim,OS-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+golang,golang:alpine,alpine,Base Runtime / Supply Chain,alpine,OS-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+php,php:apache,apache,Base Runtime / Supply Chain,apache,OS-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+ruby,ruby:slim,slim,Base Runtime / Supply Chain,slim,OS-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+busybox,busybox:latest,latest,Base Runtime / Supply Chain,latest,OS-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+centos,centos:latest,latest,Base Runtime / Supply Chain,latest,OS-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+oraclelinux,oraclelinux:latest,latest,Base Runtime / Supply Chain,latest,OS-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
+amazonlinux,amazonlinux:latest,latest,Base Runtime / Supply Chain,latest,OS-layer & dependency CVEs,Use fixed tag instead of 'latest' for reproducibility
