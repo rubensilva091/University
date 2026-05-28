@@ -1,0 +1,34 @@
+
+-------------------------------------------------------------------------------------------
+# Configuration
+-------------------------------------------------------------------------------------------
+Root - /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_01
+Source - /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_01
+Remappings - []
+EVM version - prague
+-------------------------------------------------------------------------------------------
+# Source Scope
+-------------------------------------------------------------------------------------------
+Include Filepaths Containing - [
+    "MVE_O1_Fixed.sol",
+]
+Exclude Filepaths Containing - No specific criteria.
+Auto Excluding Files - [
+    "lib",
+    "test",
+    "script",
+]
+-------------------------------------------------------------------------------------------
+# Compiling Abstract Syntax Trees
+-------------------------------------------------------------------------------------------
+Ingesting 1 compiled files [solc : v0.8.20]
+-------------------------------------------------------------------------------------------
+# Scanning Contracts
+-------------------------------------------------------------------------------------------
+Running 88 detectors
+Detectors run, printing report.
+Report printed to /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/results/aderyn/OWASP_01_MVE_O1_Fixed.md
+
+🐦 Aderyn finds bugs. You write safer code.
+⭐ Star us on GitHub if that sounds fair:
+https://github.com/Cyfrin/aderyn

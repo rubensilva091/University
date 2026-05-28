@@ -1,0 +1,34 @@
+
+-------------------------------------------------------------------------------------------
+# Configuration
+-------------------------------------------------------------------------------------------
+Root - /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_09
+Source - /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_09
+Remappings - []
+EVM version - prague
+-------------------------------------------------------------------------------------------
+# Source Scope
+-------------------------------------------------------------------------------------------
+Include Filepaths Containing - [
+    "MVE_O9_Vuln.sol",
+]
+Exclude Filepaths Containing - No specific criteria.
+Auto Excluding Files - [
+    "lib",
+    "test",
+    "script",
+]
+-------------------------------------------------------------------------------------------
+# Compiling Abstract Syntax Trees
+-------------------------------------------------------------------------------------------
+Ingesting 1 compiled files [solc : v0.8.20]
+-------------------------------------------------------------------------------------------
+# Scanning Contracts
+-------------------------------------------------------------------------------------------
+Running 88 detectors
+Detectors run, printing report.
+Report printed to /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/results/aderyn/OWASP_09_MVE_O9_Vuln.md
+
+💡 Did Aderyn help you today?
+Show some love with a quick star on GitHub Star ⭐
+https://github.com/Cyfrin/aderyn

@@ -1,0 +1,27 @@
+==== Integer Arithmetic Bugs ====
+SWC ID: 101
+Severity: High
+Contract: MVE_O9_Vuln
+Function name: mint(uint256)
+PC address: 519
+Estimated Gas Usage: 13222 - 53507
+The arithmetic operator can overflow.
+It is possible to cause an integer overflow or underflow in the arithmetic operation. 
+--------------------
+In file: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_09/MVE_O9_Vuln.sol:16
+
+totalSupply += amount
+
+--------------------
+Initial State:
+
+Account: [CREATOR], balance: 0x0, nonce:0, storage:{}
+Account: [ATTACKER], balance: 0x0, nonce:0, storage:{}
+
+Transaction Sequence:
+
+Caller: [CREATOR], calldata: , decoded_data: , value: 0x0
+Caller: [SOMEGUY], function: mint(uint256), txdata: 0xa0712d6800000000000000000000000000000000000000000000c000210589c000000001, decoded_data: (906696744170407742930945,), value: 0x0
+Caller: [CREATOR], function: mint(uint256), txdata: 0xa0712d68ffffffffffffffffffffffffffffffffffffffffffff54108608151c9d236989, decoded_data: (115792089237316195423570985008687907853269984665640563227515354852127041350025,), value: 0x0
+
+

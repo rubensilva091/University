@@ -1,0 +1,34 @@
+
+-------------------------------------------------------------------------------------------
+# Configuration
+-------------------------------------------------------------------------------------------
+Root - /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_05
+Source - /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_05
+Remappings - []
+EVM version - prague
+-------------------------------------------------------------------------------------------
+# Source Scope
+-------------------------------------------------------------------------------------------
+Include Filepaths Containing - [
+    "MVE_O5_Fixed2.sol",
+]
+Exclude Filepaths Containing - No specific criteria.
+Auto Excluding Files - [
+    "lib",
+    "test",
+    "script",
+]
+-------------------------------------------------------------------------------------------
+# Compiling Abstract Syntax Trees
+-------------------------------------------------------------------------------------------
+Ingesting 1 compiled files [solc : v0.8.20]
+-------------------------------------------------------------------------------------------
+# Scanning Contracts
+-------------------------------------------------------------------------------------------
+Running 88 detectors
+Detectors run, printing report.
+Report printed to /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/results/aderyn/OWASP_05_MVE_O5_Fixed2.md
+
+✔ Aderyn did its job. Solidity's a bit safer now.
+💫 Like the tool? A star on GitHub goes a long way:
+https://github.com/Cyfrin/aderyn

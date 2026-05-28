@@ -1,0 +1,34 @@
+
+-------------------------------------------------------------------------------------------
+# Configuration
+-------------------------------------------------------------------------------------------
+Root - /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_10
+Source - /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_10
+Remappings - []
+EVM version - prague
+-------------------------------------------------------------------------------------------
+# Source Scope
+-------------------------------------------------------------------------------------------
+Include Filepaths Containing - [
+    "MVE_O10_Fixed.sol",
+]
+Exclude Filepaths Containing - No specific criteria.
+Auto Excluding Files - [
+    "lib",
+    "test",
+    "script",
+]
+-------------------------------------------------------------------------------------------
+# Compiling Abstract Syntax Trees
+-------------------------------------------------------------------------------------------
+Ingesting 1 compiled files [solc : v0.8.20]
+-------------------------------------------------------------------------------------------
+# Scanning Contracts
+-------------------------------------------------------------------------------------------
+Running 88 detectors
+Detectors run, printing report.
+Report printed to /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/results/aderyn/OWASP_10_MVE_O10_Fixed.md
+
+🛡️ Together we make Solidity safer.
+✨ Support open-source security — star Aderyn:
+https://github.com/Cyfrin/aderyn
