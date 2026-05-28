@@ -1,0 +1,35 @@
+               
+               
+┌─────────────┐
+│ Scan Status │
+└─────────────┘
+  Scanning 1 file tracked by git with 50 Code rules:
+  Scanning 1 file with 50 solidity rules.
+                
+                
+┌──────────────┐
+│ Scan Summary │
+└──────────────┘
+
+Ran 50 rules on 1 file: 1 finding.
+
+A new version of Semgrep is available. See https://semgrep.dev/docs/upgrading
+
+Versions prior to 1.76.0 are no longer supported by Semgrep.dev, please upgrade.
+                  
+                  
+┌────────────────┐
+│ 1 Code Finding │
+└────────────────┘
+                                                                                                        
+    /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_10/MVE_O10_Fixed.sol
+     ❱ solidity.performance.non-payable-constructor.non-payable-constructor
+          Consider making costructor payable to save gas.
+          Details: https://sg.run/wRBd                   
+                                                         
+           10┆ constructor(address initialImpl) {
+           11┆     // [FIX] Inicializacao feita no constructor para nao deixar janela de takeover.
+           12┆     owner = msg.sender;
+           13┆     implementation = initialImpl;
+           14┆ }
+

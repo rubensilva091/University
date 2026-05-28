@@ -1,0 +1,135 @@
+Warning: unused option: solcVersion
+[2026-04-19 19:50:20.85] Compiling `test/OWASP_03_Fuzz.sol`... Done! (0.577852556s)
+Analyzing contract: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/test/OWASP_03_Fuzz.sol:OWASP_03_VulnFuzz
+[2026-04-19 19:50:21.45] Running slither on `test/OWASP_03_Fuzz.sol`... Done! (0.219121808s)
+Loaded 2 transaction sequences from corpus/echidna/reproducers
+Loaded 25 transaction sequences from corpus/echidna/coverage
+[2026-04-19 19:50:21.89] [Worker 0] Sequence replayed from corpus file 1452189698738998941.txt (1/7)
+[2026-04-19 19:50:21.89] [Worker 0] New coverage: 828 instr, 3 contracts, 1 seqs in corpus
+[2026-04-19 19:50:21.89] [Worker 0] Sequence replayed from corpus file 6268667897113576196.txt (2/7)
+[2026-04-19 19:50:21.89] [Worker 3] New coverage: 970 instr, 3 contracts, 2 seqs in corpus
+[2026-04-19 19:50:21.89] [Worker 3] Sequence replayed from corpus file 7929481060142103425.txt (1/6)
+[2026-04-19 19:50:21.89] [Worker 1] New coverage: 970 instr, 3 contracts, 3 seqs in corpus
+[2026-04-19 19:50:21.89] [Worker 1] Sequence replayed from corpus file 2211506572492669667.txt (1/7)
+[2026-04-19 19:50:21.90] [Worker 2] New coverage: 970 instr, 3 contracts, 4 seqs in corpus
+[2026-04-19 19:50:21.90] [Worker 2] Sequence replayed from corpus file 5575027256662893171.txt (1/7)
+[2026-04-19 19:50:21.90] [Worker 0] Sequence replayed from corpus file 1272315269480093113.txt (3/7)
+[2026-04-19 19:50:21.90] [Worker 3] Sequence replayed from corpus file 8501008337639773828.txt (2/6)
+[2026-04-19 19:50:21.90] [Worker 2] Sequence replayed from corpus file 5721394929084608143.txt (2/7)
+[2026-04-19 19:50:21.91] [Worker 1] Sequence replayed from corpus file 2581688877749071989.txt (2/7)
+[2026-04-19 19:50:21.91] [Worker 0] Sequence replayed from corpus file 136422028706997084.txt (4/7)
+[2026-04-19 19:50:21.91] [Worker 0] Sequence replayed from corpus file 1452189698738998941.txt (5/7)
+[2026-04-19 19:50:21.92] [Worker 3] Sequence replayed from corpus file 8606019225071093899.txt (3/6)
+[2026-04-19 19:50:21.92] [Worker 2] Sequence replayed from corpus file 591135091102608615.txt (3/7)
+[2026-04-19 19:50:21.92] [Worker 1] Sequence replayed from corpus file 2631726265439469501.txt (3/7)
+[2026-04-19 19:50:21.93] [Worker 0] Sequence replayed from corpus file 1525686000149373029.txt (6/7)
+[2026-04-19 19:50:21.93] [Worker 3] Sequence replayed from corpus file 8721571438615730015.txt (4/6)
+[2026-04-19 19:50:21.93] [Worker 2] Sequence replayed from corpus file 6166497993522157865.txt (4/7)
+[2026-04-19 19:50:21.93] [Worker 2] Sequence replayed from corpus file 6268667897113576196.txt (5/7)
+[2026-04-19 19:50:21.94] [Worker 1] Sequence replayed from corpus file 3246821641138614846.txt (4/7)
+[2026-04-19 19:50:21.94] [Worker 0] Sequence replayed from corpus file 2079185573936702883.txt (7/7)
+[2026-04-19 19:50:21.95] [Worker 3] Sequence replayed from corpus file 8746510944181660177.txt (5/6)
+[2026-04-19 19:50:21.95] [Worker 2] Sequence replayed from corpus file 7545842089752992081.txt (6/7)
+[2026-04-19 19:50:21.95] [Worker 1] Sequence replayed from corpus file 331579483070239335.txt (5/7)
+[2026-04-19 19:50:21.97] [Worker 3] Sequence replayed from corpus file 88918879106246972.txt (6/6)
+[2026-04-19 19:50:21.97] [Worker 2] Sequence replayed from corpus file 7599293948694684908.txt (7/7)
+[2026-04-19 19:50:21.97] [Worker 1] Sequence replayed from corpus file 3641147411829365675.txt (6/7)
+[2026-04-19 19:50:21.99] [Worker 3] New coverage: 2077 instr, 3 contracts, 5 seqs in corpus
+[2026-04-19 19:50:21.99] [Worker 0] New coverage: 2077 instr, 3 contracts, 6 seqs in corpus
+[2026-04-19 19:50:21.99] [Worker 1] Sequence replayed from corpus file 4218044368707527926.txt (7/7)
+[2026-04-19 19:50:22.01]  Saved reproducer to corpus/echidna/coverage/6125864171135646698.txt
+[2026-04-19 19:50:22.03] [Worker 2] New coverage: 2195 instr, 3 contracts, 7 seqs in corpus
+[2026-04-19 19:50:22.03] [Worker 3] New coverage: 2195 instr, 3 contracts, 8 seqs in corpus
+[2026-04-19 19:50:22.03]  Saved reproducer to corpus/echidna/coverage/3780014410365988224.txt
+[2026-04-19 19:50:22.03] [Worker 0] New coverage: 2195 instr, 3 contracts, 9 seqs in corpus
+[2026-04-19 19:50:22.05]  Saved reproducer to corpus/echidna/coverage/3117107370078894828.txt
+[2026-04-19 19:50:22.07]  Saved reproducer to corpus/echidna/coverage/4722320367017727553.txt
+[2026-04-19 19:50:22.08]  Saved reproducer to corpus/echidna/coverage/2954796917231162347.txt
+[2026-04-19 19:50:22.10] [Worker 3] Test echidna_no_overborrow falsified!
+  Call sequence:
+OWASP_03_VulnFuzz.claimBonus() from: 0x0000000000000000000000000000000000010000
+MVE_O3_Vuln.seedLiquidity() from: 0x0000000000000000000000000000000000010000 Time delay: 82670 seconds Block delay: 8447
+MockSpotPool.spotPriceE18() from: 0x0000000000000000000000000000000000030000 Time delay: 83002 seconds Block delay: 60248
+OWASP_03_VulnFuzz.borrow(43110282738504964424895451096610339149285692577779501671469973441353098216068) from: 0x0000000000000000000000000000000000020000 Time delay: 386819 seconds Block delay: 38707
+MVE_O3_Vuln.maxBorrow(0x10000) from: 0x0000000000000000000000000000000000020000 Time delay: 318775 seconds Block delay: 53451
+OWASP_03_VulnFuzz.borrow(30272265568413774889107067874843606622243940081518749882292084461028664949485) from: 0x0000000000000000000000000000000000020000 Time delay: 540356 seconds Block delay: 15367
+MVE_O3_Vuln.maxBorrow(0x10000) from: 0x0000000000000000000000000000000000020000 Time delay: 540361 seconds Block delay: 28743
+MVE_O3_Vuln.borrow(32036695068498369107191425445918637134926431059555821680843996799642153880366) from: 0x0000000000000000000000000000000000020000 Time delay: 50417 seconds Block delay: 19350
+MockSpotPool.setSpotPrice(41214125356758549235033529495398185823709560746406325093983432669772126854646) from: 0x0000000000000000000000000000000000020000 Time delay: 563507 seconds Block delay: 38705
+MVE_O3_Vuln.maxBorrow(0xffffffff) from: 0x0000000000000000000000000000000000030000 Time delay: 168835 seconds Block delay: 20243
+OWASP_03_VulnFuzz.borrow(999999999999999998) from: 0x0000000000000000000000000000000000010000 Time delay: 24867 seconds Block delay: 38705
+MVE_O3_Vuln.seedLiquidity() from: 0x0000000000000000000000000000000000010000 Time delay: 347836 seconds Block delay: 7323
+OWASP_03_VulnFuzz.*fallback*() from: 0x0000000000000000000000000000000000030000 Value: 0x3511689ec198fffe8 Time delay: 463588 seconds Block delay: 19354
+OWASP_03_VulnFuzz.borrow(48) from: 0x0000000000000000000000000000000000010000 Time delay: 540361 seconds Block delay: 42472
+MockSpotPool.spotPriceE18() from: 0x0000000000000000000000000000000000030000 Time delay: 303345 seconds Block delay: 30256
+MVE_O3_Vuln.collateral(0x2fffffffd) from: 0x0000000000000000000000000000000000010000 Time delay: 153540 seconds Block delay: 19354
+MockSpotPool.spotPriceE18() from: 0x0000000000000000000000000000000000010000 Time delay: 3601 seconds Block delay: 24987
+MVE_O3_Vuln.depositCollateral() from: 0x0000000000000000000000000000000000020000 Time delay: 322278 seconds Block delay: 47075
+MockSpotPool.spotPriceE18() from: 0x0000000000000000000000000000000000010000 Time delay: 386817 seconds Block delay: 6234
+OWASP_03_VulnFuzz.*fallback*() from: 0x0000000000000000000000000000000000030000 Value: 0xffffff Time delay: 437838 seconds Block delay: 38706
+MockSpotPool.spotPriceE18() from: 0x0000000000000000000000000000000000010000 Time delay: 3603 seconds Block delay: 12076
+MVE_O3_Vuln.seedLiquidity() from: 0x0000000000000000000000000000000000010000 Time delay: 32767 seconds Block delay: 5216
+MockSpotPool.setSpotPrice(85130434606109447156618461112870976893814114728706193507645694268659938360664) from: 0x0000000000000000000000000000000000030000 Time delay: 168835 seconds Block delay: 99
+MockSpotPool.spotPriceE18() from: 0x0000000000000000000000000000000000020000 Time delay: 50417 seconds Block delay: 38706
+MVE_O3_Vuln.depositCollateral() from: 0x0000000000000000000000000000000000020000 Time delay: 414736 seconds Block delay: 5023
+MVE_O3_Vuln.borrow(0) from: 0x0000000000000000000000000000000000030000 Time delay: 490448 seconds Block delay: 97
+MVE_O3_Vuln.collateral(0x2fffffffd) from: 0x0000000000000000000000000000000000030000 Time delay: 277232 seconds Block delay: 5219
+OWASP_03_VulnFuzz.borrow(115792089237316195423570985008687907853269984665640564039457584007913129639837) from: 0x0000000000000000000000000000000000010000 Time delay: 525476 seconds Block delay: 24987
+MockSpotPool.spotPriceE18() from: 0x0000000000000000000000000000000000010000 Time delay: 16802 seconds Block delay: 50499
+OWASP_03_VulnFuzz.*fallback*() from: 0x0000000000000000000000000000000000010000 Value: 0x8ac7230489e7ffff Time delay: 127251 seconds Block delay: 47
+MockSpotPool.setSpotPrice(101) from: 0x0000000000000000000000000000000000030000 Time delay: 209930 seconds Block delay: 11905
+OWASP_03_VulnFuzz.*fallback*() from: 0x0000000000000000000000000000000000020000 Value: 0x3a38d91324a4be2d4 Time delay: 448552 seconds Block delay: 13108
+OWASP_03_VulnFuzz.*fallback*() from: 0x0000000000000000000000000000000000020000 Value: 0x3a38d9132ca4be2d3 Time delay: 168838 seconds Block delay: 46154
+MVE_O3_Vuln.collateral(0xffffffff) from: 0x0000000000000000000000000000000000020000 Time delay: 153537 seconds Block delay: 255
+MVE_O3_Vuln.borrow(14334643732401244) from: 0x0000000000000000000000000000000000030000 Time delay: 582451 seconds Block delay: 2497
+MockSpotPool.setSpotPrice(12331717819885740708555219800377714289953724169284510004992067698209969738478) from: 0x0000000000000000000000000000000000010000 Time delay: 117472 seconds Block delay: 12074
+OWASP_03_VulnFuzz.borrow(81645173034108866621141386935765023706352572183019641618251485302949624301980) from: 0x0000000000000000000000000000000000030000 Time delay: 415353 seconds Block delay: 3603
+MockSpotPool.spotPriceE18() from: 0x0000000000000000000000000000000000030000 Time delay: 440097 seconds Block delay: 53429
+MockSpotPool.spotPriceE18() from: 0x0000000000000000000000000000000000020000 Time delay: 271957 seconds Block delay: 42595
+MockSpotPool.spotPriceE18() from: 0x0000000000000000000000000000000000030000 Time delay: 512439 seconds Block delay: 58832
+MockSpotPool.setSpotPrice(1000000000000000002) from: 0x0000000000000000000000000000000000020000 Time delay: 386815 seconds Block delay: 12053
+MVE_O3_Vuln.seedLiquidity() from: 0x0000000000000000000000000000000000010000 Time delay: 386819 seconds Block delay: 36859
+MVE_O3_Vuln.depositCollateral() from: 0x0000000000000000000000000000000000020000 Time delay: 275394 seconds Block delay: 5952
+MVE_O3_Vuln.collateral(0xffffffff) from: 0x0000000000000000000000000000000000030000 Time delay: 305572 seconds Block delay: 19349
+MVE_O3_Vuln.maxBorrow(0x1fffffffe) from: 0x0000000000000000000000000000000000030000 Time delay: 237584 seconds Block delay: 26804
+MockSpotPool.spotPriceE18() from: 0x0000000000000000000000000000000000020000 Time delay: 390247 seconds Block delay: 38702
+MVE_O3_Vuln.seedLiquidity() from: 0x0000000000000000000000000000000000010000 Time delay: 24828 seconds Block delay: 60248
+MockSpotPool.spotPriceE18() from: 0x0000000000000000000000000000000000010000 Time delay: 166184 seconds Block delay: 37097
+OWASP_03_VulnFuzz.*fallback*() from: 0x0000000000000000000000000000000000030000 Value: 0x65 Time delay: 192778 seconds Block delay: 10875
+OWASP_03_VulnFuzz.*fallback*() from: 0x0000000000000000000000000000000000020000 Value: 0x2f Time delay: 195123 seconds Block delay: 23885
+OWASP_03_VulnFuzz.borrow(31101901905410967490196368423718879035866414703768087919821371499172175853258) from: 0x0000000000000000000000000000000000010000 Time delay: 386819 seconds Block delay: 50116
+MockSpotPool.spotPriceE18() from: 0x0000000000000000000000000000000000030000 Time delay: 32767 seconds Block delay: 1984
+OWASP_03_VulnFuzz.borrow(0) from: 0x0000000000000000000000000000000000010000 Time delay: 100835 seconds Block delay: 20976
+OWASP_03_VulnFuzz.borrow(0) from: 0x0000000000000000000000000000000000020000 Time delay: 3598 seconds Block delay: 22699
+MockSpotPool.setSpotPrice(10000000000000000002) from: 0x0000000000000000000000000000000000010000 Time delay: 239371 seconds Block delay: 58832
+MockSpotPool.spotPriceE18() from: 0x0000000000000000000000000000000000020000 Time delay: 209930 seconds Block delay: 12080
+OWASP_03_VulnFuzz.borrow(3603) from: 0x0000000000000000000000000000000000010000 Time delay: 172101 seconds Block delay: 9966
+MVE_O3_Vuln.borrow(91541691224554834700948936677024543164072574870896446225624093754939854736425) from: 0x0000000000000000000000000000000000020000 Time delay: 153538 seconds Block delay: 9920
+OWASP_03_VulnFuzz.borrow(2000000000000000001) from: 0x0000000000000000000000000000000000010000 Time delay: 322324 seconds Block delay: 60290
+
+[2026-04-19 19:50:22.10] [Worker 2] Test limit reached. Stopping.
+[2026-04-19 19:50:22.11]  Saved reproducer to corpus/echidna/reproducers-unshrunk/8659684586423953179.txt
+[2026-04-19 19:50:22.12] [Worker 1] New coverage: 2198 instr, 3 contracts, 10 seqs in corpus
+[2026-04-19 19:50:22.12] [Worker 1] Test limit reached. Stopping.
+[2026-04-19 19:50:22.12] [Worker 0] Test limit reached. Stopping.
+[2026-04-19 19:50:22.13]  Saved reproducer to corpus/echidna/coverage/2366693484020494489.txt
+[2026-04-19 19:50:24.77] [Worker 3] Test limit reached. Stopping.
+[2026-04-19 19:50:24.77] [status] tests: 1/1, fuzzing: 4270/50000, values: [], cov: 2198, corpus: 10, gas/s: 33850555
+echidna_no_overborrow: failed!💥  
+  Call sequence:
+    MockSpotPool.setSpotPrice(2004610321094734358)
+    OWASP_03_VulnFuzz.borrow(1000388216819405516)
+
+Traces: 
+
+
+Unique instructions: 2198
+Unique codehashes: 3
+Corpus size: 10
+Seed: 521028897934971049
+Total calls: 4270
+
+[2026-04-19 19:50:24.77] Saving test reproducers... Done! (0.009328672s)
+[2026-04-19 19:50:24.78] Saving corpus... Done! (0.048347461s)
+[2026-04-19 19:50:24.83] Saving foundry reproducers... Done! (0.006558669s)
+[2026-04-19 19:50:24.84] Saving coverage... Done! (0.038321703s)

@@ -1,0 +1,46 @@
+               
+               
+┌─────────────┐
+│ Scan Status │
+└─────────────┘
+  Scanning 1 file tracked by git with 50 Code rules:
+  Scanning 1 file with 50 solidity rules.
+                
+                
+┌──────────────┐
+│ Scan Summary │
+└──────────────┘
+
+Ran 50 rules on 1 file: 4 findings.
+
+A new version of Semgrep is available. See https://semgrep.dev/docs/upgrading
+
+Versions prior to 1.76.0 are no longer supported by Semgrep.dev, please upgrade.
+                   
+                   
+┌─────────────────┐
+│ 4 Code Findings │
+└─────────────────┘
+                                                                                                       
+    /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_03/MVE_O3_Fixed.sol
+     ❱ solidity.performance.non-payable-constructor.non-payable-constructor
+          Consider making costructor payable to save gas.
+          Details: https://sg.run/wRBd                   
+                                                         
+           19┆ constructor(uint256 initialTwapPriceE18) {
+           20┆     owner = msg.sender;
+           21┆     twapPriceE18 = initialTwapPriceE18;
+           22┆     lastPriceUpdate = block.timestamp;
+           23┆ }
+   
+     ❱ solidity.performance.use-custom-error-not-require.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+          Details: https://sg.run/ej3L                                                                      
+                                                                                                            
+           45┆ require(amount <= maxBorrow(msg.sender), "insufficient collateral");
+            ⋮┆----------------------------------------
+           47┆ require(amount <= address(this).balance, "insufficient liquidity");
+            ⋮┆----------------------------------------
+           51┆ require(ok, "transfer failed");
+

@@ -1,0 +1,374 @@
+Warning: unused option: solcVersion
+[2026-04-19 19:52:40.43] Compiling `test/OWASP_09_Fuzz.sol`... Done! (0.593891519s)
+Analyzing contract: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/test/OWASP_09_Fuzz.sol:OWASP_09_Vuln2Fuzz
+[2026-04-19 19:52:41.05] Running slither on `test/OWASP_09_Fuzz.sol`... Done! (0.239445892s)
+Loaded 8 transaction sequences from corpus/echidna/reproducers
+Loaded 111 transaction sequences from corpus/echidna/coverage
+[2026-04-19 19:52:40.03] [Worker 2] WARNING: Sequence replay from corpus file 5472587043690756556.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("token",[]), src = 0x10000, dst = 0X62D69F6867A0A084c6d313943dC22023BC263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x1d389,0x9de)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.04] [Worker 0] New coverage: 218 instr, 2 contracts, 1 seqs in corpus
+[2026-04-19 19:52:40.04] [Worker 0] Sequence replayed from corpus file 1147482941628608687.txt (1/30)
+[2026-04-19 19:52:40.04] [Worker 0] Sequence replayed from corpus file 1452189698738998941.txt (2/30)
+[2026-04-19 19:52:40.04] [Worker 0] Sequence replayed from corpus file 1827407018559690071.txt (3/30)
+[2026-04-19 19:52:40.04] [Worker 0] Sequence replayed from corpus file 429198744153474129.txt (4/30)
+[2026-04-19 19:52:40.04] [Worker 0] Sequence replayed from corpus file 6094103462352870298.txt (5/30)
+[2026-04-19 19:52:40.04] [Worker 0] Sequence replayed from corpus file 6268667897113576196.txt (6/30)
+[2026-04-19 19:52:40.04] [Worker 0] New coverage: 541 instr, 2 contracts, 2 seqs in corpus
+[2026-04-19 19:52:40.04] [Worker 0] Sequence replayed from corpus file 7436618234315522642.txt (7/30)
+[2026-04-19 19:52:40.04] [Worker 0] Sequence replayed from corpus file 8864806242903538408.txt (8/30)
+[2026-04-19 19:52:40.04] [Worker 0] Sequence replayed from corpus file 1147482941628608687.txt (9/30)
+[2026-04-19 19:52:40.04] [Worker 3] New coverage: 547 instr, 2 contracts, 3 seqs in corpus
+[2026-04-19 19:52:40.04] [Worker 3] Sequence replayed from corpus file 7599293948694684908.txt (1/29)
+[2026-04-19 19:52:40.04] [Worker 3] WARNING: Sequence replay from corpus file 7639076289776786253.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("recipient",[]), src = 0x20000, DsT = 0X62D69F6867A0A084C6d313943dc22023BC263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x81f7,0xff)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.04] [Worker 1] New coverage: 547 instr, 2 contracts, 4 seqs in corpus
+[2026-04-19 19:52:40.04] [Worker 1] Sequence replayed from corpus file 2606617850888215744.txt (1/30)
+[2026-04-19 19:52:40.04] [Worker 0] Sequence replayed from corpus file 1272315269480093113.txt (10/30)
+[2026-04-19 19:52:40.05] [Worker 1] Sequence replayed from corpus file 2631726265439469501.txt (2/30)
+[2026-04-19 19:52:40.05] [Worker 1] WARNING: Sequence replay from corpus file 291208446476461763.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("",[]), src = 0x30000, dsT = 0x62D69F6867a0a084C6D313943Dc22023bc263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x766e2,0x8dba)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.05] [Worker 1] WARNING: Sequence replay from corpus file 2954796917231162347.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("collateral",[0x0000000000000000000000000000000000020000]), src = 0x20000, dSt = 0X62D69F6867A0a084C6D313943dC22023bC263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x142ef,0x972d)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.05] [Worker 1] WARNING: Sequence replay from corpus file 3117107370078894828.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("seedLiquidity",[]), src = 0x10000, DST = 0X62d69F6867A0A084C6D313943dC22023BC263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x142ee,0x20ff)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.05] [Worker 1] WARNING: Sequence replay from corpus file 3192550829264154428.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("recipient",[]), src = 0x20000, DsT = 0X62D69F6867A0A084C6d313943dc22023BC263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x81f7,0xff)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.05] [Worker 2] New coverage: 858 instr, 2 contracts, 5 seqs in corpus
+[2026-04-19 19:52:40.05] [Worker 2] Sequence replayed from corpus file 5490418797474821883.txt (2/30)
+[2026-04-19 19:52:40.05] [Worker 0] Sequence replayed from corpus file 136422028706997084.txt (11/30)
+[2026-04-19 19:52:40.05] [Worker 3] Sequence replayed from corpus file 7687418961876039756.txt (3/29)
+[2026-04-19 19:52:40.05] [Worker 2] Sequence replayed from corpus file 5507714098716226568.txt (3/30)
+[2026-04-19 19:52:40.05] [Worker 1] Sequence replayed from corpus file 3246821641138614846.txt (7/30)
+[2026-04-19 19:52:40.05] [Worker 3] Sequence replayed from corpus file 7699557514531849610.txt (4/29)
+[2026-04-19 19:52:40.05] [Worker 0] Sequence replayed from corpus file 1376536911212113184.txt (12/30)
+[2026-04-19 19:52:40.06] [Worker 1] Sequence replayed from corpus file 331579483070239335.txt (8/30)
+[2026-04-19 19:52:40.06] [Worker 0] Sequence replayed from corpus file 143041619300913513.txt (13/30)
+[2026-04-19 19:52:40.06] [Worker 2] Sequence replayed from corpus file 5521875468737215411.txt (4/30)
+[2026-04-19 19:52:40.06] [Worker 3] Sequence replayed from corpus file 7737079549738675815.txt (5/29)
+[2026-04-19 19:52:40.06] [Worker 1] New coverage: 989 instr, 2 contracts, 6 seqs in corpus
+[2026-04-19 19:52:40.06] [Worker 1] Sequence replayed from corpus file 3495880772445906856.txt (9/30)
+[2026-04-19 19:52:40.06] [Worker 0] Sequence replayed from corpus file 1439132272604759769.txt (14/30)
+[2026-04-19 19:52:40.06] [Worker 1] WARNING: Sequence replay from corpus file 3624943762090496582.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("",[]), src = 0x30000, dst = 0X62D69F6867A0a084C6D313943dC22023Bc263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x214ca,0x7bd3)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.06] [Worker 0] Sequence replayed from corpus file 1452189698738998941.txt (15/30)
+[2026-04-19 19:52:40.06] [Worker 0] WARNING: Sequence replay from corpus file 1460048215756638408.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("recipient",[]), src = 0x10000, DsT = 0X62D69F6867A0A084C6D313943dC22023Bc263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x3b59a,0x94d4)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.07] [Worker 2] Sequence replayed from corpus file 5575027256662893171.txt (5/30)
+[2026-04-19 19:52:40.07] [Worker 0] WARNING: Sequence replay from corpus file 1463075273270198648.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("setTransfer",[0x00000000000000000000000000000002fFffFffD,101082200808776379417051405895222205267456552106249779501970073041349052085556]), src = 0x30000, dSt = 0x62D69F6867A0a084C6D313943dc22023BC263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x2fa33,0x1d1b)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.07] [Worker 1] Sequence replayed from corpus file 3641147411829365675.txt (11/30)
+[2026-04-19 19:52:40.07] [Worker 0] Sequence replayed from corpus file 1525686000149373029.txt (18/30)
+[2026-04-19 19:52:40.07] [Worker 0] Sequence replayed from corpus file 1827407018559690071.txt (19/30)
+[2026-04-19 19:52:40.07] [Worker 0] WARNING: Sequence replay from corpus file 1884772071553819129.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("token",[]), src = 0x10000, dst = 0X62D69F6867A0A084c6d313943dC22023BC263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x1d389,0x9de)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.07] [Worker 3] Sequence replayed from corpus file 7772850779330587216.txt (6/29)
+[2026-04-19 19:52:40.08] [Worker 1] Sequence replayed from corpus file 3719294952061211078.txt (12/30)
+[2026-04-19 19:52:40.08] [Worker 1] WARNING: Sequence replay from corpus file 3780014410365988224.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("collateral",[0x0000000000000000000000000000000000020000]), src = 0x20000, dSt = 0X62D69F6867A0a084C6D313943dC22023bC263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x142ef,0x972d)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.08] [Worker 1] WARNING: Sequence replay from corpus file 3896107562649724485.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("attack",[0]), src = 0x30000, dst = 0X62D69F6867A0A084c6D313943Dc22023BC263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x6123,0x1414)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.08] [Worker 0] Sequence replayed from corpus file 1934527165697504024.txt (21/30)
+[2026-04-19 19:52:40.08] [Worker 3] Sequence replayed from corpus file 7929481060142103425.txt (7/29)
+[2026-04-19 19:52:40.08] [Worker 3] WARNING: Sequence replay from corpus file 79624897523792426.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("",[]), src = 0x10000, DST = 0X62d69F6867A0A084C6D313943DC22023bc263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x6123,0x87a0)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.08] [Worker 3] WARNING: Sequence replay from corpus file 7967181382457404102.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("",[]), src = 0x10000, DST = 0X62d69F6867A0A084C6D313943DC22023bc263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x6123,0x87a0)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.08] [Worker 2] Sequence replayed from corpus file 5576911483803430156.txt (6/30)
+[2026-04-19 19:52:40.08] [Worker 3] Sequence replayed from corpus file 8009782160310800039.txt (10/29)
+[2026-04-19 19:52:40.08] [Worker 3] WARNING: Sequence replay from corpus file 8134831341088487080.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("recipient",[]), src = 0x10000, DsT = 0X62D69F6867A0A084C6D313943dC22023Bc263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x3b59a,0x94d4)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.08] [Worker 1] Sequence replayed from corpus file 3964615687887459273.txt (15/30)
+[2026-04-19 19:52:40.08] [Worker 2] Sequence replayed from corpus file 5721394929084608143.txt (7/30)
+[2026-04-19 19:52:40.08] [Worker 0] Sequence replayed from corpus file 2079185573936702883.txt (22/30)
+[2026-04-19 19:52:40.09] [Worker 2] WARNING: Sequence replay from corpus file 5737129264558432936.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("",[]), src = 0x10000, DsT = 0X62d69f6867A0A084C6d313943dC22023BC263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x5caa0,0x9cf)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.09] [Worker 0] Sequence replayed from corpus file 2115224329430076373.txt (23/30)
+[2026-04-19 19:52:40.09] [Worker 2] Sequence replayed from corpus file 591135091102608615.txt (9/30)
+[2026-04-19 19:52:40.09] [Worker 2] WARNING: Sequence replay from corpus file 606788451241787438.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("",[]), src = 0x10000, DST = 0X62d69F6867A0A084C6D313943DC22023bc263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x6123,0x87a0)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.09] [Worker 2] Sequence replayed from corpus file 6094103462352870298.txt (11/30)
+[2026-04-19 19:52:40.12] [Worker 2] WARNING: Sequence replay from corpus file 6125864171135646698.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("seedLiquidity",[]), src = 0x10000, dst = 0x62D69f6867A0A084c6D313943dC22023BC263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x214c9,0x9733)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.12] [Worker 0] Sequence replayed from corpus file 2211506572492669667.txt (24/30)
+[2026-04-19 19:52:40.12] [Worker 3] Sequence replayed from corpus file 8347600152285091172.txt (12/29)
+[2026-04-19 19:52:40.12] [Worker 2] Sequence replayed from corpus file 6166497993522157865.txt (13/30)
+[2026-04-19 19:52:40.13] [Worker 0] Sequence replayed from corpus file 2250046604256806773.txt (25/30)
+[2026-04-19 19:52:40.13] [Worker 1] New coverage: 1002 instr, 2 contracts, 7 seqs in corpus
+[2026-04-19 19:52:40.13] [Worker 1] Sequence replayed from corpus file 3994823774015811425.txt (16/30)
+[2026-04-19 19:52:40.13] [Worker 3] Sequence replayed from corpus file 8441367243832867278.txt (13/29)
+[2026-04-19 19:52:40.13] [Worker 2] Sequence replayed from corpus file 6172461052354861167.txt (14/30)
+[2026-04-19 19:52:40.13] [Worker 2] WARNING: Sequence replay from corpus file 6258690133758384969.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("transferAmount",[]), src = 0x30000, dsT = 0x62D69F6867A0A084C6D313943Dc22023BC263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x5ab46,0x87a0)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.13] [Worker 0] Sequence replayed from corpus file 2312620418010382677.txt (26/30)
+[2026-04-19 19:52:40.13] [Worker 2] WARNING: Sequence replay from corpus file 6259152366601792302.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("token",[]), src = 0x10000, dst = 0X62D69F6867A0A084c6d313943dC22023BC263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x1d389,0x9de)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.13] [Worker 0] WARNING: Sequence replay from corpus file 2366693484020494489.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("seedLiquidity",[]), src = 0x10000, dst = 0x62D69f6867A0A084c6D313943dC22023BC263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x214c9,0x9733)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.13] [Worker 2] Sequence replayed from corpus file 6268667897113576196.txt (17/30)
+[2026-04-19 19:52:40.14] [Worker 2] Sequence replayed from corpus file 6275325763679058407.txt (18/30)
+[2026-04-19 19:52:40.14] [Worker 0] Sequence replayed from corpus file 2504713298031812608.txt (28/30)
+[2026-04-19 19:52:40.14] [Worker 2] WARNING: Sequence replay from corpus file 6445395239242402955.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("token",[]), src = 0x10000, dst = 0X62D69F6867A0A084c6d313943dC22023BC263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x1d389,0x9de)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.14] [Worker 2] WARNING: Sequence replay from corpus file 6480990898981786261.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("",[]), src = 0x20000, DSt = 0x62D69F6867a0a084C6D313943DC22023bC263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x712e3,0x1b23)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.14] [Worker 2] WARNING: Sequence replay from corpus file 6487040641841097174.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("",[]), src = 0x10000, DST = 0X62d69F6867A0A084C6D313943DC22023bc263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x6123,0x87a0)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.14] [Worker 3] Sequence replayed from corpus file 8475969825066112982.txt (14/29)
+[2026-04-19 19:52:40.14] [Worker 0] Sequence replayed from corpus file 2551918398196928109.txt (29/30)
+[2026-04-19 19:52:40.14] [Worker 1] Sequence replayed from corpus file 4062124423881251857.txt (17/30)
+[2026-04-19 19:52:40.14] [Worker 2] Sequence replayed from corpus file 6843839812021103424.txt (22/30)
+[2026-04-19 19:52:40.14] [Worker 2] WARNING: Sequence replay from corpus file 689026530293805097.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("attack",[735]), src = 0x30000, DST = 0x62D69F6867a0A084C6D313943dC22023bc263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x87a88,0x3c07)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.15] [Worker 3] Sequence replayed from corpus file 8501008337639773828.txt (15/29)
+[2026-04-19 19:52:40.15] [Worker 3] WARNING: Sequence replay from corpus file 8502406946798559018.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("",[]), src = 0x10000, DST = 0X62d69F6867A0A084C6D313943DC22023bc263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x6123,0x87a0)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.15] [Worker 2] WARNING: Sequence replay from corpus file 699908370100862995.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("attack",[40315670995802919321938158274687197499437001617885390690632228499470732094413]), src = 0x10000, DST = 0X62D69F6867A0a084C6D313943DC22023BC263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x6b504,0x2a1)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.15] [Worker 3] WARNING: Sequence replay from corpus file 8511629063655170100.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("",[]), src = 0x10000, DsT = 0X62D69f6867a0A084c6D313943Dc22023bc263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x103ef,0x2c55)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.15] [Worker 0] Sequence replayed from corpus file 2581688877749071989.txt (30/30)
+[2026-04-19 19:52:40.15] [Worker 3] WARNING: Sequence replay from corpus file 8548705151077984100.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("setTransfer",[0x62d69f6867A0A084C6d313943dC22023Bc263691,110203153208868294463950112733777600902085951557128262966235681873364681958335]), src = 0x20000, DST = 0x62D69F6867A0A084C6D313943dc22023bC263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0xb250,0x7630)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.15] [Worker 1] Sequence replayed from corpus file 4107043591176889787.txt (18/30)
+[2026-04-19 19:52:40.15] [Worker 2] Sequence replayed from corpus file 7219503434945464720.txt (25/30)
+[2026-04-19 19:52:40.15] [Worker 3] Sequence replayed from corpus file 8606019225071093899.txt (19/29)
+[2026-04-19 19:52:40.15] [Worker 2] Sequence replayed from corpus file 7436618234315522642.txt (26/30)
+[2026-04-19 19:52:40.16] [Worker 3] Sequence replayed from corpus file 8721571438615730015.txt (20/29)
+[2026-04-19 19:52:40.16] [Worker 0] Test echidna_balance_le_supply falsified!
+  Call sequence:
+MVE_O9_Vuln2.trustedSigner() from: 0x0000000000000000000000000000000000020000 Time delay: 322307 seconds Block delay: 32767
+MVE_O9_Vuln2.balanceOf(0x1337) from: 0x0000000000000000000000000000000000020000 Time delay: 419861 seconds Block delay: 5022
+MVE_O9_Vuln2.trustedSigner() from: 0x0000000000000000000000000000000000020000 Time delay: 477603 seconds Block delay: 53451
+MVE_O9_Vuln2.claim(0xffffffff,18381884689498766082590605678531791091345878836093098466062589782795685456654,115792089237316195423570985008687907853269984665640564039457584007913129639871,"4T\SO\CAN") from: 0x0000000000000000000000000000000000020000 Time delay: 477602 seconds Block delay: 41284
+OWASP_09_Vuln2Fuzz.recordBalance() from: 0x0000000000000000000000000000000000030000 Time delay: 358061 seconds Block delay: 5952
+OWASP_09_Vuln2Fuzz.recordBalance() from: 0x0000000000000000000000000000000000010000 Time delay: 526194 seconds Block delay: 5053
+MVE_O9_Vuln2.claim(0x10000,30,2,"invalid signature            length") from: 0x0000000000000000000000000000000000010000 Time delay: 136393 seconds Block delay: 32
+OWASP_09_Vuln2Fuzz.recordBalance() from: 0x0000000000000000000000000000000000020000 Time delay: 407328 seconds Block delay: 61
+OWASP_09_Vuln2Fuzz.recordBalance() from: 0x0000000000000000000000000000000000010000 Time delay: 322371 seconds Block delay: 53349
+MVE_O9_Vuln2.trustedSigner() from: 0x0000000000000000000000000000000000010000 Time delay: 358061 seconds Block delay: 5952
+MVE_O9_Vuln2.trustedSigner() from: 0x0000000000000000000000000000000000030000 Time delay: 322372 seconds Block delay: 32737
+OWASP_09_Vuln2Fuzz.recordBalance() from: 0x0000000000000000000000000000000000030000 Time delay: 318197 seconds Block delay: 53349
+MVE_O9_Vuln2.claim(0x2fffffffd,115246788489395100356443489114350073244757519808096167539210643176132439894830,115792089237316195423570985008687907853269984665640564039457584007913129639933,"invalid nonce") from: 0x0000000000000000000000000000000000010000 Time delay: 512439 seconds Block delay: 32
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000020000 Time delay: 588255 seconds Block delay: 15393
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000020000 Time delay: 31594 seconds Block delay: 15367
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(87281332637930462788870124400883655257420260808361015559727829123041884365582) from: 0x0000000000000000000000000000000000010000 Time delay: 412373 seconds Block delay: 20243
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(79126747127738959254207850742891608373498046527517972944955936338590671879385) from: 0x0000000000000000000000000000000000030000 Time delay: 341155 seconds Block delay: 50116
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639934) from: 0x0000000000000000000000000000000000020000 Time delay: 569114 seconds Block delay: 55777
+MVE_O9_Vuln2.symbol() from: 0x0000000000000000000000000000000000030000 Time delay: 67960 seconds Block delay: 60054
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(1000000000000000000000002) from: 0x0000000000000000000000000000000000030000 Time delay: 4 seconds Block delay: 60364
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(999999999999999999999998) from: 0x0000000000000000000000000000000000010000 Time delay: 63091 seconds Block delay: 22699
+MVE_O9_Vuln2.totalSupply() from: 0x0000000000000000000000000000000000030000 Time delay: 219062 seconds Block delay: 23722
+MVE_O9_Vuln2.mint(50576645388654526370754014079817871095121853126371423233749169818434680981513) from: 0x0000000000000000000000000000000000030000 Time delay: 251323 seconds Block delay: 906
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115604633646453070590037707500108075878052543998565405804570442489788104245865) from: 0x0000000000000000000000000000000000020000 Time delay: 38059 seconds Block delay: 41612
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(28020163205563428282627264557082220397836153992689262507727192131285871313616) from: 0x0000000000000000000000000000000000030000 Time delay: 322372 seconds Block delay: 5237
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(98627999904516037111113430823273842688665137450007427025946024905235221238577) from: 0x0000000000000000000000000000000000010000 Time delay: 903 seconds Block delay: 8868
+MVE_O9_Vuln2.MAX_SUPPLY() from: 0x0000000000000000000000000000000000030000 Time delay: 440097 seconds Block delay: 127
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000030000 Time delay: 1792 seconds Block delay: 55589
+MVE_O9_Vuln2.mint(2) from: 0x0000000000000000000000000000000000020000 Time delay: 440097 seconds Block delay: 50115
+MVE_O9_Vuln2.totalSupply() from: 0x0000000000000000000000000000000000010000 Time delay: 448552 seconds Block delay: 24987
+MVE_O9_Vuln2.MAX_SUPPLY() from: 0x0000000000000000000000000000000000010000 Time delay: 322371 seconds Block delay: 367
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(389) from: 0x0000000000000000000000000000000000020000 Time delay: 405856 seconds Block delay: 15391
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(56635209126161145740582973660962619465903888657379971622421145817712426416392) from: 0x0000000000000000000000000000000000010000 Time delay: 171741 seconds Block delay: 1123
+MVE_O9_Vuln2.symbol() from: 0x0000000000000000000000000000000000030000 Time delay: 569114 seconds Block delay: 15393
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639934) from: 0x0000000000000000000000000000000000010000 Time delay: 412362 seconds Block delay: 15394
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(389) from: 0x0000000000000000000000000000000000030000 Time delay: 318197 seconds Block delay: 5020
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(13592350) from: 0x0000000000000000000000000000000000020000 Time delay: 100835 seconds Block delay: 5053
+MVE_O9_Vuln2.balanceOf(0x2fffffffd) from: 0x0000000000000000000000000000000000030000 Time delay: 361136 seconds Block delay: 56636
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000030000 Time delay: 322371 seconds Block delay: 644
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000010000 Time delay: 322374 seconds Block delay: 50111
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000030000 Time delay: 251322 seconds Block delay: 6234
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(742931521970) from: 0x0000000000000000000000000000000000010000 Time delay: 12117 seconds Block delay: 561
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984664640564039457584007913129639934) from: 0x0000000000000000000000000000000000020000 Time delay: 824 seconds Block delay: 38350
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000030000 Time delay: 137258 seconds Block delay: 60054
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000020000 Time delay: 127251 seconds Block delay: 12155
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(0) from: 0x0000000000000000000000000000000000010000 Time delay: 24867 seconds Block delay: 1792
+MVE_O9_Vuln2.balanceOf(0xb4c79dab8f259c7aee6e5b2aa729821864227e84) from: 0x0000000000000000000000000000000000010000 Time delay: 644 seconds Block delay: 53349
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000030000 Time delay: 71053 seconds Block delay: 5140
+MVE_O9_Vuln2.decimals() from: 0x0000000000000000000000000000000000030000 Time delay: 12117 seconds Block delay: 50114
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640563039457584007913129639936) from: 0x0000000000000000000000000000000000020000 Time delay: 293572 seconds Block delay: 53349
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000020000 Time delay: 49735 seconds Block delay: 55538
+MVE_O9_Vuln2.totalSupply() from: 0x0000000000000000000000000000000000010000 Time delay: 322371 seconds Block delay: 5053
+MVE_O9_Vuln2.name() from: 0x0000000000000000000000000000000000010000 Time delay: 292304 seconds Block delay: 20112
+MVE_O9_Vuln2.balanceOf(0x1fffffffe) from: 0x0000000000000000000000000000000000030000 Time delay: 305572 seconds Block delay: 8869
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000010000
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000010000 Time delay: 137258 seconds Block delay: 14867
+MVE_O9_Vuln2.MAX_SUPPLY() from: 0x0000000000000000000000000000000000030000 Time delay: 322372 seconds Block delay: 7323
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000010000 Time delay: 586025 seconds Block delay: 30144
+MVE_O9_Vuln2.name() from: 0x0000000000000000000000000000000000030000 Time delay: 277232 seconds Block delay: 23275
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(0) from: 0x0000000000000000000000000000000000020000 Time delay: 38059 seconds Block delay: 34093
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(1000000000000000000000000000000) from: 0x0000000000000000000000000000000000020000 Time delay: 569114 seconds Block delay: 15005
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(78132326539344419577552092691811844068748664540464497578239372278323675810367) from: 0x0000000000000000000000000000000000030000 Time delay: 225906 seconds Block delay: 15392
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(2066845) from: 0x0000000000000000000000000000000000010000 Time delay: 376096 seconds Block delay: 11905
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(97736066772228679313808441370225488999879254622223301351792655666538681319344) from: 0x0000000000000000000000000000000000030000 Time delay: 166184 seconds Block delay: 36930
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(24930287902720202517715850119629520528631896063522918367091997108105100652767) from: 0x0000000000000000000000000000000000010000 Time delay: 127251 seconds Block delay: 23403
+MVE_O9_Vuln2.MAX_SUPPLY() from: 0x0000000000000000000000000000000000020000 Time delay: 45142 seconds Block delay: 9920
+MVE_O9_Vuln2.MAX_SUPPLY() from: 0x0000000000000000000000000000000000010000 Time delay: 164725 seconds Block delay: 6721
+MVE_O9_Vuln2.MAX_SUPPLY() from: 0x0000000000000000000000000000000000020000 Time delay: 116188 seconds Block delay: 22689
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(58152037552414597013461263107914722075579315647982852987060071801679886281651) from: 0x0000000000000000000000000000000000030000 Time delay: 322247 seconds Block delay: 17268
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(107872342044784580930789585186378930985180345183552203635296230723557604105107) from: 0x0000000000000000000000000000000000030000 Time delay: 112444 seconds Block delay: 35248
+MVE_O9_Vuln2.totalSupply() from: 0x0000000000000000000000000000000000020000 Time delay: 420078 seconds Block delay: 31694
+MVE_O9_Vuln2.balanceOf(0x2fffffffd) from: 0x0000000000000000000000000000000000020000 Time delay: 319609 seconds Block delay: 29463
+MVE_O9_Vuln2.MAX_SUPPLY() from: 0x0000000000000000000000000000000000020000 Time delay: 480152 seconds Block delay: 54155
+MVE_O9_Vuln2.name() from: 0x0000000000000000000000000000000000020000 Time delay: 420078 seconds Block delay: 35200
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(3049571982) from: 0x0000000000000000000000000000000000010000 Time delay: 83537 seconds Block delay: 5020
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000020000 Time delay: 31594 seconds Block delay: 15390
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(106043498241304116176321358917115592031276514554285157358880787532727331062577) from: 0x0000000000000000000000000000000000010000 Time delay: 116188 seconds Block delay: 45852
+MVE_O9_Vuln2.mint(115792089237316195423570985008687907853269984665640563039457584007913129639934) from: 0x0000000000000000000000000000000000020000 Time delay: 206186 seconds Block delay: 23653
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(26934399174532306122774494009889739637702143926055011611981813297072209454647) from: 0x0000000000000000000000000000000000010000 Time delay: 10913 seconds Block delay: 19098
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(906) from: 0x0000000000000000000000000000000000030000 Time delay: 251326 seconds Block delay: 19739
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(40864988374791604841891510080215468892886821345697262487953482343585663548723) from: 0x0000000000000000000000000000000000010000 Time delay: 95705 seconds Block delay: 57086
+MVE_O9_Vuln2.decimals() from: 0x0000000000000000000000000000000000020000 Time delay: 71050 seconds Block delay: 3661
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000020000 Time delay: 100835 seconds Block delay: 17268
+MVE_O9_Vuln2.decimals() from: 0x0000000000000000000000000000000000010000 Time delay: 322247 seconds Block delay: 15389
+MVE_O9_Vuln2.balanceOf(0x1fffffffe) from: 0x0000000000000000000000000000000000030000 Time delay: 344203 seconds Block delay: 367
+MVE_O9_Vuln2.symbol() from: 0x0000000000000000000000000000000000030000 Time delay: 322372 seconds Block delay: 45819
+MVE_O9_Vuln2.decimals() from: 0x0000000000000000000000000000000000010000 Time delay: 165340 seconds Block delay: 12155
+MVE_O9_Vuln2.MAX_SUPPLY() from: 0x0000000000000000000000000000000000010000
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000020000 Time delay: 171741 seconds Block delay: 29463
+MVE_O9_Vuln2.mint(1) from: 0x0000000000000000000000000000000000020000 Time delay: 73040 seconds Block delay: 15389
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(36403806711493819155154487569570603601763891986387203685856175436541072811035) from: 0x0000000000000000000000000000000000020000 Time delay: 71047 seconds Block delay: 5023
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(1529155990) from: 0x0000000000000000000000000000000000010000 Time delay: 56038 seconds Block delay: 45819
+MVE_O9_Vuln2.symbol() from: 0x0000000000000000000000000000000000030000 Time delay: 206186 seconds Block delay: 255
+MVE_O9_Vuln2.mint(1000000000000000000000000) from: 0x0000000000000000000000000000000000010000 Time delay: 38059 seconds Block delay: 33786
+OWASP_09_Vuln2Fuzz.burnTokens(115792089237316195423570985008687907853269984664640564039457584007913129639939) from: 0x0000000000000000000000000000000000020000 Time delay: 526194 seconds Block delay: 56640
+MVE_O9_Vuln2.name() from: 0x0000000000000000000000000000000000010000 Time delay: 135921 seconds Block delay: 4
+OWASP_09_Vuln2Fuzz.mintTokens(999999999999999999999999) from: 0x0000000000000000000000000000000000030000 Time delay: 447588 seconds Block delay: 15389
+OWASP_09_Vuln2Fuzz.burnTokens(35783309711303627494443423338908472466571193087177173647580191035788758658563) from: 0x0000000000000000000000000000000000030000 Time delay: 322372 seconds Block delay: 53678
+
+[2026-04-19 19:52:40.16] [Worker 2] Sequence replayed from corpus file 7541016534342641440.txt (27/30)
+[2026-04-19 19:52:40.16] [Worker 0] Test echidna_no_underflow_wrap falsified!
+  Call sequence:
+MVE_O9_Vuln2.trustedSigner() from: 0x0000000000000000000000000000000000020000 Time delay: 322307 seconds Block delay: 32767
+MVE_O9_Vuln2.balanceOf(0x1337) from: 0x0000000000000000000000000000000000020000 Time delay: 419861 seconds Block delay: 5022
+MVE_O9_Vuln2.trustedSigner() from: 0x0000000000000000000000000000000000020000 Time delay: 477603 seconds Block delay: 53451
+MVE_O9_Vuln2.claim(0xffffffff,18381884689498766082590605678531791091345878836093098466062589782795685456654,115792089237316195423570985008687907853269984665640564039457584007913129639871,"4T\SO\CAN") from: 0x0000000000000000000000000000000000020000 Time delay: 477602 seconds Block delay: 41284
+OWASP_09_Vuln2Fuzz.recordBalance() from: 0x0000000000000000000000000000000000030000 Time delay: 358061 seconds Block delay: 5952
+OWASP_09_Vuln2Fuzz.recordBalance() from: 0x0000000000000000000000000000000000010000 Time delay: 526194 seconds Block delay: 5053
+MVE_O9_Vuln2.claim(0x10000,30,2,"invalid signature            length") from: 0x0000000000000000000000000000000000010000 Time delay: 136393 seconds Block delay: 32
+OWASP_09_Vuln2Fuzz.recordBalance() from: 0x0000000000000000000000000000000000020000 Time delay: 407328 seconds Block delay: 61
+OWASP_09_Vuln2Fuzz.recordBalance() from: 0x0000000000000000000000000000000000010000 Time delay: 322371 seconds Block delay: 53349
+MVE_O9_Vuln2.trustedSigner() from: 0x0000000000000000000000000000000000010000 Time delay: 358061 seconds Block delay: 5952
+MVE_O9_Vuln2.trustedSigner() from: 0x0000000000000000000000000000000000030000 Time delay: 322372 seconds Block delay: 32737
+OWASP_09_Vuln2Fuzz.recordBalance() from: 0x0000000000000000000000000000000000030000 Time delay: 318197 seconds Block delay: 53349
+MVE_O9_Vuln2.claim(0x2fffffffd,115246788489395100356443489114350073244757519808096167539210643176132439894830,115792089237316195423570985008687907853269984665640564039457584007913129639933,"invalid nonce") from: 0x0000000000000000000000000000000000010000 Time delay: 512439 seconds Block delay: 32
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000020000 Time delay: 588255 seconds Block delay: 15393
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000020000 Time delay: 31594 seconds Block delay: 15367
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(87281332637930462788870124400883655257420260808361015559727829123041884365582) from: 0x0000000000000000000000000000000000010000 Time delay: 412373 seconds Block delay: 20243
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(79126747127738959254207850742891608373498046527517972944955936338590671879385) from: 0x0000000000000000000000000000000000030000 Time delay: 341155 seconds Block delay: 50116
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639934) from: 0x0000000000000000000000000000000000020000 Time delay: 569114 seconds Block delay: 55777
+MVE_O9_Vuln2.symbol() from: 0x0000000000000000000000000000000000030000 Time delay: 67960 seconds Block delay: 60054
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(1000000000000000000000002) from: 0x0000000000000000000000000000000000030000 Time delay: 4 seconds Block delay: 60364
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(999999999999999999999998) from: 0x0000000000000000000000000000000000010000 Time delay: 63091 seconds Block delay: 22699
+MVE_O9_Vuln2.totalSupply() from: 0x0000000000000000000000000000000000030000 Time delay: 219062 seconds Block delay: 23722
+MVE_O9_Vuln2.mint(50576645388654526370754014079817871095121853126371423233749169818434680981513) from: 0x0000000000000000000000000000000000030000 Time delay: 251323 seconds Block delay: 906
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115604633646453070590037707500108075878052543998565405804570442489788104245865) from: 0x0000000000000000000000000000000000020000 Time delay: 38059 seconds Block delay: 41612
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(28020163205563428282627264557082220397836153992689262507727192131285871313616) from: 0x0000000000000000000000000000000000030000 Time delay: 322372 seconds Block delay: 5237
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(98627999904516037111113430823273842688665137450007427025946024905235221238577) from: 0x0000000000000000000000000000000000010000 Time delay: 903 seconds Block delay: 8868
+MVE_O9_Vuln2.MAX_SUPPLY() from: 0x0000000000000000000000000000000000030000 Time delay: 440097 seconds Block delay: 127
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000030000 Time delay: 1792 seconds Block delay: 55589
+MVE_O9_Vuln2.mint(2) from: 0x0000000000000000000000000000000000020000 Time delay: 440097 seconds Block delay: 50115
+MVE_O9_Vuln2.totalSupply() from: 0x0000000000000000000000000000000000010000 Time delay: 448552 seconds Block delay: 24987
+MVE_O9_Vuln2.MAX_SUPPLY() from: 0x0000000000000000000000000000000000010000 Time delay: 322371 seconds Block delay: 367
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(389) from: 0x0000000000000000000000000000000000020000 Time delay: 405856 seconds Block delay: 15391
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(56635209126161145740582973660962619465903888657379971622421145817712426416392) from: 0x0000000000000000000000000000000000010000 Time delay: 171741 seconds Block delay: 1123
+MVE_O9_Vuln2.symbol() from: 0x0000000000000000000000000000000000030000 Time delay: 569114 seconds Block delay: 15393
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639934) from: 0x0000000000000000000000000000000000010000 Time delay: 412362 seconds Block delay: 15394
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(389) from: 0x0000000000000000000000000000000000030000 Time delay: 318197 seconds Block delay: 5020
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(13592350) from: 0x0000000000000000000000000000000000020000 Time delay: 100835 seconds Block delay: 5053
+MVE_O9_Vuln2.balanceOf(0x2fffffffd) from: 0x0000000000000000000000000000000000030000 Time delay: 361136 seconds Block delay: 56636
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000030000 Time delay: 322371 seconds Block delay: 644
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000010000 Time delay: 322374 seconds Block delay: 50111
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000030000 Time delay: 251322 seconds Block delay: 6234
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(742931521970) from: 0x0000000000000000000000000000000000010000 Time delay: 12117 seconds Block delay: 561
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984664640564039457584007913129639934) from: 0x0000000000000000000000000000000000020000 Time delay: 824 seconds Block delay: 38350
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000030000 Time delay: 137258 seconds Block delay: 60054
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000020000 Time delay: 127251 seconds Block delay: 12155
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(0) from: 0x0000000000000000000000000000000000010000 Time delay: 24867 seconds Block delay: 1792
+MVE_O9_Vuln2.balanceOf(0xb4c79dab8f259c7aee6e5b2aa729821864227e84) from: 0x0000000000000000000000000000000000010000 Time delay: 644 seconds Block delay: 53349
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000030000 Time delay: 71053 seconds Block delay: 5140
+MVE_O9_Vuln2.decimals() from: 0x0000000000000000000000000000000000030000 Time delay: 12117 seconds Block delay: 50114
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640563039457584007913129639936) from: 0x0000000000000000000000000000000000020000 Time delay: 293572 seconds Block delay: 53349
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000020000 Time delay: 49735 seconds Block delay: 55538
+MVE_O9_Vuln2.totalSupply() from: 0x0000000000000000000000000000000000010000 Time delay: 322371 seconds Block delay: 5053
+MVE_O9_Vuln2.name() from: 0x0000000000000000000000000000000000010000 Time delay: 292304 seconds Block delay: 20112
+MVE_O9_Vuln2.balanceOf(0x1fffffffe) from: 0x0000000000000000000000000000000000030000 Time delay: 305572 seconds Block delay: 8869
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000010000
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000010000 Time delay: 137258 seconds Block delay: 14867
+MVE_O9_Vuln2.MAX_SUPPLY() from: 0x0000000000000000000000000000000000030000 Time delay: 322372 seconds Block delay: 7323
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000010000 Time delay: 586025 seconds Block delay: 30144
+MVE_O9_Vuln2.name() from: 0x0000000000000000000000000000000000030000 Time delay: 277232 seconds Block delay: 23275
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(0) from: 0x0000000000000000000000000000000000020000 Time delay: 38059 seconds Block delay: 34093
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(1000000000000000000000000000000) from: 0x0000000000000000000000000000000000020000 Time delay: 569114 seconds Block delay: 15005
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(78132326539344419577552092691811844068748664540464497578239372278323675810367) from: 0x0000000000000000000000000000000000030000 Time delay: 225906 seconds Block delay: 15392
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(2066845) from: 0x0000000000000000000000000000000000010000 Time delay: 376096 seconds Block delay: 11905
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(97736066772228679313808441370225488999879254622223301351792655666538681319344) from: 0x0000000000000000000000000000000000030000 Time delay: 166184 seconds Block delay: 36930
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(24930287902720202517715850119629520528631896063522918367091997108105100652767) from: 0x0000000000000000000000000000000000010000 Time delay: 127251 seconds Block delay: 23403
+MVE_O9_Vuln2.MAX_SUPPLY() from: 0x0000000000000000000000000000000000020000 Time delay: 45142 seconds Block delay: 9920
+MVE_O9_Vuln2.MAX_SUPPLY() from: 0x0000000000000000000000000000000000010000 Time delay: 164725 seconds Block delay: 6721
+MVE_O9_Vuln2.MAX_SUPPLY() from: 0x0000000000000000000000000000000000020000 Time delay: 116188 seconds Block delay: 22689
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(58152037552414597013461263107914722075579315647982852987060071801679886281651) from: 0x0000000000000000000000000000000000030000 Time delay: 322247 seconds Block delay: 17268
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(107872342044784580930789585186378930985180345183552203635296230723557604105107) from: 0x0000000000000000000000000000000000030000 Time delay: 112444 seconds Block delay: 35248
+MVE_O9_Vuln2.totalSupply() from: 0x0000000000000000000000000000000000020000 Time delay: 420078 seconds Block delay: 31694
+MVE_O9_Vuln2.balanceOf(0x2fffffffd) from: 0x0000000000000000000000000000000000020000 Time delay: 319609 seconds Block delay: 29463
+MVE_O9_Vuln2.MAX_SUPPLY() from: 0x0000000000000000000000000000000000020000 Time delay: 480152 seconds Block delay: 54155
+MVE_O9_Vuln2.name() from: 0x0000000000000000000000000000000000020000 Time delay: 420078 seconds Block delay: 35200
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(3049571982) from: 0x0000000000000000000000000000000000010000 Time delay: 83537 seconds Block delay: 5020
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000020000 Time delay: 31594 seconds Block delay: 15390
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(106043498241304116176321358917115592031276514554285157358880787532727331062577) from: 0x0000000000000000000000000000000000010000 Time delay: 116188 seconds Block delay: 45852
+MVE_O9_Vuln2.mint(115792089237316195423570985008687907853269984665640563039457584007913129639934) from: 0x0000000000000000000000000000000000020000 Time delay: 206186 seconds Block delay: 23653
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(26934399174532306122774494009889739637702143926055011611981813297072209454647) from: 0x0000000000000000000000000000000000010000 Time delay: 10913 seconds Block delay: 19098
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(906) from: 0x0000000000000000000000000000000000030000 Time delay: 251326 seconds Block delay: 19739
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(40864988374791604841891510080215468892886821345697262487953482343585663548723) from: 0x0000000000000000000000000000000000010000 Time delay: 95705 seconds Block delay: 57086
+MVE_O9_Vuln2.decimals() from: 0x0000000000000000000000000000000000020000 Time delay: 71050 seconds Block delay: 3661
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000020000 Time delay: 100835 seconds Block delay: 17268
+MVE_O9_Vuln2.decimals() from: 0x0000000000000000000000000000000000010000 Time delay: 322247 seconds Block delay: 15389
+MVE_O9_Vuln2.balanceOf(0x1fffffffe) from: 0x0000000000000000000000000000000000030000 Time delay: 344203 seconds Block delay: 367
+MVE_O9_Vuln2.symbol() from: 0x0000000000000000000000000000000000030000 Time delay: 322372 seconds Block delay: 45819
+MVE_O9_Vuln2.decimals() from: 0x0000000000000000000000000000000000010000 Time delay: 165340 seconds Block delay: 12155
+MVE_O9_Vuln2.MAX_SUPPLY() from: 0x0000000000000000000000000000000000010000
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(115792089237316195423570985008687907853269984665640564039457584007913129639935) from: 0x0000000000000000000000000000000000020000 Time delay: 171741 seconds Block delay: 29463
+MVE_O9_Vuln2.mint(1) from: 0x0000000000000000000000000000000000020000 Time delay: 73040 seconds Block delay: 15389
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(36403806711493819155154487569570603601763891986387203685856175436541072811035) from: 0x0000000000000000000000000000000000020000 Time delay: 71047 seconds Block delay: 5023
+OWASP_09_Vuln2Fuzz.mintAndSnapshot(1529155990) from: 0x0000000000000000000000000000000000010000 Time delay: 56038 seconds Block delay: 45819
+MVE_O9_Vuln2.symbol() from: 0x0000000000000000000000000000000000030000 Time delay: 206186 seconds Block delay: 255
+MVE_O9_Vuln2.mint(1000000000000000000000000) from: 0x0000000000000000000000000000000000010000 Time delay: 38059 seconds Block delay: 33786
+OWASP_09_Vuln2Fuzz.burnTokens(115792089237316195423570985008687907853269984664640564039457584007913129639939) from: 0x0000000000000000000000000000000000020000 Time delay: 526194 seconds Block delay: 56640
+MVE_O9_Vuln2.name() from: 0x0000000000000000000000000000000000010000 Time delay: 135921 seconds Block delay: 4
+OWASP_09_Vuln2Fuzz.mintTokens(999999999999999999999999) from: 0x0000000000000000000000000000000000030000 Time delay: 447588 seconds Block delay: 15389
+OWASP_09_Vuln2Fuzz.burnTokens(35783309711303627494443423338908472466571193087177173647580191035788758658563) from: 0x0000000000000000000000000000000000030000 Time delay: 322372 seconds Block delay: 53678
+
+[2026-04-19 19:52:40.16] [Worker 0] New coverage: 1459 instr, 2 contracts, 8 seqs in corpus
+[2026-04-19 19:52:40.16] [Worker 1] Sequence replayed from corpus file 4189815214030488760.txt (19/30)
+[2026-04-19 19:52:40.16] [Worker 3] Sequence replayed from corpus file 8746510944181660177.txt (21/29)
+[2026-04-19 19:52:40.16] [Worker 2] Sequence replayed from corpus file 7545842089752992081.txt (28/30)
+[2026-04-19 19:52:40.16] [Worker 3] Sequence replayed from corpus file 8816047107854424912.txt (22/29)
+[2026-04-19 19:52:40.16] [Worker 1] Sequence replayed from corpus file 4218044368707527926.txt (20/30)
+[2026-04-19 19:52:40.17] [Worker 2] Sequence replayed from corpus file 7573893382168289186.txt (29/30)
+[2026-04-19 19:52:40.17] [Worker 3] Sequence replayed from corpus file 88376936411611116.txt (23/29)
+[2026-04-19 19:52:40.17] [Worker 3] Sequence replayed from corpus file 8864806242903538408.txt (24/29)
+[2026-04-19 19:52:40.17] [Worker 1] Sequence replayed from corpus file 4263861369944305064.txt (21/30)
+[2026-04-19 19:52:40.17] [Worker 1] Sequence replayed from corpus file 429198744153474129.txt (22/30)
+[2026-04-19 19:52:40.17] [Worker 3] Sequence replayed from corpus file 88918879106246972.txt (25/29)
+[2026-04-19 19:52:40.17] [Worker 3] WARNING: Sequence replay from corpus file 900947245564972896.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("",[]), src = 0x10000, DST = 0X62d69F6867A0A084C6D313943DC22023bc263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x6123,0x87a0)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.17] [Worker 2] Sequence replayed from corpus file 7588820713148210740.txt (30/30)
+[2026-04-19 19:52:40.17] [Worker 2] Test limit reached. Stopping.
+[2026-04-19 19:52:40.17] [Worker 3] WARNING: Sequence replay from corpus file 9012819905411243058.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("token",[]), src = 0x10000, dst = 0X62D69F6867A0A084c6d313943dC22023BC263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x1d389,0x9de)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.17]  Saved reproducer to corpus/echidna/reproducers-unshrunk/327505389312681720.txt
+[2026-04-19 19:52:40.17] [Worker 1] Sequence replayed from corpus file 4300667799207512545.txt (23/30)
+[2026-04-19 19:52:40.18] [Worker 1] Sequence replayed from corpus file 4350964911548517955.txt (24/30)
+[2026-04-19 19:52:40.19] [Worker 1] WARNING: Sequence replay from corpus file 4722320367017727553.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("borrow",[0]), src = 0x20000, DST = 0X62D69F6867A0a084c6d313943Dc22023bC263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x4dd39,0x6b0c)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.19] [Worker 3] New coverage: 1535 instr, 2 contracts, 9 seqs in corpus
+[2026-04-19 19:52:40.19] [Worker 3] Sequence replayed from corpus file 9134760244884338817.txt (28/29)
+[2026-04-19 19:52:40.19] [Worker 1] Sequence replayed from corpus file 479371498318639832.txt (26/30)
+[2026-04-19 19:52:40.19] [Worker 3] Sequence replayed from corpus file 9140924489476635527.txt (29/29)
+[2026-04-19 19:52:40.19] [Worker 3] Test limit reached. Stopping.
+[2026-04-19 19:52:40.19] [Worker 1] Sequence replayed from corpus file 4903871675519987651.txt (27/30)
+[2026-04-19 19:52:40.20] [Worker 1] Sequence replayed from corpus file 5086363509404862029.txt (28/30)
+[2026-04-19 19:52:40.20]  Saved reproducer to corpus/echidna/coverage/3120249526817026452.txt
+[2026-04-19 19:52:40.20] [Worker 1] Sequence replayed from corpus file 514479850897989268.txt (29/30)
+[2026-04-19 19:52:40.20] [Worker 1] WARNING: Sequence replay from corpus file 5261821104142863275.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("token",[]), src = 0x10000, dst = 0X62D69F6867A0A084c6d313943dC22023BC263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x1d389,0x9de)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:52:40.20] [Worker 1] Test limit reached. Stopping.
+[2026-04-19 19:52:42.52] [Worker 0] Test limit reached. Stopping.
+[2026-04-19 19:52:42.52] [status] tests: 2/2, fuzzing: 6881/50000, values: [], cov: 1535, corpus: 9, gas/s: 73546422
+echidna_balance_le_supply: failed!💥  
+  Call sequence:
+    MVE_O9_Vuln2.mint(1)
+    OWASP_09_Vuln2Fuzz.burnTokens(1)
+
+Traces: 
+call [1mMVE_O9_Vuln2[0m::totalSupply()() [1m(/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/test/OWASP_09_Fuzz.sol:91)[0m
+ └╴← (0)
+call [1mMVE_O9_Vuln2[0m::balanceOf(address)([1mOWASP_09_Vuln2Fuzz[0m) [1m(/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/test/OWASP_09_Fuzz.sol:91)[0m
+ └╴← (115792089237316195423570985008687907853269984665640564039457584007913129639935)
+
+echidna_no_underflow_wrap: failed!💥  
+  Call sequence:
+    MVE_O9_Vuln2.mint(1)
+    OWASP_09_Vuln2Fuzz.burnTokens(1)
+
+Traces: 
+call [1mMVE_O9_Vuln2[0m::balanceOf(address)([1mOWASP_09_Vuln2Fuzz[0m) [1m(/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/test/OWASP_09_Fuzz.sol:96)[0m
+ └╴← (115792089237316195423570985008687907853269984665640564039457584007913129639935)
+
+
+Unique instructions: 1535
+Unique codehashes: 2
+Corpus size: 9
+Seed: 4388433357148004963
+Total calls: 6881
+
+[2026-04-19 19:52:42.52] Saving test reproducers... Done! (0.012275529s)
+[2026-04-19 19:52:42.53] Saving corpus... Done! (0.040612664s)
+[2026-04-19 19:52:42.57] Saving foundry reproducers... Done! (0.015551274s)
+[2026-04-19 19:52:42.59] Saving coverage... Done! (0.040480051s)

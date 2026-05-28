@@ -1,0 +1,38 @@
+               
+               
+┌─────────────┐
+│ Scan Status │
+└─────────────┘
+  Scanning 1 file tracked by git with 50 Code rules:
+  Scanning 1 file with 50 solidity rules.
+                
+                
+┌──────────────┐
+│ Scan Summary │
+└──────────────┘
+
+Ran 50 rules on 1 file: 4 findings.
+
+A new version of Semgrep is available. See https://semgrep.dev/docs/upgrading
+
+Versions prior to 1.76.0 are no longer supported by Semgrep.dev, please upgrade.
+                   
+                   
+┌─────────────────┐
+│ 4 Code Findings │
+└─────────────────┘
+                                                                                                       
+    /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_02/MVE_O2_Fixed.sol
+     ❱ solidity.performance.use-custom-error-not-require.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+          Details: https://sg.run/ej3L                                                                      
+                                                                                                            
+           14┆ require(deposits[msg.sender] >= 1 ether, "not eligible");
+            ⋮┆----------------------------------------
+           16┆ require(!bonusClaimed[msg.sender], "bonus already claimed");
+            ⋮┆----------------------------------------
+           23┆ require(amount > 0, "nothing to withdraw");
+            ⋮┆----------------------------------------
+           31┆ require(ok, "transfer failed");
+

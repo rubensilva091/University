@@ -1,0 +1,48 @@
+               
+               
+┌─────────────┐
+│ Scan Status │
+└─────────────┘
+  Scanning 1 file tracked by git with 50 Code rules:
+  Scanning 1 file with 50 solidity rules.
+                
+                
+┌──────────────┐
+│ Scan Summary │
+└──────────────┘
+
+Ran 50 rules on 1 file: 6 findings.
+
+A new version of Semgrep is available. See https://semgrep.dev/docs/upgrading
+
+Versions prior to 1.76.0 are no longer supported by Semgrep.dev, please upgrade.
+                   
+                   
+┌─────────────────┐
+│ 6 Code Findings │
+└─────────────────┘
+                                                                                                       
+    /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_05/MVE_O5_Fixed.sol
+     ❱ solidity.performance.non-payable-constructor.non-payable-constructor
+          Consider making costructor payable to save gas.
+          Details: https://sg.run/wRBd                   
+                                                         
+            9┆ constructor(address signer) {
+           10┆     trustedSigner = signer;
+           11┆ }
+   
+     ❱ solidity.performance.use-custom-error-not-require.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+          Details: https://sg.run/ej3L                                                                      
+                                                                                                            
+           22┆ require(to != address(0), "invalid recipient");
+            ⋮┆----------------------------------------
+           25┆ require(block.timestamp <= deadline, "signature expired");
+            ⋮┆----------------------------------------
+           28┆ require(nonce == nonces[to], "invalid nonce");
+            ⋮┆----------------------------------------
+           35┆ require(recovered == trustedSigner, "bad signature");
+            ⋮┆----------------------------------------
+           43┆ require(signature.length == 65, "invalid signature length");
+

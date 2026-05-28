@@ -1,0 +1,38 @@
+               
+               
+┌─────────────┐
+│ Scan Status │
+└─────────────┘
+  Scanning 1 file tracked by git with 50 Code rules:
+  Scanning 1 file with 50 solidity rules.
+                
+                
+┌──────────────┐
+│ Scan Summary │
+└──────────────┘
+
+Ran 50 rules on 1 file: 4 findings.
+
+A new version of Semgrep is available. See https://semgrep.dev/docs/upgrading
+
+Versions prior to 1.76.0 are no longer supported by Semgrep.dev, please upgrade.
+                   
+                   
+┌─────────────────┐
+│ 4 Code Findings │
+└─────────────────┘
+                                                                                                       
+    /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_04/MVE_O4_Fixed.sol
+     ❱ solidity.performance.use-custom-error-not-require.use-custom-error-not-require
+          Consider using custom errors as they are more gas efficient while allowing developers  to describe
+          the error in detail using NatSpec.                                                                
+          Details: https://sg.run/ej3L                                                                      
+                                                                                                            
+           22┆ require(block.number > lastDepositBlock[msg.sender], "cooldown not met");
+            ⋮┆----------------------------------------
+           25┆ require(amount > 0, "nothing");
+            ⋮┆----------------------------------------
+           26┆ require(amount <= address(this).balance, "insufficient pool");
+            ⋮┆----------------------------------------
+           33┆ require(ok, "transfer failed");
+

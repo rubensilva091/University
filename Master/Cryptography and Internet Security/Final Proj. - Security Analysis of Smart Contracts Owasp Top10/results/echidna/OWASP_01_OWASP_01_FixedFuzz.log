@@ -1,0 +1,43 @@
+Warning: unused option: solcVersion
+[2026-04-19 19:49:59.06] Compiling `test/OWASP_01_Fuzz.sol`... Done! (0.56848958s)
+Analyzing contract: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/test/OWASP_01_Fuzz.sol:OWASP_01_FixedFuzz
+[2026-04-19 19:49:59.65] Running slither on `test/OWASP_01_Fuzz.sol`... Done! (0.28086878s)
+Loaded 1 transaction sequences from corpus/echidna/reproducers
+Loaded 4 transaction sequences from corpus/echidna/coverage
+[2026-04-19 19:49:59.98] [Worker 0] New coverage: 469 instr, 2 contracts, 1 seqs in corpus
+[2026-04-19 19:49:59.98] [Worker 0] Sequence replayed from corpus file 1452189698738998941.txt (1/2)
+[2026-04-19 19:49:59.99] [Worker 1] New coverage: 704 instr, 2 contracts, 2 seqs in corpus
+[2026-04-19 19:49:59.99] [Worker 1] Sequence replayed from corpus file 3641147411829365675.txt (1/2)
+[2026-04-19 19:49:59.99]  Saved reproducer to corpus/echidna/coverage/1452189698738998941.txt
+[2026-04-19 19:49:59.99] [Worker 2] New coverage: 704 instr, 2 contracts, 3 seqs in corpus
+[2026-04-19 19:49:59.99] [Worker 3] New coverage: 704 instr, 2 contracts, 4 seqs in corpus
+[2026-04-19 19:49:59.99] [Worker 2] Sequence replayed from corpus file 8721571438615730015.txt (1/1)
+[2026-04-19 19:49:59.99] [Worker 0] Sequence replayed from corpus file 2211506572492669667.txt (2/2)
+[2026-04-19 19:50:00.01] [Worker 1] New coverage: 831 instr, 2 contracts, 5 seqs in corpus
+[2026-04-19 19:50:00.01] [Worker 1] Sequence replayed from corpus file 8501008337639773828.txt (2/2)
+[2026-04-19 19:50:00.02]  Saved reproducer to corpus/echidna/coverage/6166497993522157865.txt
+[2026-04-19 19:50:00.30] [Worker 2] New coverage: 834 instr, 2 contracts, 6 seqs in corpus
+[2026-04-19 19:50:00.31]  Saved reproducer to corpus/echidna/coverage/2631726265439469501.txt
+[2026-04-19 19:50:00.67] [Worker 3] New coverage: 837 instr, 2 contracts, 7 seqs in corpus
+[2026-04-19 19:50:00.68]  Saved reproducer to corpus/echidna/coverage/1272315269480093113.txt
+[2026-04-19 19:50:00.78] [Worker 0] New coverage: 840 instr, 2 contracts, 8 seqs in corpus
+[2026-04-19 19:50:00.80]  Saved reproducer to corpus/echidna/coverage/591135091102608615.txt
+[2026-04-19 19:50:00.83] [Worker 1] New coverage: 843 instr, 2 contracts, 9 seqs in corpus
+[2026-04-19 19:50:00.85]  Saved reproducer to corpus/echidna/coverage/7929481060142103425.txt
+[2026-04-19 19:50:01.16] [Worker 2] Test limit reached. Stopping.
+[2026-04-19 19:50:01.17] [Worker 0] Test limit reached. Stopping.
+[2026-04-19 19:50:01.17] [Worker 1] Test limit reached. Stopping.
+[2026-04-19 19:50:01.17] [Worker 3] Test limit reached. Stopping.
+[2026-04-19 19:50:01.17] [status] tests: 0/1, fuzzing: 50224/50000, values: [], cov: 843, corpus: 9, gas/s: 1100368039
+echidna_treasury_unchanged: passing
+
+Unique instructions: 843
+Unique codehashes: 2
+Corpus size: 9
+Seed: 5106803401456756718
+Total calls: 50224
+
+[2026-04-19 19:50:01.17] Saving test reproducers... Done! (0.000001161s)
+[2026-04-19 19:50:01.17] Saving corpus... Done! (0.042114537s)
+[2026-04-19 19:50:01.22] Saving foundry reproducers... Done! (0.002681148s)
+[2026-04-19 19:50:01.22] Saving coverage... Done! (0.037845504s)

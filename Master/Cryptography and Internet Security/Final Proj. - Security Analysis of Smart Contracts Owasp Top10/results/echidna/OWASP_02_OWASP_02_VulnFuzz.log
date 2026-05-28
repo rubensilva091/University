@@ -1,0 +1,61 @@
+Warning: unused option: solcVersion
+[2026-04-19 19:50:11.00] Compiling `test/OWASP_02_Fuzz.sol`... Done! (0.51229808s)
+Analyzing contract: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/test/OWASP_02_Fuzz.sol:OWASP_02_VulnFuzz
+[2026-04-19 19:50:11.52] Running slither on `test/OWASP_02_Fuzz.sol`... Done! (0.209050099s)
+Loaded 1 transaction sequences from corpus/echidna/reproducers
+Loaded 15 transaction sequences from corpus/echidna/coverage
+[2026-04-19 19:50:11.85] [Worker 0] Sequence replayed from corpus file 1452189698738998941.txt (1/4)
+[2026-04-19 19:50:11.87] [Worker 2] Sequence replayed from corpus file 3641147411829365675.txt (1/4)
+[2026-04-19 19:50:11.87] [Worker 3] New coverage: 314 instr, 2 contracts, 1 seqs in corpus
+[2026-04-19 19:50:11.87] [Worker 3] Sequence replayed from corpus file 7929481060142103425.txt (1/4)
+[2026-04-19 19:50:11.87] [Worker 1] New coverage: 314 instr, 2 contracts, 2 seqs in corpus
+[2026-04-19 19:50:11.87] [Worker 1] Sequence replayed from corpus file 1525686000149373029.txt (1/4)
+[2026-04-19 19:50:11.87] [Worker 0] Sequence replayed from corpus file 1272315269480093113.txt (2/4)
+[2026-04-19 19:50:11.88] [Worker 2] Sequence replayed from corpus file 4218044368707527926.txt (2/4)
+[2026-04-19 19:50:11.88] [Worker 3] Sequence replayed from corpus file 8501008337639773828.txt (2/4)
+[2026-04-19 19:50:11.88] [Worker 1] Sequence replayed from corpus file 2079185573936702883.txt (2/4)
+[2026-04-19 19:50:11.88] [Worker 0] Sequence replayed from corpus file 136422028706997084.txt (3/4)
+[2026-04-19 19:50:11.88] [Worker 0] Sequence replayed from corpus file 1452189698738998941.txt (4/4)
+[2026-04-19 19:50:11.89] [Worker 0] Test echidna_bonus_claimed_once falsified!
+  Call sequence:
+MVE_O2_Vuln.deposits(0x1fffffffe) from: 0x0000000000000000000000000000000000020000 Time delay: 289607 seconds Block delay: 59982
+OWASP_02_VulnFuzz.claimBonus() from: 0x0000000000000000000000000000000000010000 Time delay: 45142 seconds Block delay: 18429
+MVE_O2_Vuln.claimBonus() from: 0x0000000000000000000000000000000000010000 Time delay: 358061 seconds Block delay: 15188
+MVE_O2_Vuln.deposits(0xa329c0648769a73afac7f9381e08fb43dbea72) from: 0x0000000000000000000000000000000000030000 Time delay: 386820 seconds Block delay: 42101
+MVE_O2_Vuln.claimBonus() from: 0x0000000000000000000000000000000000020000 Time delay: 33605 seconds Block delay: 30011
+OWASP_02_VulnFuzz.claimBonus() from: 0x0000000000000000000000000000000000010000 Time delay: 386815 seconds Block delay: 57086
+
+[2026-04-19 19:50:11.89] [Worker 2] Sequence replayed from corpus file 591135091102608615.txt (3/4)
+[2026-04-19 19:50:11.89] [Worker 3] Sequence replayed from corpus file 8721571438615730015.txt (3/4)
+[2026-04-19 19:50:11.89] [Worker 1] Sequence replayed from corpus file 2211506572492669667.txt (3/4)
+[2026-04-19 19:50:11.90]  Saved reproducer to corpus/echidna/reproducers-unshrunk/2851875566849573664.txt
+[2026-04-19 19:50:11.90] [Worker 0] New coverage: 911 instr, 2 contracts, 3 seqs in corpus
+[2026-04-19 19:50:11.90] [Worker 2] Sequence replayed from corpus file 6166497993522157865.txt (4/4)
+[2026-04-19 19:50:11.90] [Worker 2] Test limit reached. Stopping.
+[2026-04-19 19:50:11.90] [Worker 3] Sequence replayed from corpus file 88918879106246972.txt (4/4)
+[2026-04-19 19:50:11.90] [Worker 3] Test limit reached. Stopping.
+[2026-04-19 19:50:11.91] [Worker 1] Sequence replayed from corpus file 2631726265439469501.txt (4/4)
+[2026-04-19 19:50:11.91] [Worker 1] Test limit reached. Stopping.
+[2026-04-19 19:50:11.92]  Saved reproducer to corpus/echidna/coverage/5575027256662893171.txt
+[2026-04-19 19:50:13.16] [Worker 0] Test limit reached. Stopping.
+[2026-04-19 19:50:13.16] [status] tests: 1/1, fuzzing: 1519/50000, values: [], cov: 911, corpus: 3, gas/s: 32799232
+echidna_bonus_claimed_once: failed!💥  
+  Call sequence:
+    OWASP_02_VulnFuzz.claimBonus()
+    OWASP_02_VulnFuzz.claimBonus()
+
+Traces: 
+call [1mMVE_O2_Vuln[0m::bonusOf(address)(0x00a329c0648769A73afAc7F9381E08FB43dBEA72) [1m<no source map>[0m
+ └╴← (200000000000000000)
+
+
+Unique instructions: 911
+Unique codehashes: 2
+Corpus size: 3
+Seed: 1797019020580144108
+Total calls: 1519
+
+[2026-04-19 19:50:13.16] Saving test reproducers... Done! (0.008234907s)
+[2026-04-19 19:50:13.17] Saving corpus... Done! (0.013145355s)
+[2026-04-19 19:50:13.18] Saving foundry reproducers... Done! (0.006197587s)
+[2026-04-19 19:50:13.19] Saving coverage... Done! (0.027524375s)

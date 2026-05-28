@@ -1,0 +1,115 @@
+Warning: unused option: solcVersion
+[2026-04-19 19:51:23.14] Compiling `test/OWASP_06_Fuzz.sol`... Done! (0.714263403s)
+Analyzing contract: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/test/OWASP_06_Fuzz.sol:OWASP_06_Vuln2Fuzz
+[2026-04-19 19:51:23.88] Running slither on `test/OWASP_06_Fuzz.sol`... Done! (0.265329604s)
+Loaded 5 transaction sequences from corpus/echidna/reproducers
+Loaded 68 transaction sequences from corpus/echidna/coverage
+[2026-04-19 19:51:24.76] [Worker 0] New coverage: 809 instr, 3 contracts, 1 seqs in corpus
+[2026-04-19 19:51:24.76] [Worker 0] Sequence replayed from corpus file 1452189698738998941.txt (1/19)
+[2026-04-19 19:51:24.76] [Worker 0] Sequence replayed from corpus file 1827407018559690071.txt (2/19)
+[2026-04-19 19:51:24.76] [Worker 0] Sequence replayed from corpus file 6094103462352870298.txt (3/19)
+[2026-04-19 19:51:24.76] [Worker 0] Sequence replayed from corpus file 6268667897113576196.txt (4/19)
+[2026-04-19 19:51:24.76] [Worker 0] Sequence replayed from corpus file 8864806242903538408.txt (5/19)
+[2026-04-19 19:51:24.76] [Worker 3] New coverage: 852 instr, 3 contracts, 2 seqs in corpus
+[2026-04-19 19:51:24.76] [Worker 3] Sequence replayed from corpus file 7929481060142103425.txt (1/16)
+[2026-04-19 19:51:24.76] [Worker 2] New coverage: 852 instr, 3 contracts, 3 seqs in corpus
+[2026-04-19 19:51:24.76] [Worker 2] Sequence replayed from corpus file 5086363509404862029.txt (1/19)
+[2026-04-19 19:51:24.76] [Worker 0] Sequence replayed from corpus file 1272315269480093113.txt (6/19)
+[2026-04-19 19:51:24.76] [Worker 1] New coverage: 861 instr, 3 contracts, 4 seqs in corpus
+[2026-04-19 19:51:24.76] [Worker 1] Sequence replayed from corpus file 2551918398196928109.txt (1/19)
+[2026-04-19 19:51:24.77] [Worker 2] Sequence replayed from corpus file 514479850897989268.txt (2/19)
+[2026-04-19 19:51:24.77] [Worker 0] Sequence replayed from corpus file 136422028706997084.txt (7/19)
+[2026-04-19 19:51:24.77] [Worker 3] New coverage: 992 instr, 3 contracts, 5 seqs in corpus
+[2026-04-19 19:51:24.77] [Worker 3] Sequence replayed from corpus file 79624897523792426.txt (2/16)
+[2026-04-19 19:51:24.77] [Worker 1] New coverage: 992 instr, 3 contracts, 6 seqs in corpus
+[2026-04-19 19:51:24.77] [Worker 1] Sequence replayed from corpus file 2581688877749071989.txt (2/19)
+[2026-04-19 19:51:24.78] [Worker 2] Sequence replayed from corpus file 5575027256662893171.txt (3/19)
+[2026-04-19 19:51:24.78] [Worker 0] Sequence replayed from corpus file 1376536911212113184.txt (8/19)
+[2026-04-19 19:51:24.78] [Worker 2] Sequence replayed from corpus file 5721394929084608143.txt (4/19)
+[2026-04-19 19:51:24.78] [Worker 1] Sequence replayed from corpus file 2606617850888215744.txt (3/19)
+[2026-04-19 19:51:24.78] [Worker 0] Sequence replayed from corpus file 1439132272604759769.txt (9/19)
+[2026-04-19 19:51:24.78] [Worker 0] Sequence replayed from corpus file 1452189698738998941.txt (10/19)
+[2026-04-19 19:51:24.79] [Worker 3] Sequence replayed from corpus file 7967181382457404102.txt (3/16)
+[2026-04-19 19:51:24.79] [Worker 1] Sequence replayed from corpus file 2631726265439469501.txt (4/19)
+[2026-04-19 19:51:24.79] [Worker 0] Sequence replayed from corpus file 1525686000149373029.txt (11/19)
+[2026-04-19 19:51:24.79] [Worker 3] Sequence replayed from corpus file 8009782160310800039.txt (4/16)
+[2026-04-19 19:51:24.79] [Worker 0] Sequence replayed from corpus file 1827407018559690071.txt (12/19)
+[2026-04-19 19:51:24.79] [Worker 1] Sequence replayed from corpus file 2954796917231162347.txt (5/19)
+[2026-04-19 19:51:24.79] [Worker 3] Sequence replayed from corpus file 8441367243832867278.txt (5/16)
+[2026-04-19 19:51:24.79] [Worker 0] Sequence replayed from corpus file 1934527165697504024.txt (13/19)
+[2026-04-19 19:51:24.80] [Worker 2] Sequence replayed from corpus file 5737129264558432936.txt (5/19)
+[2026-04-19 19:51:24.80] [Worker 3] Sequence replayed from corpus file 8501008337639773828.txt (6/16)
+[2026-04-19 19:51:24.80] [Worker 1] Sequence replayed from corpus file 3117107370078894828.txt (6/19)
+[2026-04-19 19:51:24.80] [Worker 2] Sequence replayed from corpus file 591135091102608615.txt (6/19)
+[2026-04-19 19:51:24.80] [Worker 0] Sequence replayed from corpus file 2079185573936702883.txt (14/19)
+[2026-04-19 19:51:24.81] [Worker 1] Sequence replayed from corpus file 3246821641138614846.txt (7/19)
+[2026-04-19 19:51:24.81] [Worker 0] Sequence replayed from corpus file 2115224329430076373.txt (15/19)
+[2026-04-19 19:51:24.83] [Worker 3] Sequence replayed from corpus file 8502406946798559018.txt (7/16)
+[2026-04-19 19:51:24.83] [Worker 1] Sequence replayed from corpus file 331579483070239335.txt (8/19)
+[2026-04-19 19:51:24.83] [Worker 0] Sequence replayed from corpus file 2211506572492669667.txt (16/19)
+[2026-04-19 19:51:24.83] [Worker 2] Sequence replayed from corpus file 606788451241787438.txt (7/19)
+[2026-04-19 19:51:24.83] [Worker 2] Sequence replayed from corpus file 6094103462352870298.txt (8/19)
+[2026-04-19 19:51:24.84] [Worker 2] Sequence replayed from corpus file 6125864171135646698.txt (9/19)
+[2026-04-19 19:51:24.84] [Worker 1] Sequence replayed from corpus file 3495880772445906856.txt (9/19)
+[2026-04-19 19:51:24.84] [Worker 0] Sequence replayed from corpus file 2250046604256806773.txt (17/19)
+[2026-04-19 19:51:24.84] [Worker 2] Sequence replayed from corpus file 6166497993522157865.txt (10/19)
+[2026-04-19 19:51:24.84] [Worker 2] Sequence replayed from corpus file 6268667897113576196.txt (11/19)
+[2026-04-19 19:51:24.84] [Worker 3] Sequence replayed from corpus file 8511629063655170100.txt (8/16)
+[2026-04-19 19:51:24.84] [Worker 0] Sequence replayed from corpus file 2312620418010382677.txt (18/19)
+[2026-04-19 19:51:24.84] [Worker 2] Sequence replayed from corpus file 6275325763679058407.txt (12/19)
+[2026-04-19 19:51:24.85] [Worker 3] Sequence replayed from corpus file 8606019225071093899.txt (9/16)
+[2026-04-19 19:51:24.85] [Worker 1] Sequence replayed from corpus file 3624943762090496582.txt (10/19)
+[2026-04-19 19:51:24.85] [Worker 3] Sequence replayed from corpus file 8721571438615730015.txt (10/16)
+[2026-04-19 19:51:24.85] [Worker 2] Sequence replayed from corpus file 6480990898981786261.txt (13/19)
+[2026-04-19 19:51:24.86] [Worker 1] Sequence replayed from corpus file 3641147411829365675.txt (11/19)
+[2026-04-19 19:51:24.86] [Worker 3] Sequence replayed from corpus file 8746510944181660177.txt (11/16)
+[2026-04-19 19:51:24.86] [Worker 0] Sequence replayed from corpus file 2366693484020494489.txt (19/19)
+[2026-04-19 19:51:24.86] [Worker 3] Sequence replayed from corpus file 8816047107854424912.txt (12/16)
+[2026-04-19 19:51:24.86] [Worker 0] Test echidna_allocation_preserved_on_failed_transfer falsified!
+  Call sequence:
+OWASP_06_Vuln2Fuzz.tryClaim() Time delay: 577015 seconds Block delay: 11942
+
+[2026-04-19 19:51:24.87] [Worker 0] New coverage: 1889 instr, 3 contracts, 7 seqs in corpus
+[2026-04-19 19:51:24.87] [Worker 1] Sequence replayed from corpus file 3780014410365988224.txt (12/19)
+[2026-04-19 19:51:24.87] [Worker 0] Test limit reached. Stopping.
+[2026-04-19 19:51:24.87] [Worker 2] Sequence replayed from corpus file 6487040641841097174.txt (14/19)
+[2026-04-19 19:51:24.87] [Worker 3] Sequence replayed from corpus file 88376936411611116.txt (13/16)
+[2026-04-19 19:51:24.87] [Worker 3] Sequence replayed from corpus file 8864806242903538408.txt (14/16)
+[2026-04-19 19:51:24.87] [Worker 2] Sequence replayed from corpus file 7545842089752992081.txt (15/19)
+[2026-04-19 19:51:24.87] [Worker 1] Sequence replayed from corpus file 3964615687887459273.txt (13/19)
+[2026-04-19 19:51:24.88] [Worker 3] Sequence replayed from corpus file 88918879106246972.txt (15/16)
+[2026-04-19 19:51:24.88] [Worker 2] Sequence replayed from corpus file 7588820713148210740.txt (16/19)
+[2026-04-19 19:51:24.88] [Worker 3] Sequence replayed from corpus file 900947245564972896.txt (16/16)
+[2026-04-19 19:51:24.88] [Worker 3] Test limit reached. Stopping.
+[2026-04-19 19:51:24.88] [Worker 1] Sequence replayed from corpus file 4107043591176889787.txt (14/19)
+[2026-04-19 19:51:24.89] [Worker 1] Sequence replayed from corpus file 4218044368707527926.txt (15/19)
+[2026-04-19 19:51:24.89] [Worker 2] Sequence replayed from corpus file 7599293948694684908.txt (17/19)
+[2026-04-19 19:51:24.89]  Saved reproducer to corpus/echidna/reproducers-unshrunk/2095811098495167673.txt
+[2026-04-19 19:51:24.89] [Worker 2] Sequence replayed from corpus file 7687418961876039756.txt (18/19)
+[2026-04-19 19:51:24.89] [Worker 1] Sequence replayed from corpus file 4300667799207512545.txt (16/19)
+[2026-04-19 19:51:24.89] [Worker 2] Sequence replayed from corpus file 7699557514531849610.txt (19/19)
+[2026-04-19 19:51:24.89] [Worker 2] Test limit reached. Stopping.
+[2026-04-19 19:51:24.90] [Worker 1] Sequence replayed from corpus file 4722320367017727553.txt (17/19)
+[2026-04-19 19:51:24.90] [Worker 1] Sequence replayed from corpus file 479371498318639832.txt (18/19)
+[2026-04-19 19:51:24.90] [Worker 1] Sequence replayed from corpus file 4903871675519987651.txt (19/19)
+[2026-04-19 19:51:24.90] [Worker 1] Test limit reached. Stopping.
+[2026-04-19 19:51:24.90] [status] tests: 1/1, fuzzing: 6146/50000, values: [], cov: 1889, corpus: 7, gas/s: 0
+echidna_allocation_preserved_on_failed_transfer: failed!💥  
+  Call sequence:
+    OWASP_06_Vuln2Fuzz.tryClaim()
+
+Traces: 
+call 0x62d69f6867A0A084C6d313943dC22023Bc263691::[1mallocated[0m([1mOWASP_06_Vuln2Fuzz[0m) [1m(/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/test/OWASP_06_Fuzz.sol:97)[0m
+ └╴← (0)
+
+
+Unique instructions: 1889
+Unique codehashes: 3
+Corpus size: 7
+Seed: 8230510250293842132
+Total calls: 6146
+
+[2026-04-19 19:51:24.90] Saving test reproducers... Done! (0.008080693s)
+[2026-04-19 19:51:24.91] Saving corpus... Done! (0.034451593s)
+[2026-04-19 19:51:24.95] Saving foundry reproducers... Done! (0.006207581s)
+[2026-04-19 19:51:24.95] Saving coverage... Done! (0.042185437s)

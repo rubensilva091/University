@@ -1,0 +1,90 @@
+Warning: unused option: solcVersion
+[2026-04-19 19:50:46.32] Compiling `test/OWASP_05_Fuzz.sol`... Done! (0.637252037s)
+Analyzing contract: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/test/OWASP_05_Fuzz.sol:OWASP_05_FixedFuzz
+[2026-04-19 19:50:46.98] Running slither on `test/OWASP_05_Fuzz.sol`... Done! (0.28612281s)
+Loaded 4 transaction sequences from corpus/echidna/reproducers
+Loaded 53 transaction sequences from corpus/echidna/coverage
+[2026-04-19 19:50:47.68] [Worker 0] Sequence replayed from corpus file 1452189698738998941.txt (1/15)
+[2026-04-19 19:50:47.68] [Worker 0] Sequence replayed from corpus file 1827407018559690071.txt (2/15)
+[2026-04-19 19:50:47.68] [Worker 0] Sequence replayed from corpus file 6268667897113576196.txt (3/15)
+[2026-04-19 19:50:47.68] [Worker 0] Sequence replayed from corpus file 8864806242903538408.txt (4/15)
+[2026-04-19 19:50:47.68] [Worker 1] New coverage: 361 instr, 2 contracts, 1 seqs in corpus
+[2026-04-19 19:50:47.68] [Worker 1] Sequence replayed from corpus file 2250046604256806773.txt (1/15)
+[2026-04-19 19:50:47.69] [Worker 3] New coverage: 361 instr, 2 contracts, 2 seqs in corpus
+[2026-04-19 19:50:47.69] [Worker 3] Sequence replayed from corpus file 7599293948694684908.txt (1/12)
+[2026-04-19 19:50:47.69] [Worker 2] New coverage: 361 instr, 2 contracts, 3 seqs in corpus
+[2026-04-19 19:50:47.69] [Worker 2] Sequence replayed from corpus file 4218044368707527926.txt (1/15)
+[2026-04-19 19:50:47.69] [Worker 0] Sequence replayed from corpus file 1272315269480093113.txt (5/15)
+[2026-04-19 19:50:47.69] [Worker 3] Sequence replayed from corpus file 7699557514531849610.txt (2/12)
+[2026-04-19 19:50:47.70] [Worker 1] Sequence replayed from corpus file 2312620418010382677.txt (2/15)
+[2026-04-19 19:50:47.70] [Worker 1] WARNING: Sequence replay from corpus file 2366693484020494489.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("seedLiquidity",[]), src = 0x10000, dst = 0x62D69f6867A0A084c6D313943dC22023BC263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x214c9,0x9733)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:50:47.70] [Worker 2] Sequence replayed from corpus file 4300667799207512545.txt (2/15)
+[2026-04-19 19:50:47.71] [Worker 2] WARNING: Sequence replay from corpus file 4722320367017727553.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("borrow",[0]), src = 0x20000, DST = 0X62D69F6867A0a084c6d313943Dc22023bC263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x4dd39,0x6b0c)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:50:47.71] [Worker 0] Sequence replayed from corpus file 136422028706997084.txt (6/15)
+[2026-04-19 19:50:47.71] [Worker 3] Sequence replayed from corpus file 7929481060142103425.txt (3/12)
+[2026-04-19 19:50:47.73] [Worker 3] Sequence replayed from corpus file 8009782160310800039.txt (4/12)
+[2026-04-19 19:50:47.73] [Worker 1] Sequence replayed from corpus file 2551918398196928109.txt (4/15)
+[2026-04-19 19:50:47.73] [Worker 2] Sequence replayed from corpus file 479371498318639832.txt (4/15)
+[2026-04-19 19:50:47.73] [Worker 0] Sequence replayed from corpus file 1376536911212113184.txt (7/15)
+[2026-04-19 19:50:47.74] [Worker 1] Sequence replayed from corpus file 2581688877749071989.txt (5/15)
+[2026-04-19 19:50:47.74] [Worker 2] Sequence replayed from corpus file 4903871675519987651.txt (5/15)
+[2026-04-19 19:50:47.74] [Worker 0] Sequence replayed from corpus file 1439132272604759769.txt (8/15)
+[2026-04-19 19:50:47.74] [Worker 0] Sequence replayed from corpus file 1452189698738998941.txt (9/15)
+[2026-04-19 19:50:47.74] [Worker 1] Sequence replayed from corpus file 2631726265439469501.txt (6/15)
+[2026-04-19 19:50:47.74] [Worker 1] WARNING: Sequence replay from corpus file 2954796917231162347.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("collateral",[0x0000000000000000000000000000000000020000]), src = 0x20000, dSt = 0X62D69F6867A0a084C6D313943dC22023bC263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x142ef,0x972d)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:50:47.74] [Worker 1] WARNING: Sequence replay from corpus file 3117107370078894828.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("seedLiquidity",[]), src = 0x10000, DST = 0X62d69F6867A0A084C6D313943dC22023BC263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x142ee,0x20ff)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:50:47.74] [Worker 2] Sequence replayed from corpus file 5086363509404862029.txt (6/15)
+[2026-04-19 19:50:47.74] [Worker 0] Sequence replayed from corpus file 1525686000149373029.txt (10/15)
+[2026-04-19 19:50:47.74] [Worker 0] Sequence replayed from corpus file 1827407018559690071.txt (11/15)
+[2026-04-19 19:50:47.74] [Worker 1] Sequence replayed from corpus file 3246821641138614846.txt (9/15)
+[2026-04-19 19:50:47.74] [Worker 2] Sequence replayed from corpus file 514479850897989268.txt (7/15)
+[2026-04-19 19:50:47.75] [Worker 3] New coverage: 817 instr, 2 contracts, 4 seqs in corpus
+[2026-04-19 19:50:47.75] [Worker 3] Sequence replayed from corpus file 8441367243832867278.txt (5/12)
+[2026-04-19 19:50:47.75] [Worker 0] Sequence replayed from corpus file 1934527165697504024.txt (12/15)
+[2026-04-19 19:50:47.75] [Worker 1] Sequence replayed from corpus file 331579483070239335.txt (10/15)
+[2026-04-19 19:50:47.75] [Worker 2] Sequence replayed from corpus file 5575027256662893171.txt (8/15)
+[2026-04-19 19:50:47.75] [Worker 3] Sequence replayed from corpus file 8501008337639773828.txt (6/12)
+[2026-04-19 19:50:47.75] [Worker 0] Sequence replayed from corpus file 2079185573936702883.txt (13/15)
+[2026-04-19 19:50:47.76] [Worker 2] Sequence replayed from corpus file 5721394929084608143.txt (9/15)
+[2026-04-19 19:50:47.76] [Worker 1] Sequence replayed from corpus file 3495880772445906856.txt (11/15)
+[2026-04-19 19:50:47.76] [Worker 3] Sequence replayed from corpus file 8606019225071093899.txt (7/12)
+[2026-04-19 19:50:47.76] [Worker 0] Sequence replayed from corpus file 2115224329430076373.txt (14/15)
+[2026-04-19 19:50:47.76] [Worker 2] Sequence replayed from corpus file 591135091102608615.txt (10/15)
+[2026-04-19 19:50:47.76] [Worker 1] Sequence replayed from corpus file 3641147411829365675.txt (12/15)
+[2026-04-19 19:50:47.76] [Worker 2] WARNING: Sequence replay from corpus file 6125864171135646698.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("seedLiquidity",[]), src = 0x10000, dst = 0x62D69f6867A0A084c6D313943dC22023BC263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x214c9,0x9733)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:50:47.76] [Worker 1] WARNING: Sequence replay from corpus file 3780014410365988224.txt failed. The destination contract is not deployed for this transaction: Tx {call = SolCall ("collateral",[0x0000000000000000000000000000000000020000]), src = 0x20000, dSt = 0X62D69F6867A0a084C6D313943dC22023bC263691, gas = 12500000, gasprice = 0x0, value = 0x0, delay = (0x142ef,0x972d)}. Remove the file or the transaction to fix the issue.
+[2026-04-19 19:50:47.76] [Worker 3] Sequence replayed from corpus file 8721571438615730015.txt (8/12)
+[2026-04-19 19:50:47.76] [Worker 0] Sequence replayed from corpus file 2211506572492669667.txt (15/15)
+[2026-04-19 19:50:47.77] [Worker 1] Sequence replayed from corpus file 3964615687887459273.txt (14/15)
+[2026-04-19 19:50:47.77] [Worker 2] Sequence replayed from corpus file 6166497993522157865.txt (12/15)
+[2026-04-19 19:50:47.77] [Worker 2] Sequence replayed from corpus file 6268667897113576196.txt (13/15)
+[2026-04-19 19:50:47.77] [Worker 3] Sequence replayed from corpus file 8746510944181660177.txt (9/12)
+[2026-04-19 19:50:47.77] [Worker 2] Sequence replayed from corpus file 6275325763679058407.txt (14/15)
+[2026-04-19 19:50:47.77] [Worker 1] Sequence replayed from corpus file 4107043591176889787.txt (15/15)
+[2026-04-19 19:50:47.78] [Worker 3] Sequence replayed from corpus file 88376936411611116.txt (10/12)
+[2026-04-19 19:50:47.78] [Worker 3] Sequence replayed from corpus file 8864806242903538408.txt (11/12)
+[2026-04-19 19:50:47.78] [Worker 2] Sequence replayed from corpus file 7545842089752992081.txt (15/15)
+[2026-04-19 19:50:47.78] [Worker 3] Sequence replayed from corpus file 88918879106246972.txt (12/12)
+[2026-04-19 19:50:47.80] [Worker 1] New coverage: 1632 instr, 2 contracts, 5 seqs in corpus
+[2026-04-19 19:50:47.81] [Worker 2] New coverage: 1632 instr, 2 contracts, 6 seqs in corpus
+[2026-04-19 19:50:47.82]  Saved reproducer to corpus/echidna/coverage/2606617850888215744.txt
+[2026-04-19 19:50:47.83]  Saved reproducer to corpus/echidna/coverage/7588820713148210740.txt
+[2026-04-19 19:50:50.66] [status] tests: 0/2, fuzzing: 48375/50000, values: [], cov: 1632, corpus: 6, gas/s: 447670278
+[2026-04-19 19:50:50.69] [Worker 1] Test limit reached. Stopping.
+[2026-04-19 19:50:50.74] [Worker 2] Test limit reached. Stopping.
+[2026-04-19 19:50:50.77] [Worker 3] Test limit reached. Stopping.
+[2026-04-19 19:50:50.80] [Worker 0] Test limit reached. Stopping.
+[2026-04-19 19:50:50.80] [status] tests: 0/2, fuzzing: 50216/50000, values: [], cov: 1632, corpus: 6, gas/s: 0
+echidna_no_replay: passing
+echidna_nonce_monotonic: passing
+
+Unique instructions: 1632
+Unique codehashes: 2
+Corpus size: 6
+Seed: 6610590344599971239
+Total calls: 50216
+
+[2026-04-19 19:50:50.80] Saving test reproducers... Done! (0.000001783s)
+[2026-04-19 19:50:50.80] Saving corpus... Done! (0.02941983s)
+[2026-04-19 19:50:50.83] Saving foundry reproducers... Done! (0.002591926s)
+[2026-04-19 19:50:50.83] Saving coverage... Done! (0.049418258s)

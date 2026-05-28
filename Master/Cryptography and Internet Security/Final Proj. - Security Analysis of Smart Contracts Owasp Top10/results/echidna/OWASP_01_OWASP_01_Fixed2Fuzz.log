@@ -1,0 +1,46 @@
+Warning: unused option: solcVersion
+[2026-04-19 19:50:08.78] Compiling `test/OWASP_01_Fuzz.sol`... Done! (0.577473361s)
+Analyzing contract: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/test/OWASP_01_Fuzz.sol:OWASP_01_Fixed2Fuzz
+[2026-04-19 19:50:09.38] Running slither on `test/OWASP_01_Fuzz.sol`... Done! (0.250787839s)
+Loaded 1 transaction sequences from corpus/echidna/reproducers
+Loaded 15 transaction sequences from corpus/echidna/coverage
+[2026-04-19 19:50:09.75] [Worker 0] New coverage: 323 instr, 2 contracts, 1 seqs in corpus
+[2026-04-19 19:50:09.75] [Worker 0] Sequence replayed from corpus file 1452189698738998941.txt (1/4)
+[2026-04-19 19:50:09.76] [Worker 3] New coverage: 1199 instr, 2 contracts, 2 seqs in corpus
+[2026-04-19 19:50:09.76] [Worker 3] Sequence replayed from corpus file 7929481060142103425.txt (1/4)
+[2026-04-19 19:50:09.76] [Worker 2] New coverage: 1199 instr, 2 contracts, 3 seqs in corpus
+[2026-04-19 19:50:09.76] [Worker 2] Sequence replayed from corpus file 3641147411829365675.txt (1/4)
+[2026-04-19 19:50:09.76] [Worker 0] Sequence replayed from corpus file 1272315269480093113.txt (2/4)
+[2026-04-19 19:50:09.77] [Worker 3] Sequence replayed from corpus file 8501008337639773828.txt (2/4)
+[2026-04-19 19:50:09.77] [Worker 1] New coverage: 1199 instr, 2 contracts, 4 seqs in corpus
+[2026-04-19 19:50:09.77] [Worker 1] Sequence replayed from corpus file 1525686000149373029.txt (1/4)
+[2026-04-19 19:50:09.78] [Worker 3] Sequence replayed from corpus file 8721571438615730015.txt (3/4)
+[2026-04-19 19:50:09.78] [Worker 2] New coverage: 1205 instr, 2 contracts, 5 seqs in corpus
+[2026-04-19 19:50:09.78] [Worker 2] Sequence replayed from corpus file 4218044368707527926.txt (2/4)
+[2026-04-19 19:50:09.78] [Worker 1] Sequence replayed from corpus file 2079185573936702883.txt (2/4)
+[2026-04-19 19:50:09.78] [Worker 0] New coverage: 1205 instr, 2 contracts, 6 seqs in corpus
+[2026-04-19 19:50:09.78] [Worker 0] Sequence replayed from corpus file 136422028706997084.txt (3/4)
+[2026-04-19 19:50:09.78] [Worker 0] Sequence replayed from corpus file 1452189698738998941.txt (4/4)
+[2026-04-19 19:50:09.80] [Worker 2] Sequence replayed from corpus file 591135091102608615.txt (3/4)
+[2026-04-19 19:50:09.80] [Worker 1] Sequence replayed from corpus file 2211506572492669667.txt (3/4)
+[2026-04-19 19:50:09.81] [Worker 3] New coverage: 1237 instr, 2 contracts, 7 seqs in corpus
+[2026-04-19 19:50:09.81] [Worker 3] Sequence replayed from corpus file 88918879106246972.txt (4/4)
+[2026-04-19 19:50:09.82] [Worker 2] Sequence replayed from corpus file 6166497993522157865.txt (4/4)
+[2026-04-19 19:50:09.82] [Worker 1] Sequence replayed from corpus file 2631726265439469501.txt (4/4)
+[2026-04-19 19:50:09.19] [Worker 1] Test limit reached. Stopping.
+[2026-04-19 19:50:09.19] [Worker 3] Test limit reached. Stopping.
+[2026-04-19 19:50:09.21] [Worker 2] Test limit reached. Stopping.
+[2026-04-19 19:50:09.22] [Worker 0] Test limit reached. Stopping.
+[2026-04-19 19:50:09.22] [status] tests: 0/1, fuzzing: 50176/50000, values: [], cov: 1237, corpus: 7, gas/s: 0
+echidna_no_inflation: passing
+
+Unique instructions: 1237
+Unique codehashes: 2
+Corpus size: 7
+Seed: 7296189997331098785
+Total calls: 50176
+
+[2026-04-19 19:50:09.22] Saving test reproducers... Done! (0.000001536s)
+[2026-04-19 19:50:09.22] Saving corpus... Done! (0.031861119s)
+[2026-04-19 19:50:09.26] Saving foundry reproducers... Done! (0.002946198s)
+[2026-04-19 19:50:09.26] Saving coverage... Done! (0.040435322s)

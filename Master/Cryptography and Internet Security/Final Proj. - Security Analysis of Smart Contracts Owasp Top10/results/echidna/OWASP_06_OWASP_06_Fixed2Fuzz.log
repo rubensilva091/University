@@ -1,0 +1,111 @@
+Warning: unused option: solcVersion
+[2026-04-19 19:51:25.94] Compiling `test/OWASP_06_Fuzz.sol`... Done! (0.692251311s)
+Analyzing contract: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/test/OWASP_06_Fuzz.sol:OWASP_06_Fixed2Fuzz
+[2026-04-19 19:51:26.66] Running slither on `test/OWASP_06_Fuzz.sol`... Done! (0.311739629s)
+Loaded 6 transaction sequences from corpus/echidna/reproducers
+Loaded 69 transaction sequences from corpus/echidna/coverage
+[2026-04-19 19:51:27.49] [Worker 0] Sequence replayed from corpus file 1452189698738998941.txt (1/19)
+[2026-04-19 19:51:27.49] [Worker 0] Sequence replayed from corpus file 1827407018559690071.txt (2/19)
+[2026-04-19 19:51:27.49] [Worker 0] New coverage: 1399 instr, 3 contracts, 1 seqs in corpus
+[2026-04-19 19:51:27.49] [Worker 0] Sequence replayed from corpus file 429198744153474129.txt (3/19)
+[2026-04-19 19:51:27.49] [Worker 0] Sequence replayed from corpus file 6094103462352870298.txt (4/19)
+[2026-04-19 19:51:27.49] [Worker 0] Sequence replayed from corpus file 6268667897113576196.txt (5/19)
+[2026-04-19 19:51:27.49] [Worker 0] Sequence replayed from corpus file 8864806242903538408.txt (6/19)
+[2026-04-19 19:51:27.49] [Worker 2] New coverage: 1402 instr, 3 contracts, 2 seqs in corpus
+[2026-04-19 19:51:27.49] [Worker 2] Sequence replayed from corpus file 4903871675519987651.txt (1/19)
+[2026-04-19 19:51:27.50] [Worker 0] Sequence replayed from corpus file 1272315269480093113.txt (7/19)
+[2026-04-19 19:51:27.50] [Worker 3] New coverage: 1402 instr, 3 contracts, 3 seqs in corpus
+[2026-04-19 19:51:27.50] [Worker 3] Sequence replayed from corpus file 7687418961876039756.txt (1/18)
+[2026-04-19 19:51:27.50] [Worker 1] New coverage: 1402 instr, 3 contracts, 4 seqs in corpus
+[2026-04-19 19:51:27.50] [Worker 1] Sequence replayed from corpus file 2366693484020494489.txt (1/19)
+[2026-04-19 19:51:27.50] [Worker 2] Sequence replayed from corpus file 5086363509404862029.txt (2/19)
+[2026-04-19 19:51:27.50]  Saved reproducer to corpus/echidna/coverage/429198744153474129.txt
+[2026-04-19 19:51:27.50] [Worker 3] Sequence replayed from corpus file 7699557514531849610.txt (2/18)
+[2026-04-19 19:51:27.50] [Worker 0] Sequence replayed from corpus file 136422028706997084.txt (8/19)
+[2026-04-19 19:51:27.51] [Worker 1] Sequence replayed from corpus file 2551918398196928109.txt (2/19)
+[2026-04-19 19:51:27.51] [Worker 2] Sequence replayed from corpus file 514479850897989268.txt (3/19)
+[2026-04-19 19:51:27.51] [Worker 3] Sequence replayed from corpus file 7929481060142103425.txt (3/18)
+[2026-04-19 19:51:27.51] [Worker 0] Sequence replayed from corpus file 1376536911212113184.txt (9/19)
+[2026-04-19 19:51:27.51] [Worker 1] New coverage: 1644 instr, 3 contracts, 5 seqs in corpus
+[2026-04-19 19:51:27.51] [Worker 1] Sequence replayed from corpus file 2581688877749071989.txt (3/19)
+[2026-04-19 19:51:27.52] [Worker 0] Sequence replayed from corpus file 1439132272604759769.txt (10/19)
+[2026-04-19 19:51:27.52] [Worker 0] Sequence replayed from corpus file 1452189698738998941.txt (11/19)
+[2026-04-19 19:51:27.52] [Worker 1] Sequence replayed from corpus file 2606617850888215744.txt (4/19)
+[2026-04-19 19:51:27.52] [Worker 0] Sequence replayed from corpus file 1525686000149373029.txt (12/19)
+[2026-04-19 19:51:27.52] [Worker 0] Sequence replayed from corpus file 1827407018559690071.txt (13/19)
+[2026-04-19 19:51:27.53] [Worker 3] Sequence replayed from corpus file 79624897523792426.txt (4/18)
+[2026-04-19 19:51:27.53] [Worker 1] Sequence replayed from corpus file 2631726265439469501.txt (5/19)
+[2026-04-19 19:51:27.53] [Worker 0] Sequence replayed from corpus file 1934527165697504024.txt (14/19)
+[2026-04-19 19:51:27.54] [Worker 2] New coverage: 1902 instr, 3 contracts, 6 seqs in corpus
+[2026-04-19 19:51:27.54] [Worker 1] Sequence replayed from corpus file 2954796917231162347.txt (6/19)
+[2026-04-19 19:51:27.54] [Worker 2] Sequence replayed from corpus file 5472587043690756556.txt (4/19)
+[2026-04-19 19:51:27.54] [Worker 0] Sequence replayed from corpus file 2079185573936702883.txt (15/19)
+[2026-04-19 19:51:27.54] [Worker 3] Sequence replayed from corpus file 7967181382457404102.txt (5/18)
+[2026-04-19 19:51:27.54] [Worker 2] Sequence replayed from corpus file 5575027256662893171.txt (5/19)
+[2026-04-19 19:51:27.54] [Worker 1] Sequence replayed from corpus file 3117107370078894828.txt (7/19)
+[2026-04-19 19:51:27.55] [Worker 3] Sequence replayed from corpus file 8009782160310800039.txt (6/18)
+[2026-04-19 19:51:27.55] [Worker 0] Sequence replayed from corpus file 2115224329430076373.txt (16/19)
+[2026-04-19 19:51:27.55] [Worker 2] Sequence replayed from corpus file 5721394929084608143.txt (6/19)
+[2026-04-19 19:51:27.57] [Worker 1] Sequence replayed from corpus file 3246821641138614846.txt (8/19)
+[2026-04-19 19:51:27.57] [Worker 3] Sequence replayed from corpus file 8441367243832867278.txt (7/18)
+[2026-04-19 19:51:27.57] [Worker 0] Sequence replayed from corpus file 2211506572492669667.txt (17/19)
+[2026-04-19 19:51:27.58] [Worker 3] Sequence replayed from corpus file 8501008337639773828.txt (8/18)
+[2026-04-19 19:51:27.58] [Worker 1] Sequence replayed from corpus file 331579483070239335.txt (9/19)
+[2026-04-19 19:51:27.58] [Worker 0] Sequence replayed from corpus file 2250046604256806773.txt (18/19)
+[2026-04-19 19:51:27.58] [Worker 2] Sequence replayed from corpus file 5737129264558432936.txt (7/19)
+[2026-04-19 19:51:27.58] [Worker 1] Sequence replayed from corpus file 3495880772445906856.txt (10/19)
+[2026-04-19 19:51:27.58] [Worker 0] Sequence replayed from corpus file 2312620418010382677.txt (19/19)
+[2026-04-19 19:51:27.59] [Worker 2] Sequence replayed from corpus file 591135091102608615.txt (8/19)
+[2026-04-19 19:51:27.59] [Worker 3] Sequence replayed from corpus file 8502406946798559018.txt (9/18)
+[2026-04-19 19:51:27.59] [Worker 2] Sequence replayed from corpus file 606788451241787438.txt (9/19)
+[2026-04-19 19:51:27.59] [Worker 1] Sequence replayed from corpus file 3624943762090496582.txt (11/19)
+[2026-04-19 19:51:27.59] [Worker 2] Sequence replayed from corpus file 6094103462352870298.txt (10/19)
+[2026-04-19 19:51:27.60] [Worker 2] Sequence replayed from corpus file 6125864171135646698.txt (11/19)
+[2026-04-19 19:51:27.60] [Worker 1] Sequence replayed from corpus file 3641147411829365675.txt (12/19)
+[2026-04-19 19:51:27.60] [Worker 2] Sequence replayed from corpus file 6166497993522157865.txt (12/19)
+[2026-04-19 19:51:27.60] [Worker 2] Sequence replayed from corpus file 6268667897113576196.txt (13/19)
+[2026-04-19 19:51:27.60] [Worker 1] Sequence replayed from corpus file 3780014410365988224.txt (13/19)
+[2026-04-19 19:51:27.60] [Worker 3] Sequence replayed from corpus file 8511629063655170100.txt (10/18)
+[2026-04-19 19:51:27.60] [Worker 2] Sequence replayed from corpus file 6275325763679058407.txt (14/19)
+[2026-04-19 19:51:27.61] [Worker 1] Sequence replayed from corpus file 3964615687887459273.txt (14/19)
+[2026-04-19 19:51:27.61] [Worker 3] Sequence replayed from corpus file 8606019225071093899.txt (11/18)
+[2026-04-19 19:51:27.61] [Worker 1] Sequence replayed from corpus file 4107043591176889787.txt (15/19)
+[2026-04-19 19:51:27.61] [Worker 3] Sequence replayed from corpus file 8721571438615730015.txt (12/18)
+[2026-04-19 19:51:27.61] [Worker 3] Sequence replayed from corpus file 8746510944181660177.txt (13/18)
+[2026-04-19 19:51:27.61] [Worker 1] Sequence replayed from corpus file 4218044368707527926.txt (16/19)
+[2026-04-19 19:51:27.62] [Worker 2] Sequence replayed from corpus file 6480990898981786261.txt (15/19)
+[2026-04-19 19:51:27.62] [Worker 3] Sequence replayed from corpus file 8816047107854424912.txt (14/18)
+[2026-04-19 19:51:27.62] [Worker 1] Sequence replayed from corpus file 4300667799207512545.txt (17/19)
+[2026-04-19 19:51:27.62] [Worker 3] Sequence replayed from corpus file 88376936411611116.txt (15/18)
+[2026-04-19 19:51:27.62] [Worker 3] Sequence replayed from corpus file 8864806242903538408.txt (16/18)
+[2026-04-19 19:51:27.63] [Worker 1] Sequence replayed from corpus file 4722320367017727553.txt (18/19)
+[2026-04-19 19:51:27.63] [Worker 3] Sequence replayed from corpus file 88918879106246972.txt (17/18)
+[2026-04-19 19:51:27.63] [Worker 2] Sequence replayed from corpus file 6487040641841097174.txt (16/19)
+[2026-04-19 19:51:27.63] [Worker 1] Sequence replayed from corpus file 479371498318639832.txt (19/19)
+[2026-04-19 19:51:27.63] [Worker 2] Sequence replayed from corpus file 7545842089752992081.txt (17/19)
+[2026-04-19 19:51:27.63] [Worker 3] Sequence replayed from corpus file 900947245564972896.txt (18/18)
+[2026-04-19 19:51:27.64] [Worker 2] Sequence replayed from corpus file 7588820713148210740.txt (18/19)
+[2026-04-19 19:51:27.65] [Worker 2] Sequence replayed from corpus file 7599293948694684908.txt (19/19)
+[2026-04-19 19:51:27.90] [Worker 3] New coverage: 1905 instr, 3 contracts, 7 seqs in corpus
+[2026-04-19 19:51:27.91]  Saved reproducer to corpus/echidna/coverage/1884772071553819129.txt
+[2026-04-19 19:51:27.94] [Worker 0] New coverage: 1969 instr, 3 contracts, 8 seqs in corpus
+[2026-04-19 19:51:27.95]  Saved reproducer to corpus/echidna/coverage/9012819905411243058.txt
+[2026-04-19 19:51:28.11] [Worker 0] New coverage: 2047 instr, 3 contracts, 9 seqs in corpus
+[2026-04-19 19:51:28.12]  Saved reproducer to corpus/echidna/coverage/6445395239242402955.txt
+[2026-04-19 19:51:29.57] [Worker 1] Test limit reached. Stopping.
+[2026-04-19 19:51:29.62] [Worker 3] Test limit reached. Stopping.
+[2026-04-19 19:51:29.62] [Worker 2] Test limit reached. Stopping.
+[2026-04-19 19:51:29.65] [Worker 0] Test limit reached. Stopping.
+[2026-04-19 19:51:29.65] [status] tests: 0/1, fuzzing: 50173/50000, values: [], cov: 2047, corpus: 9, gas/s: 608427639
+echidna_allocation_preserved_on_failed_transfer: passing
+
+Unique instructions: 2047
+Unique codehashes: 3
+Corpus size: 9
+Seed: 2384228172545375394
+Total calls: 50173
+
+[2026-04-19 19:51:29.65] Saving test reproducers... Done! (0.000001356s)
+[2026-04-19 19:51:29.65] Saving corpus... Done! (0.042178202s)
+[2026-04-19 19:51:29.69] Saving foundry reproducers... Done! (0.00273257s)
+[2026-04-19 19:51:29.69] Saving coverage... Done! (0.046669484s)
