@@ -1,0 +1,39 @@
+[1m[32m⇾[0m[0m [1mReading the configuration file at: [1m/tmp/medusa_OWASP_07_VulnFuzz.json[0m[0m
+⇾ Compiling targets with crytic-compile
+⇾ Running command:
+/home/martim/.local/bin/crytic-compile /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/test/OWASP_07_Fuzz.sol --export-format solc
+⇾ Finished compiling targets in 1s
+warn artifacts: Medusa is running against the same build artifacts as previously (last run: 22 minutes ago)
+⇾ Running with a timeout of 60 seconds
+⇾ Setting up test chain
+⇾ Finished setting up test chain
+⇾ Creating corpus...
+⇾ Initializing corpus...
+⇾ Fuzzing with 4 workers
+⇾ [NOT STARTED] Property Test: OWASP_07_FixedFuzz.echidna_shares_decrease_on_withdraw()
+⇾ [NOT STARTED] Property Test: OWASP_07_VulnFuzz.echidna_shares_decrease_on_withdraw()
+⇾ fuzz: elapsed:       0s, calls:          0 (     0/sec), seq/s:      0, branches:     80, corpus:     0, failures: 0/0, gas/s:            0
+⇾ [Worker 2] Shrinking call sequence for Property Test: OWASP_07_VulnFuzz.echidna_shares_decrease_on_withdraw() with 1 call(s)
+⇾ [Worker 2] Shrinking complete after 1 attempts (limit: 5000)
+⇾ [Worker 3] Shrinking call sequence for Property Test: OWASP_07_VulnFuzz.echidna_shares_decrease_on_withdraw() with 1 call(s)
+⇾ [Worker 3] Shrinking complete after 2 attempts (limit: 5000)
+⇾ Fuzzer stopped, test results follow below ...
+⇾ [NOT STARTED] Property Test: OWASP_07_FixedFuzz.echidna_shares_decrease_on_withdraw()
+⇾ [FAILED] Property Test: OWASP_07_VulnFuzz.echidna_shares_decrease_on_withdraw()
+Test for method "OWASP_07_VulnFuzz.echidna_shares_decrease_on_withdraw()" failed after the following call sequence:
+[Call Sequence]
+1) MVE_O7_Vuln.withdraw(uint256)(1) (block=2, time=2, gas=12500000, gasprice=0, value=0, sender=0x10000)
+[Execution Trace]
+ => [call] MVE_O7_Vuln.withdraw(uint256)(1) (addr=0x54919A19522Ce7c842E25735a9cFEcef1c0a06dA, value=0, sender=0x10000)
+	 => [call] (addr=0x10000, value=1, sender=0x54919A19522Ce7c842E25735a9cFEcef1c0a06dA)
+	 => [return ()]
+
+[Property Test Execution Trace]
+[Execution Trace]
+ => [call] OWASP_07_VulnFuzz.echidna_shares_decrease_on_withdraw()() (addr=0xA647ff3c36cFab592509E13860ab8c4F28781a66, value=0, sender=0x10000)
+	 => [call] MVE_O7_Vuln.shares(address)(0xA647ff3c36cFab592509E13860ab8c4F28781a66) (addr=0x54919A19522Ce7c842E25735a9cFEcef1c0a06dA, value=<nil>, sender=0xA647ff3c36cFab592509E13860ab8c4F28781a66)
+		 => [return (10000000000000000000)]
+	 => [return (false)]
+
+⇾ Test summary: 0 test(s) passed, 1 test(s) failed
+⇾ lcov report(s) saved to: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/corpus/medusa/OWASP_07_VulnFuzz/coverage/lcov.info

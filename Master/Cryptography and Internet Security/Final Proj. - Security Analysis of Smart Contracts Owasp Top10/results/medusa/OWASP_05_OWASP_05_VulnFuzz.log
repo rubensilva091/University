@@ -1,0 +1,32 @@
+[1m[32m⇾[0m[0m [1mReading the configuration file at: [1m/tmp/medusa_OWASP_05_VulnFuzz.json[0m[0m
+⇾ Compiling targets with crytic-compile
+⇾ Running command:
+/home/martim/.local/bin/crytic-compile /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/test/OWASP_05_Fuzz.sol --export-format solc
+⇾ Finished compiling targets in 1s
+⇾ artifacts: Medusa is running against a new set of build artifacts
+⇾ Running with a timeout of 60 seconds
+⇾ Setting up test chain
+⇾ Finished setting up test chain
+⇾ Creating corpus...
+⇾ Initializing corpus...
+⇾ Fuzzing with 4 workers
+⇾ [NOT STARTED] Property Test: OWASP_05_Vuln2Fuzz.echidna_zero_address_balance_empty()
+⇾ fuzz: elapsed:       0s, calls:          0 (     0/sec), seq/s:      0, branches:     30, corpus:     0, failures: 0/0, gas/s:            0
+⇾ [NOT STARTED] Property Test: OWASP_05_Vuln2Fuzz.echidna_no_balance_without_valid_sig()
+⇾ [NOT STARTED] Property Test: OWASP_05_VulnFuzz.echidna_no_replay()
+⇾ [NOT STARTED] Property Test: OWASP_05_Fixed2Fuzz.echidna_zero_address_balance_empty()
+⇾ [NOT STARTED] Property Test: OWASP_05_Fixed2Fuzz.echidna_no_balance_without_valid_sig()
+⇾ [NOT STARTED] Property Test: OWASP_05_FixedFuzz.echidna_no_replay()
+⇾ [NOT STARTED] Property Test: OWASP_05_FixedFuzz.echidna_nonce_monotonic()
+⇾ fuzz: elapsed:       3s, calls:     157301 ( 52430/sec), seq/s:    525, branches:    175, corpus:     6, failures: 0/1576, gas/s:   1523035747
+⇾ Transaction test limit reached, halting now...
+⇾ Fuzzer stopped, test results follow below ...
+⇾ [NOT STARTED] Property Test: OWASP_05_Fixed2Fuzz.echidna_no_balance_without_valid_sig()
+⇾ [NOT STARTED] Property Test: OWASP_05_Fixed2Fuzz.echidna_zero_address_balance_empty()
+⇾ [NOT STARTED] Property Test: OWASP_05_FixedFuzz.echidna_no_replay()
+⇾ [NOT STARTED] Property Test: OWASP_05_FixedFuzz.echidna_nonce_monotonic()
+⇾ [NOT STARTED] Property Test: OWASP_05_Vuln2Fuzz.echidna_no_balance_without_valid_sig()
+⇾ [NOT STARTED] Property Test: OWASP_05_Vuln2Fuzz.echidna_zero_address_balance_empty()
+⇾ [PASSED] Property Test: OWASP_05_VulnFuzz.echidna_no_replay()
+⇾ Test summary: 1 test(s) passed, 0 test(s) failed
+⇾ lcov report(s) saved to: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/corpus/medusa/OWASP_05_VulnFuzz/coverage/lcov.info

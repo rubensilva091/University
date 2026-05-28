@@ -1,0 +1,83 @@
+[1m[32m⇾[0m[0m [1mReading the configuration file at: [1m/tmp/medusa_OWASP_09_Vuln2Fuzz.json[0m[0m
+⇾ Compiling targets with crytic-compile
+⇾ Running command:
+/home/martim/.local/bin/crytic-compile /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/test/OWASP_09_Fuzz.sol --export-format solc
+⇾ Finished compiling targets in 1s
+⇾ artifacts: Medusa is running against a new set of build artifacts
+⇾ Running with a timeout of 60 seconds
+⇾ Setting up test chain
+⇾ Finished setting up test chain
+⇾ Creating corpus...
+⇾ Fuzzing with 4 workers
+⇾ fuzz: elapsed:       0s, calls:          0 (     0/sec), seq/s:      0, branches:      9, corpus:     0, failures: 0/0, gas/s:            0
+⇾ [NOT STARTED] Property Test: OWASP_09_VulnFuzz.echidna_supply_never_decreases()
+⇾ [NOT STARTED] Property Test: OWASP_09_VulnFuzz.echidna_supply_cap()
+⇾ [NOT STARTED] Property Test: OWASP_09_Fixed2Fuzz.echidna_balance_le_supply()
+⇾ [NOT STARTED] Property Test: OWASP_09_Fixed2Fuzz.echidna_no_underflow_wrap()
+⇾ [NOT STARTED] Property Test: OWASP_09_FixedFuzz.echidna_supply_cap()
+⇾ [NOT STARTED] Property Test: OWASP_09_FixedFuzz.echidna_supply_never_decreases()
+⇾ [NOT STARTED] Property Test: OWASP_09_Vuln2Fuzz.echidna_balance_le_supply()
+⇾ [NOT STARTED] Property Test: OWASP_09_Vuln2Fuzz.echidna_no_underflow_wrap()
+⇾ [Worker 1] Shrinking call sequence for Property Test: OWASP_09_Vuln2Fuzz.echidna_no_underflow_wrap() with 10 call(s)
+⇾ [Worker 3] Shrinking call sequence for Property Test: OWASP_09_Vuln2Fuzz.echidna_no_underflow_wrap() with 9 call(s)
+⇾ [Worker 0] Shrinking call sequence for Property Test: OWASP_09_Vuln2Fuzz.echidna_balance_le_supply() with 21 call(s)
+⇾ [Worker 2] Shrinking call sequence for Property Test: OWASP_09_Vuln2Fuzz.echidna_balance_le_supply() with 12 call(s)
+⇾ [Worker 3] Shrinking complete after 5000 attempts (limit: 5000)
+⇾ [Worker 3] Shrinking call sequence for Property Test: OWASP_09_Vuln2Fuzz.echidna_balance_le_supply() with 9 call(s)
+⇾ [Worker 1] Shrinking complete after 5000 attempts (limit: 5000)
+⇾ [Worker 1] Shrinking call sequence for Property Test: OWASP_09_Vuln2Fuzz.echidna_balance_le_supply() with 10 call(s)
+⇾ [Worker 2] Shrinking complete after 5000 attempts (limit: 5000)
+⇾ [Worker 2] Shrinking call sequence for Property Test: OWASP_09_Vuln2Fuzz.echidna_no_underflow_wrap() with 12 call(s)
+⇾ [Worker 0] Shrinking complete after 5000 attempts (limit: 5000)
+⇾ [Worker 0] Shrinking call sequence for Property Test: OWASP_09_Vuln2Fuzz.echidna_no_underflow_wrap() with 21 call(s)
+⇾ [Worker 2] Shrinking complete after 5000 attempts (limit: 5000)
+⇾ [Worker 3] Shrinking complete after 5000 attempts (limit: 5000)
+⇾ [Worker 0] Shrinking complete after 5000 attempts (limit: 5000)
+⇾ [Worker 1] Shrinking complete after 5000 attempts (limit: 5000)
+⇾ Fuzzer stopped, test results follow below ...
+⇾ [NOT STARTED] Property Test: OWASP_09_Fixed2Fuzz.echidna_balance_le_supply()
+⇾ [NOT STARTED] Property Test: OWASP_09_Fixed2Fuzz.echidna_no_underflow_wrap()
+⇾ [NOT STARTED] Property Test: OWASP_09_FixedFuzz.echidna_supply_cap()
+⇾ [NOT STARTED] Property Test: OWASP_09_FixedFuzz.echidna_supply_never_decreases()
+⇾ [NOT STARTED] Property Test: OWASP_09_VulnFuzz.echidna_supply_cap()
+⇾ [NOT STARTED] Property Test: OWASP_09_VulnFuzz.echidna_supply_never_decreases()
+⇾ [FAILED] Property Test: OWASP_09_Vuln2Fuzz.echidna_balance_le_supply()
+Test for method "OWASP_09_Vuln2Fuzz.echidna_balance_le_supply()" failed after the following call sequence:
+[Call Sequence]
+1) MVE_O9_Vuln2.mint(uint256)(2993155353253689176481642601634422134283202580123491) (block=2, time=2, gas=12500000, gasprice=0, value=0, sender=0x20000)
+2) OWASP_09_Vuln2Fuzz.burnTokens(uint256)(542979479629799723640312087707) (block=2, time=2, gas=12500000, gasprice=0, value=0, sender=0x30000)
+[Execution Trace]
+ => [call] OWASP_09_Vuln2Fuzz.burnTokens(uint256)(542979479629799723640312087707) (addr=0xA647ff3c36cFab592509E13860ab8c4F28781a66, value=0, sender=0x30000)
+	 => [call] MVE_O9_Vuln2.burn(uint256)(542979479629799723640312087707) (addr=0x54919A19522Ce7c842E25735a9cFEcef1c0a06dA, value=0, sender=0xA647ff3c36cFab592509E13860ab8c4F28781a66)
+		 => [return ()]
+	 => [return ()]
+
+[Property Test Execution Trace]
+[Execution Trace]
+ => [call] OWASP_09_Vuln2Fuzz.echidna_balance_le_supply()() (addr=0xA647ff3c36cFab592509E13860ab8c4F28781a66, value=0, sender=0x10000)
+	 => [call] MVE_O9_Vuln2.totalSupply()() (addr=0x54919A19522Ce7c842E25735a9cFEcef1c0a06dA, value=<nil>, sender=0xA647ff3c36cFab592509E13860ab8c4F28781a66)
+		 => [return (2993155353253689176481099622154792334559562268035784)]
+	 => [call] MVE_O9_Vuln2.balanceOf(address)(0xA647ff3c36cFab592509E13860ab8c4F28781a66) (addr=0x54919A19522Ce7c842E25735a9cFEcef1c0a06dA, value=<nil>, sender=0xA647ff3c36cFab592509E13860ab8c4F28781a66)
+		 => [return (115792089237316195423570985008687907853269984665097584559827784284272817552229)]
+	 => [return (false)]
+
+⇾ [FAILED] Property Test: OWASP_09_Vuln2Fuzz.echidna_no_underflow_wrap()
+Test for method "OWASP_09_Vuln2Fuzz.echidna_no_underflow_wrap()" failed after the following call sequence:
+[Call Sequence]
+1) MVE_O9_Vuln2.mint(uint256)(664613998014051844204358771443237528) (block=2, time=2, gas=12500000, gasprice=0, value=0, sender=0x30000)
+2) OWASP_09_Vuln2Fuzz.burnTokens(uint256)(7934562507868467961137052918) (block=2, time=2, gas=12500000, gasprice=0, value=0, sender=0x20000)
+[Execution Trace]
+ => [call] OWASP_09_Vuln2Fuzz.burnTokens(uint256)(7934562507868467961137052918) (addr=0xA647ff3c36cFab592509E13860ab8c4F28781a66, value=0, sender=0x20000)
+	 => [call] MVE_O9_Vuln2.burn(uint256)(7934562507868467961137052918) (addr=0x54919A19522Ce7c842E25735a9cFEcef1c0a06dA, value=0, sender=0xA647ff3c36cFab592509E13860ab8c4F28781a66)
+		 => [return ()]
+	 => [return ()]
+
+[Property Test Execution Trace]
+[Execution Trace]
+ => [call] OWASP_09_Vuln2Fuzz.echidna_no_underflow_wrap()() (addr=0xA647ff3c36cFab592509E13860ab8c4F28781a66, value=0, sender=0x10000)
+	 => [call] MVE_O9_Vuln2.balanceOf(address)(0xA647ff3c36cFab592509E13860ab8c4F28781a66) (addr=0x54919A19522Ce7c842E25735a9cFEcef1c0a06dA, value=<nil>, sender=0xA647ff3c36cFab592509E13860ab8c4F28781a66)
+		 => [return (115792089237316195423570985008687907853269984665632629476949715539951992587018)]
+	 => [return (false)]
+
+⇾ Test summary: 0 test(s) passed, 2 test(s) failed
+⇾ lcov report(s) saved to: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/corpus/medusa/OWASP_09_Vuln2Fuzz/coverage/lcov.info

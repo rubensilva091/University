@@ -1,0 +1,33 @@
+[1m[32m⇾[0m[0m [1mReading the configuration file at: [1m/tmp/medusa_OWASP_09_Fixed2Fuzz.json[0m[0m
+⇾ Compiling targets with crytic-compile
+⇾ Running command:
+/home/martim/.local/bin/crytic-compile /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/test/OWASP_09_Fuzz.sol --export-format solc
+⇾ Finished compiling targets in 1s
+⇾ artifacts: Medusa is running against a new set of build artifacts
+⇾ Running with a timeout of 60 seconds
+⇾ Setting up test chain
+⇾ Finished setting up test chain
+⇾ Creating corpus...
+⇾ Fuzzing with 4 workers
+⇾ [NOT STARTED] Property Test: OWASP_09_Vuln2Fuzz.echidna_balance_le_supply()
+⇾ [NOT STARTED] Property Test: OWASP_09_Vuln2Fuzz.echidna_no_underflow_wrap()
+⇾ [NOT STARTED] Property Test: OWASP_09_VulnFuzz.echidna_supply_cap()
+⇾ [NOT STARTED] Property Test: OWASP_09_VulnFuzz.echidna_supply_never_decreases()
+⇾ [NOT STARTED] Property Test: OWASP_09_Fixed2Fuzz.echidna_balance_le_supply()
+⇾ [NOT STARTED] Property Test: OWASP_09_Fixed2Fuzz.echidna_no_underflow_wrap()
+⇾ [NOT STARTED] Property Test: OWASP_09_FixedFuzz.echidna_supply_cap()
+⇾ [NOT STARTED] Property Test: OWASP_09_FixedFuzz.echidna_supply_never_decreases()
+⇾ fuzz: elapsed:       0s, calls:          0 (     0/sec), seq/s:      0, branches:      9, corpus:     0, failures: 0/0, gas/s:            0
+⇾ fuzz: elapsed:       3s, calls:      89452 ( 29816/sec), seq/s:    297, branches:    225, corpus:    14, failures: 0/892, gas/s:    939373351
+⇾ Transaction test limit reached, halting now...
+⇾ Fuzzer stopped, test results follow below ...
+⇾ [NOT STARTED] Property Test: OWASP_09_FixedFuzz.echidna_supply_cap()
+⇾ [NOT STARTED] Property Test: OWASP_09_FixedFuzz.echidna_supply_never_decreases()
+⇾ [NOT STARTED] Property Test: OWASP_09_Vuln2Fuzz.echidna_balance_le_supply()
+⇾ [NOT STARTED] Property Test: OWASP_09_Vuln2Fuzz.echidna_no_underflow_wrap()
+⇾ [NOT STARTED] Property Test: OWASP_09_VulnFuzz.echidna_supply_cap()
+⇾ [NOT STARTED] Property Test: OWASP_09_VulnFuzz.echidna_supply_never_decreases()
+⇾ [PASSED] Property Test: OWASP_09_Fixed2Fuzz.echidna_balance_le_supply()
+⇾ [PASSED] Property Test: OWASP_09_Fixed2Fuzz.echidna_no_underflow_wrap()
+⇾ Test summary: 2 test(s) passed, 0 test(s) failed
+⇾ lcov report(s) saved to: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/corpus/medusa/OWASP_09_Fixed2Fuzz/coverage/lcov.info

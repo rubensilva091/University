@@ -1,0 +1,64 @@
+[1m[32m⇾[0m[0m [1mReading the configuration file at: [1m/tmp/medusa_OWASP_10_VulnFuzz.json[0m[0m
+⇾ Compiling targets with crytic-compile
+⇾ Running command:
+/home/martim/.local/bin/crytic-compile /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/test/OWASP_10_Fuzz.sol --export-format solc
+⇾ Finished compiling targets in 1s
+warn artifacts: Medusa is running against the same build artifacts as previously (last run: 22 minutes ago)
+⇾ Running with a timeout of 60 seconds
+⇾ Setting up test chain
+⇾ Finished setting up test chain
+⇾ Creating corpus...
+⇾ Initializing corpus...
+⇾ Fuzzing with 4 workers
+⇾ [NOT STARTED] Property Test: OWASP_10_FixedFuzz.echidna_impl_controlled()
+⇾ [NOT STARTED] Property Test: OWASP_10_FixedFuzz.echidna_owner_is_deployer()
+⇾ [NOT STARTED] Property Test: OWASP_10_VulnFuzz.echidna_owner_is_deployer()
+⇾ [NOT STARTED] Property Test: OWASP_10_VulnFuzz.echidna_owner_not_attacker()
+⇾ fuzz: elapsed:       0s, calls:          0 (     0/sec), seq/s:      0, branches:      9, corpus:     0, failures: 0/0, gas/s:            0
+⇾ [Worker 3] Shrinking call sequence for Property Test: OWASP_10_VulnFuzz.echidna_owner_is_deployer() with 1 call(s)
+⇾ [Worker 3] Shrinking complete after 0 attempts (limit: 5000)
+⇾ [Worker 1] Shrinking call sequence for Property Test: OWASP_10_VulnFuzz.echidna_owner_is_deployer() with 1 call(s)
+⇾ [Worker 2] Shrinking call sequence for Property Test: OWASP_10_VulnFuzz.echidna_owner_is_deployer() with 1 call(s)
+⇾ [Worker 2] Shrinking complete after 0 attempts (limit: 5000)
+⇾ [Worker 1] Shrinking complete after 1 attempts (limit: 5000)
+⇾ [Worker 0] Shrinking call sequence for Property Test: OWASP_10_VulnFuzz.echidna_owner_is_deployer() with 1 call(s)
+⇾ [Worker 1] Shrinking call sequence for Property Test: OWASP_10_VulnFuzz.echidna_owner_not_attacker() with 1 call(s)
+⇾ [Worker 1] Shrinking complete after 0 attempts (limit: 5000)
+⇾ [Worker 0] Shrinking complete after 2 attempts (limit: 5000)
+⇾ Fuzzer stopped, test results follow below ...
+⇾ [NOT STARTED] Property Test: OWASP_10_FixedFuzz.echidna_impl_controlled()
+⇾ [NOT STARTED] Property Test: OWASP_10_FixedFuzz.echidna_owner_is_deployer()
+⇾ [FAILED] Property Test: OWASP_10_VulnFuzz.echidna_owner_is_deployer()
+Test for method "OWASP_10_VulnFuzz.echidna_owner_is_deployer()" failed after the following call sequence:
+[Call Sequence]
+1) OWASP_10_VulnFuzz.tryInitialize(address,address)(0x1337, 0x30000) (block=9452, time=394741, gas=12500000, gasprice=0, value=0, sender=0x10000)
+[Execution Trace]
+ => [call] OWASP_10_VulnFuzz.tryInitialize(address,address)(0x1337, 0x30000) (addr=0xA647ff3c36cFab592509E13860ab8c4F28781a66, value=0, sender=0x10000)
+	 => [call] MVE_O10_Vuln.initialize(address,address)(0x1337, 0x30000) (addr=0x54919A19522Ce7c842E25735a9cFEcef1c0a06dA, value=0, sender=0xA647ff3c36cFab592509E13860ab8c4F28781a66)
+		 => [return ()]
+	 => [return ()]
+
+[Property Test Execution Trace]
+[Execution Trace]
+ => [call] OWASP_10_VulnFuzz.echidna_owner_is_deployer()() (addr=0xA647ff3c36cFab592509E13860ab8c4F28781a66, value=0, sender=0x10000)
+	 => [call] MVE_O10_Vuln.owner()() (addr=0x54919A19522Ce7c842E25735a9cFEcef1c0a06dA, value=<nil>, sender=0xA647ff3c36cFab592509E13860ab8c4F28781a66)
+		 => [return (0x1337)]
+	 => [return (false)]
+
+⇾ [FAILED] Property Test: OWASP_10_VulnFuzz.echidna_owner_not_attacker()
+Test for method "OWASP_10_VulnFuzz.echidna_owner_not_attacker()" failed after the following call sequence:
+[Call Sequence]
+1) MVE_O10_Vuln.initialize(address,address)(0x41, 0x1337) (block=15866, time=602012, gas=12500000, gasprice=0, value=0, sender=0x20000)
+[Execution Trace]
+ => [call] MVE_O10_Vuln.initialize(address,address)(0x41, 0x1337) (addr=0x54919A19522Ce7c842E25735a9cFEcef1c0a06dA, value=0, sender=0x20000)
+	 => [return ()]
+
+[Property Test Execution Trace]
+[Execution Trace]
+ => [call] OWASP_10_VulnFuzz.echidna_owner_not_attacker()() (addr=0xA647ff3c36cFab592509E13860ab8c4F28781a66, value=0, sender=0x10000)
+	 => [call] MVE_O10_Vuln.owner()() (addr=0x54919A19522Ce7c842E25735a9cFEcef1c0a06dA, value=<nil>, sender=0xA647ff3c36cFab592509E13860ab8c4F28781a66)
+		 => [return (0x41)]
+	 => [return (false)]
+
+⇾ Test summary: 0 test(s) passed, 2 test(s) failed
+⇾ lcov report(s) saved to: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/corpus/medusa/OWASP_10_VulnFuzz/coverage/lcov.info

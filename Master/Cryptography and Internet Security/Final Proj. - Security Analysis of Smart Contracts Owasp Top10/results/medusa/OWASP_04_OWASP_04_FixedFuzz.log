@@ -1,0 +1,22 @@
+[1m[32m⇾[0m[0m [1mReading the configuration file at: [1m/tmp/medusa_OWASP_04_FixedFuzz.json[0m[0m
+⇾ Compiling targets with crytic-compile
+⇾ Running command:
+/home/martim/.local/bin/crytic-compile /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/test/OWASP_04_Fuzz.sol --export-format solc
+⇾ Finished compiling targets in 0s
+warn artifacts: Medusa is running against the same build artifacts as previously (last run: 21 minutes ago)
+⇾ Running with a timeout of 60 seconds
+⇾ Setting up test chain
+⇾ Finished setting up test chain
+⇾ Creating corpus...
+⇾ Initializing corpus...
+⇾ Fuzzing with 4 workers
+⇾ [NOT STARTED] Property Test: OWASP_04_FixedFuzz.echidna_no_atomic_drain()
+⇾ [NOT STARTED] Property Test: OWASP_04_VulnFuzz.echidna_no_atomic_drain()
+⇾ fuzz: elapsed:       0s, calls:          0 (     0/sec), seq/s:      0, branches:     18, corpus:     0, failures: 0/0, gas/s:            0
+⇾ fuzz: elapsed:       3s, calls:     236748 ( 78891/sec), seq/s:    791, branches:    148, corpus:    13, failures: 0/2375, gas/s:   2645452598
+⇾ Transaction test limit reached, halting now...
+⇾ Fuzzer stopped, test results follow below ...
+⇾ [NOT STARTED] Property Test: OWASP_04_VulnFuzz.echidna_no_atomic_drain()
+⇾ [PASSED] Property Test: OWASP_04_FixedFuzz.echidna_no_atomic_drain()
+⇾ Test summary: 1 test(s) passed, 0 test(s) failed
+⇾ lcov report(s) saved to: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/corpus/medusa/OWASP_04_FixedFuzz/coverage/lcov.info

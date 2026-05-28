@@ -1,0 +1,45 @@
+[1m[32m⇾[0m[0m [1mReading the configuration file at: [1m/tmp/medusa_OWASP_02_VulnFuzz.json[0m[0m
+⇾ Compiling targets with crytic-compile
+⇾ Running command:
+/home/martim/.local/bin/crytic-compile /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/test/OWASP_02_Fuzz.sol --export-format solc
+⇾ Finished compiling targets in 0s
+warn artifacts: Medusa is running against the same build artifacts as previously (last run: 21 minutes ago)
+⇾ Running with a timeout of 60 seconds
+⇾ Setting up test chain
+⇾ Finished setting up test chain
+⇾ Creating corpus...
+⇾ Initializing corpus...
+⇾ Fuzzing with 4 workers
+⇾ [NOT STARTED] Property Test: OWASP_02_FixedFuzz.echidna_bonus_claimed_once()
+⇾ [NOT STARTED] Property Test: OWASP_02_VulnFuzz.echidna_bonus_claimed_once()
+⇾ fuzz: elapsed:       0s, calls:          0 (     0/sec), seq/s:      0, branches:     27, corpus:     0, failures: 0/0, gas/s:            0
+⇾ [Worker 1] Shrinking call sequence for Property Test: OWASP_02_VulnFuzz.echidna_bonus_claimed_once() with 2 call(s)
+⇾ [Worker 2] Shrinking call sequence for Property Test: OWASP_02_VulnFuzz.echidna_bonus_claimed_once() with 2 call(s)
+⇾ [Worker 0] Shrinking call sequence for Property Test: OWASP_02_VulnFuzz.echidna_bonus_claimed_once() with 2 call(s)
+⇾ [Worker 3] Shrinking call sequence for Property Test: OWASP_02_VulnFuzz.echidna_bonus_claimed_once() with 2 call(s)
+⇾ [Worker 2] Shrinking complete after 5000 attempts (limit: 5000)
+⇾ [Worker 3] Shrinking complete after 5000 attempts (limit: 5000)
+⇾ [Worker 1] Shrinking complete after 5000 attempts (limit: 5000)
+⇾ [Worker 0] Shrinking complete after 5000 attempts (limit: 5000)
+⇾ Fuzzer stopped, test results follow below ...
+⇾ [NOT STARTED] Property Test: OWASP_02_FixedFuzz.echidna_bonus_claimed_once()
+⇾ [FAILED] Property Test: OWASP_02_VulnFuzz.echidna_bonus_claimed_once()
+Test for method "OWASP_02_VulnFuzz.echidna_bonus_claimed_once()" failed after the following call sequence:
+[Call Sequence]
+1) OWASP_02_VulnFuzz.claimBonus()() (block=2, time=2, gas=12500000, gasprice=0, value=0, sender=0x20000)
+2) OWASP_02_VulnFuzz.claimBonus()() (block=2, time=2, gas=12500000, gasprice=0, value=0, sender=0x20000)
+[Execution Trace]
+ => [call] OWASP_02_VulnFuzz.claimBonus()() (addr=0xA647ff3c36cFab592509E13860ab8c4F28781a66, value=0, sender=0x20000)
+	 => [call] MVE_O2_Vuln.claimBonus()() (addr=0x54919A19522Ce7c842E25735a9cFEcef1c0a06dA, value=0, sender=0xA647ff3c36cFab592509E13860ab8c4F28781a66)
+		 => [return ()]
+	 => [return ()]
+
+[Property Test Execution Trace]
+[Execution Trace]
+ => [call] OWASP_02_VulnFuzz.echidna_bonus_claimed_once()() (addr=0xA647ff3c36cFab592509E13860ab8c4F28781a66, value=0, sender=0x10000)
+	 => [call] MVE_O2_Vuln.bonusOf(address)(0xA647ff3c36cFab592509E13860ab8c4F28781a66) (addr=0x54919A19522Ce7c842E25735a9cFEcef1c0a06dA, value=<nil>, sender=0xA647ff3c36cFab592509E13860ab8c4F28781a66)
+		 => [return (200000000000000000)]
+	 => [return (false)]
+
+⇾ Test summary: 0 test(s) passed, 1 test(s) failed
+⇾ lcov report(s) saved to: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/corpus/medusa/OWASP_02_VulnFuzz/coverage/lcov.info

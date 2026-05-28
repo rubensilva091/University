@@ -1,0 +1,26 @@
+[1m[32m⇾[0m[0m [1mReading the configuration file at: [1m/tmp/medusa_OWASP_10_FixedFuzz.json[0m[0m
+⇾ Compiling targets with crytic-compile
+⇾ Running command:
+/home/martim/.local/bin/crytic-compile /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/test/OWASP_10_Fuzz.sol --export-format solc
+⇾ Finished compiling targets in 1s
+warn artifacts: Medusa is running against the same build artifacts as previously (last run: 22 minutes ago)
+⇾ Running with a timeout of 60 seconds
+⇾ Setting up test chain
+⇾ Finished setting up test chain
+⇾ Creating corpus...
+⇾ Initializing corpus...
+⇾ Fuzzing with 4 workers
+⇾ fuzz: elapsed:       0s, calls:          0 (     0/sec), seq/s:      0, branches:     30, corpus:     0, failures: 0/0, gas/s:            0
+⇾ [NOT STARTED] Property Test: OWASP_10_FixedFuzz.echidna_impl_controlled()
+⇾ [NOT STARTED] Property Test: OWASP_10_FixedFuzz.echidna_owner_is_deployer()
+⇾ [NOT STARTED] Property Test: OWASP_10_VulnFuzz.echidna_owner_is_deployer()
+⇾ [NOT STARTED] Property Test: OWASP_10_VulnFuzz.echidna_owner_not_attacker()
+⇾ fuzz: elapsed:       3s, calls:     127784 ( 42580/sec), seq/s:    425, branches:     67, corpus:     4, failures: 0/1278, gas/s:   1017410194
+⇾ Transaction test limit reached, halting now...
+⇾ Fuzzer stopped, test results follow below ...
+⇾ [NOT STARTED] Property Test: OWASP_10_VulnFuzz.echidna_owner_is_deployer()
+⇾ [NOT STARTED] Property Test: OWASP_10_VulnFuzz.echidna_owner_not_attacker()
+⇾ [PASSED] Property Test: OWASP_10_FixedFuzz.echidna_impl_controlled()
+⇾ [PASSED] Property Test: OWASP_10_FixedFuzz.echidna_owner_is_deployer()
+⇾ Test summary: 2 test(s) passed, 0 test(s) failed
+⇾ lcov report(s) saved to: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/corpus/medusa/OWASP_10_FixedFuzz/coverage/lcov.info

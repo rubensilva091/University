@@ -1,0 +1,25 @@
+[1m[32m⇾[0m[0m [1mReading the configuration file at: [1m/tmp/medusa_OWASP_06_Fixed2Fuzz.json[0m[0m
+⇾ Compiling targets with crytic-compile
+⇾ Running command:
+/home/martim/.local/bin/crytic-compile /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/test/OWASP_06_Fuzz.sol --export-format solc
+⇾ Finished compiling targets in 1s
+⇾ artifacts: Medusa is running against a new set of build artifacts
+⇾ Running with a timeout of 60 seconds
+⇾ Setting up test chain
+⇾ Finished setting up test chain
+⇾ Creating corpus...
+⇾ Fuzzing with 4 workers
+⇾ [NOT STARTED] Property Test: OWASP_06_Fixed2Fuzz.echidna_allocation_preserved_on_failed_transfer()
+⇾ fuzz: elapsed:       0s, calls:          0 (     0/sec), seq/s:      0, branches:     83, corpus:     0, failures: 0/0, gas/s:            0
+⇾ [NOT STARTED] Property Test: OWASP_06_FixedFuzz.echidna_no_phantom_credit()
+⇾ [NOT STARTED] Property Test: OWASP_06_Vuln2Fuzz.echidna_allocation_preserved_on_failed_transfer()
+⇾ [NOT STARTED] Property Test: OWASP_06_VulnFuzz.echidna_no_phantom_credit()
+⇾ fuzz: elapsed:       3s, calls:     145122 ( 48373/sec), seq/s:    482, branches:    250, corpus:     9, failures: 0/1449, gas/s:   1347273815
+⇾ Transaction test limit reached, halting now...
+⇾ Fuzzer stopped, test results follow below ...
+⇾ [NOT STARTED] Property Test: OWASP_06_FixedFuzz.echidna_no_phantom_credit()
+⇾ [NOT STARTED] Property Test: OWASP_06_Vuln2Fuzz.echidna_allocation_preserved_on_failed_transfer()
+⇾ [NOT STARTED] Property Test: OWASP_06_VulnFuzz.echidna_no_phantom_credit()
+⇾ [PASSED] Property Test: OWASP_06_Fixed2Fuzz.echidna_allocation_preserved_on_failed_transfer()
+⇾ Test summary: 1 test(s) passed, 0 test(s) failed
+⇾ lcov report(s) saved to: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/corpus/medusa/OWASP_06_Fixed2Fuzz/coverage/lcov.info

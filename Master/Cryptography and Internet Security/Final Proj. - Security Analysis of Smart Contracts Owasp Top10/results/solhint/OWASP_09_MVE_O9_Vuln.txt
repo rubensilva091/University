@@ -1,0 +1,12 @@
+A new version of Solhint is available: 6.2.1
+Please consider updating your Solhint package.
+
+/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_09/MVE_O9_Vuln.sol
+   4:1  warning  Contract, Structs and Enums should be in CamelCase   contract-name-camelcase
+   5:5  warning  Constant name must be in capitalized SNAKE_CASE      const-name-snakecase
+   6:5  warning  Constant name must be in capitalized SNAKE_CASE      const-name-snakecase
+   7:5  warning  Constant name must be in capitalized SNAKE_CASE      const-name-snakecase
+  19:9  warning  GC: Use Custom Errors instead of require statements  gas-custom-errors
+
+✖ 5 problems (0 errors, 5 warnings)
+

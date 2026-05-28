@@ -1,0 +1,46 @@
+[1m[32m⇾[0m[0m [1mReading the configuration file at: [1m/tmp/medusa_OWASP_01_VulnFuzz.json[0m[0m
+⇾ Compiling targets with crytic-compile
+⇾ Running command:
+/home/martim/.local/bin/crytic-compile /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/test/OWASP_01_Fuzz.sol --export-format solc
+⇾ Finished compiling targets in 1s
+⇾ artifacts: Medusa is running against a new set of build artifacts
+⇾ Running with a timeout of 60 seconds
+⇾ Setting up test chain
+⇾ Finished setting up test chain
+⇾ Creating corpus...
+⇾ Initializing corpus...
+⇾ Fuzzing with 4 workers
+⇾ [NOT STARTED] Property Test: OWASP_01_Fixed2Fuzz.echidna_no_inflation()
+⇾ fuzz: elapsed:       0s, calls:          0 (     0/sec), seq/s:      0, branches:     19, corpus:     0, failures: 0/0, gas/s:            0
+⇾ [NOT STARTED] Property Test: OWASP_01_FixedFuzz.echidna_treasury_unchanged()
+⇾ [NOT STARTED] Property Test: OWASP_01_Vuln2Fuzz.echidna_no_inflation()
+⇾ [NOT STARTED] Property Test: OWASP_01_VulnFuzz.echidna_treasury_unchanged()
+⇾ [Worker 0] Shrinking call sequence for Property Test: OWASP_01_VulnFuzz.echidna_treasury_unchanged() with 1 call(s)
+⇾ [Worker 1] Shrinking call sequence for Property Test: OWASP_01_VulnFuzz.echidna_treasury_unchanged() with 1 call(s)
+⇾ [Worker 1] Shrinking complete after 0 attempts (limit: 5000)
+⇾ [Worker 2] Shrinking call sequence for Property Test: OWASP_01_VulnFuzz.echidna_treasury_unchanged() with 1 call(s)
+⇾ [Worker 3] Shrinking call sequence for Property Test: OWASP_01_VulnFuzz.echidna_treasury_unchanged() with 1 call(s)
+⇾ [Worker 3] Shrinking complete after 0 attempts (limit: 5000)
+⇾ [Worker 0] Shrinking complete after 7 attempts (limit: 5000)
+⇾ [Worker 2] Shrinking complete after 3 attempts (limit: 5000)
+⇾ Fuzzer stopped, test results follow below ...
+⇾ [NOT STARTED] Property Test: OWASP_01_Fixed2Fuzz.echidna_no_inflation()
+⇾ [NOT STARTED] Property Test: OWASP_01_FixedFuzz.echidna_treasury_unchanged()
+⇾ [NOT STARTED] Property Test: OWASP_01_Vuln2Fuzz.echidna_no_inflation()
+⇾ [FAILED] Property Test: OWASP_01_VulnFuzz.echidna_treasury_unchanged()
+Test for method "OWASP_01_VulnFuzz.echidna_treasury_unchanged()" failed after the following call sequence:
+[Call Sequence]
+1) MVE_O1_Vuln.setTreasury(address)(0x0) (block=2, time=2, gas=12500000, gasprice=0, value=0, sender=0x10000)
+[Execution Trace]
+ => [call] MVE_O1_Vuln.setTreasury(address)(0x0) (addr=0x54919A19522Ce7c842E25735a9cFEcef1c0a06dA, value=0, sender=0x10000)
+	 => [return ()]
+
+[Property Test Execution Trace]
+[Execution Trace]
+ => [call] OWASP_01_VulnFuzz.echidna_treasury_unchanged()() (addr=0xA647ff3c36cFab592509E13860ab8c4F28781a66, value=0, sender=0x10000)
+	 => [call] MVE_O1_Vuln.treasury()() (addr=0x54919A19522Ce7c842E25735a9cFEcef1c0a06dA, value=<nil>, sender=0xA647ff3c36cFab592509E13860ab8c4F28781a66)
+		 => [return (0x0)]
+	 => [return (false)]
+
+⇾ Test summary: 0 test(s) passed, 1 test(s) failed
+⇾ lcov report(s) saved to: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/corpus/medusa/OWASP_01_VulnFuzz/coverage/lcov.info

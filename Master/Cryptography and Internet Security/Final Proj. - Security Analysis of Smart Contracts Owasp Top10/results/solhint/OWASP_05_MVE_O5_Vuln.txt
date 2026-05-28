@@ -1,0 +1,13 @@
+A new version of Solhint is available: 6.2.1
+Please consider updating your Solhint package.
+
+/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_05/MVE_O5_Vuln.sol
+   4:1  warning  Contract, Structs and Enums should be in CamelCase                                                 contract-name-camelcase
+   5:5  warning  Immutable variables name are set to be in capitalized SNAKE_CASE                                   immutable-vars-naming
+   8:5  warning  Explicitly mark visibility in function (Set ignoreConstructors to true if using solidity >=0.7.0)  func-visibility
+  23:9  warning  GC: Use Custom Errors instead of require statements                                                gas-custom-errors
+  31:9  warning  GC: Use Custom Errors instead of require statements                                                gas-custom-errors
+  37:9  warning  Avoid to use inline assembly. It is acceptable only in rare cases                                  no-inline-assembly
+
+✖ 6 problems (0 errors, 6 warnings)
+

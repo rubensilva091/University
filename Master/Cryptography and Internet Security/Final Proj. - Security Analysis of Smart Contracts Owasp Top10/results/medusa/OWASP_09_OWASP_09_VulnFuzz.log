@@ -1,0 +1,56 @@
+[1m[32m⇾[0m[0m [1mReading the configuration file at: [1m/tmp/medusa_OWASP_09_VulnFuzz.json[0m[0m
+⇾ Compiling targets with crytic-compile
+⇾ Running command:
+/home/martim/.local/bin/crytic-compile /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/test/OWASP_09_Fuzz.sol --export-format solc
+⇾ Finished compiling targets in 1s
+⇾ artifacts: Medusa is running against a new set of build artifacts
+⇾ Running with a timeout of 60 seconds
+⇾ Setting up test chain
+⇾ Finished setting up test chain
+⇾ Creating corpus...
+⇾ Initializing corpus...
+⇾ Fuzzing with 4 workers
+⇾ [NOT STARTED] Property Test: OWASP_09_Fixed2Fuzz.echidna_balance_le_supply()
+⇾ fuzz: elapsed:       0s, calls:          0 (     0/sec), seq/s:      0, branches:      9, corpus:     0, failures: 0/0, gas/s:            0
+⇾ [NOT STARTED] Property Test: OWASP_09_Fixed2Fuzz.echidna_no_underflow_wrap()
+⇾ [NOT STARTED] Property Test: OWASP_09_FixedFuzz.echidna_supply_never_decreases()
+⇾ [NOT STARTED] Property Test: OWASP_09_FixedFuzz.echidna_supply_cap()
+⇾ [NOT STARTED] Property Test: OWASP_09_Vuln2Fuzz.echidna_balance_le_supply()
+⇾ [NOT STARTED] Property Test: OWASP_09_Vuln2Fuzz.echidna_no_underflow_wrap()
+⇾ [NOT STARTED] Property Test: OWASP_09_VulnFuzz.echidna_supply_cap()
+⇾ [NOT STARTED] Property Test: OWASP_09_VulnFuzz.echidna_supply_never_decreases()
+⇾ [Worker 1] Shrinking call sequence for Property Test: OWASP_09_VulnFuzz.echidna_supply_never_decreases() with 3 call(s)
+⇾ [Worker 2] Shrinking call sequence for Property Test: OWASP_09_VulnFuzz.echidna_supply_never_decreases() with 2 call(s)
+⇾ [Worker 3] Shrinking call sequence for Property Test: OWASP_09_VulnFuzz.echidna_supply_never_decreases() with 3 call(s)
+⇾ [Worker 0] Shrinking call sequence for Property Test: OWASP_09_VulnFuzz.echidna_supply_never_decreases() with 3 call(s)
+⇾ [Worker 2] Shrinking complete after 5000 attempts (limit: 5000)
+⇾ [Worker 1] Shrinking complete after 5000 attempts (limit: 5000)
+⇾ [Worker 0] Shrinking complete after 5000 attempts (limit: 5000)
+⇾ [Worker 3] Shrinking complete after 5000 attempts (limit: 5000)
+⇾ Fuzzer stopped, test results follow below ...
+⇾ [NOT STARTED] Property Test: OWASP_09_Fixed2Fuzz.echidna_balance_le_supply()
+⇾ [NOT STARTED] Property Test: OWASP_09_Fixed2Fuzz.echidna_no_underflow_wrap()
+⇾ [NOT STARTED] Property Test: OWASP_09_FixedFuzz.echidna_supply_cap()
+⇾ [NOT STARTED] Property Test: OWASP_09_FixedFuzz.echidna_supply_never_decreases()
+⇾ [NOT STARTED] Property Test: OWASP_09_Vuln2Fuzz.echidna_balance_le_supply()
+⇾ [NOT STARTED] Property Test: OWASP_09_Vuln2Fuzz.echidna_no_underflow_wrap()
+⇾ [PASSED] Property Test: OWASP_09_VulnFuzz.echidna_supply_cap()
+⇾ [FAILED] Property Test: OWASP_09_VulnFuzz.echidna_supply_never_decreases()
+Test for method "OWASP_09_VulnFuzz.echidna_supply_never_decreases()" failed after the following call sequence:
+[Call Sequence]
+1) OWASP_09_VulnFuzz.mintAndSnapshot(uint256)(2) (block=2, time=2, gas=12500000, gasprice=0, value=0, sender=0x10000)
+2) OWASP_09_VulnFuzz.mintAndSnapshot(uint256)(0) (block=2, time=2, gas=12500000, gasprice=0, value=0, sender=0x10000)
+3) MVE_O9_Vuln.mint(uint256)(115792089237316195423570985008687907853269984665640564039457584007913129639934) (block=2, time=2, gas=12500000, gasprice=0, value=0, sender=0x30000)
+[Execution Trace]
+ => [call] MVE_O9_Vuln.mint(uint256)(115792089237316195423570985008687907853269984665640564039457584007913129639934) (addr=0x54919A19522Ce7c842E25735a9cFEcef1c0a06dA, value=0, sender=0x30000)
+	 => [return ()]
+
+[Property Test Execution Trace]
+[Execution Trace]
+ => [call] OWASP_09_VulnFuzz.echidna_supply_never_decreases()() (addr=0xA647ff3c36cFab592509E13860ab8c4F28781a66, value=0, sender=0x10000)
+	 => [call] MVE_O9_Vuln.totalSupply()() (addr=0x54919A19522Ce7c842E25735a9cFEcef1c0a06dA, value=<nil>, sender=0xA647ff3c36cFab592509E13860ab8c4F28781a66)
+		 => [return (0)]
+	 => [return (false)]
+
+⇾ Test summary: 1 test(s) passed, 1 test(s) failed
+⇾ lcov report(s) saved to: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/corpus/medusa/OWASP_09_VulnFuzz/coverage/lcov.info

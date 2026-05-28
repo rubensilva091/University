@@ -1,0 +1,30 @@
+[1m[32m⇾[0m[0m [1mReading the configuration file at: [1m/tmp/medusa_OWASP_08_Fixed2Fuzz.json[0m[0m
+⇾ Compiling targets with crytic-compile
+⇾ Running command:
+/home/martim/.local/bin/crytic-compile /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/test/OWASP_08_Fuzz.sol --export-format solc
+⇾ Finished compiling targets in 1s
+warn artifacts: Medusa is running against the same build artifacts as previously (last run: 22 minutes ago)
+⇾ Running with a timeout of 60 seconds
+⇾ Setting up test chain
+⇾ Finished setting up test chain
+⇾ Creating corpus...
+⇾ Initializing corpus...
+⇾ Fuzzing with 4 workers
+⇾ [NOT STARTED] Property Test: OWASP_08_FixedFuzz.echidna_solvency()
+⇾ fuzz: elapsed:       0s, calls:          0 (     0/sec), seq/s:      0, branches:      9, corpus:     0, failures: 0/0, gas/s:            0
+⇾ [NOT STARTED] Property Test: OWASP_08_Vuln2Fuzz.echidna_solvency()
+⇾ [NOT STARTED] Property Test: OWASP_08_VulnFuzz.echidna_solvency()
+⇾ [NOT STARTED] Property Test: OWASP_08_VulnReentryFuzz.echidna_no_drain()
+⇾ [NOT STARTED] Property Test: OWASP_08_VulnReentryFuzz.echidna_seed_backed()
+⇾ [NOT STARTED] Property Test: OWASP_08_Fixed2Fuzz.echidna_solvency()
+⇾ fuzz: elapsed:       3s, calls:     145303 ( 48433/sec), seq/s:    486, branches:    212, corpus:    12, failures: 0/1460, gas/s:   2167962208
+⇾ Transaction test limit reached, halting now...
+⇾ Fuzzer stopped, test results follow below ...
+⇾ [NOT STARTED] Property Test: OWASP_08_FixedFuzz.echidna_solvency()
+⇾ [NOT STARTED] Property Test: OWASP_08_Vuln2Fuzz.echidna_solvency()
+⇾ [NOT STARTED] Property Test: OWASP_08_VulnFuzz.echidna_solvency()
+⇾ [NOT STARTED] Property Test: OWASP_08_VulnReentryFuzz.echidna_no_drain()
+⇾ [NOT STARTED] Property Test: OWASP_08_VulnReentryFuzz.echidna_seed_backed()
+⇾ [PASSED] Property Test: OWASP_08_Fixed2Fuzz.echidna_solvency()
+⇾ Test summary: 1 test(s) passed, 0 test(s) failed
+⇾ lcov report(s) saved to: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/corpus/medusa/OWASP_08_Fixed2Fuzz/coverage/lcov.info

@@ -1,0 +1,10 @@
+A new version of Solhint is available: 6.2.1
+Please consider updating your Solhint package.
+
+/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_10/MVE_O10_Vuln.sol
+   4:1  warning  Contract, Structs and Enums should be in CamelCase   contract-name-camelcase
+  10:9  warning  GC: Use Custom Errors instead of require statements  gas-custom-errors
+  16:9  warning  GC: Use Custom Errors instead of require statements  gas-custom-errors
+
+✖ 3 problems (0 errors, 3 warnings)
+

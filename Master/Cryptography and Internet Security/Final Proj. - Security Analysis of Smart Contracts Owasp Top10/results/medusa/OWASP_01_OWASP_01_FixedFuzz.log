@@ -1,0 +1,26 @@
+[1m[32m⇾[0m[0m [1mReading the configuration file at: [1m/tmp/medusa_OWASP_01_FixedFuzz.json[0m[0m
+⇾ Compiling targets with crytic-compile
+⇾ Running command:
+/home/martim/.local/bin/crytic-compile /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/test/OWASP_01_Fuzz.sol --export-format solc
+⇾ Finished compiling targets in 1s
+⇾ artifacts: Medusa is running against a new set of build artifacts
+⇾ Running with a timeout of 60 seconds
+⇾ Setting up test chain
+⇾ Finished setting up test chain
+⇾ Creating corpus...
+⇾ Initializing corpus...
+⇾ Fuzzing with 4 workers
+⇾ [NOT STARTED] Property Test: OWASP_01_VulnFuzz.echidna_treasury_unchanged()
+⇾ [NOT STARTED] Property Test: OWASP_01_Fixed2Fuzz.echidna_no_inflation()
+⇾ [NOT STARTED] Property Test: OWASP_01_FixedFuzz.echidna_treasury_unchanged()
+⇾ [NOT STARTED] Property Test: OWASP_01_Vuln2Fuzz.echidna_no_inflation()
+⇾ fuzz: elapsed:       0s, calls:          0 (     0/sec), seq/s:      0, branches:     19, corpus:     0, failures: 0/0, gas/s:            0
+⇾ fuzz: elapsed:       3s, calls:     209873 ( 69954/sec), seq/s:    700, branches:    108, corpus:     7, failures: 0/2103, gas/s:   1601022252
+⇾ Transaction test limit reached, halting now...
+⇾ Fuzzer stopped, test results follow below ...
+⇾ [NOT STARTED] Property Test: OWASP_01_Fixed2Fuzz.echidna_no_inflation()
+⇾ [NOT STARTED] Property Test: OWASP_01_Vuln2Fuzz.echidna_no_inflation()
+⇾ [NOT STARTED] Property Test: OWASP_01_VulnFuzz.echidna_treasury_unchanged()
+⇾ [PASSED] Property Test: OWASP_01_FixedFuzz.echidna_treasury_unchanged()
+⇾ Test summary: 1 test(s) passed, 0 test(s) failed
+⇾ lcov report(s) saved to: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/corpus/medusa/OWASP_01_FixedFuzz/coverage/lcov.info

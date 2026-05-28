@@ -1,0 +1,979 @@
+No files changed, compilation skipped
+note[screaming-snake-case-const]: constants should use SCREAMING_SNAKE_CASE
+ --> contracts/OWASP_09/MVE_O9_Vuln.sol:5:28
+  |
+5 |     string public constant name = "Overflow Token";
+  |                            ^^^^ help: consider using: `NAME`
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#screaming-snake-case-const
+
+note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
+  --> contracts/OWASP_06/MVE_O6_Fixed2.sol:12:36
+   |
+12 |     IERC20Minimal public immutable token;
+   |                                    ^^^^^ help: consider using: `TOKEN`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#screaming-snake-case-immutable
+
+note[unwrapped-modifier-logic]: wrap modifier logic to reduce code size
+  --> contracts/OWASP_08/MVE_O8_Fixed2.sol:14:5
+   |
+14 | /     modifier nonReentrant() {
+15 | |         if (locked) revert ReentrantCall();
+16 | |         locked = true;
+17 | |         _;
+18 | |         locked = false;
+19 | |     }
+   | |_____^
+   |
+help: wrap modifier logic to reduce code size
+   |
+14 ~     modifier nonReentrant() {
+15 +         _nonReentrantBefore();
+16 +         _;
+17 +         _nonReentrantAfter();
+18 +     }
+19 + 
+20 +     function _nonReentrantBefore() internal {
+21 +         if (locked) revert ReentrantCall();
+22 +         locked = true;
+23 +     }
+24 + 
+25 +     function _nonReentrantAfter() internal {
+26 +         locked = false;
+27 +     }
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#unwrapped-modifier-logic
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_01_Halmos.sol:4:8
+  |
+4 | import "../contracts/OWASP_01/MVE_O1_Vuln.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[screaming-snake-case-const]: constants should use SCREAMING_SNAKE_CASE
+ --> contracts/OWASP_09/MVE_O9_Vuln.sol:6:28
+  |
+6 |     string public constant symbol = "OVF";
+  |                            ^^^^^^ help: consider using: `SYMBOL`
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#screaming-snake-case-const
+
+note[unwrapped-modifier-logic]: wrap modifier logic to reduce code size
+  --> contracts/OWASP_03/MVE_O3_Fixed.sol:13:5
+   |
+13 | /     modifier onlyOwner() {
+14 | |         // [FIX] Protege atualizacao do preco contra atores nao autorizados.
+15 | |         if (msg.sender != owner) revert NotOwner();
+16 | |         _;
+17 | |     }
+   | |_____^
+   |
+help: wrap modifier logic to reduce code size
+   |
+13 ~     modifier onlyOwner() {
+14 +         _onlyOwner();
+15 +         _;
+16 +     }
+17 + 
+18 +     function _onlyOwner() internal {
+19 +         if (msg.sender != owner) revert NotOwner();
+20 +     }
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#unwrapped-modifier-logic
+
+note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
+ --> contracts/OWASP_05/MVE_O5_Fixed.sol:5:30
+  |
+5 |     address public immutable trustedSigner;
+  |                              ^^^^^^^^^^^^^ help: consider using: `TRUSTED_SIGNER`
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#screaming-snake-case-immutable
+
+note[unwrapped-modifier-logic]: wrap modifier logic to reduce code size
+  --> contracts/OWASP_01/MVE_O1_Fixed.sol:11:5
+   |
+11 | /     modifier onlyOwner() {
+12 | |         // [FIX] Restringe funcoes criticas ao owner.
+13 | |         if (msg.sender != owner) revert NotOwner();
+14 | |         _;
+15 | |     }
+   | |_____^
+   |
+help: wrap modifier logic to reduce code size
+   |
+11 ~     modifier onlyOwner() {
+12 +         _onlyOwner();
+13 +         _;
+14 +     }
+15 + 
+16 +     function _onlyOwner() internal {
+17 +         if (msg.sender != owner) revert NotOwner();
+18 +     }
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#unwrapped-modifier-logic
+
+note[unwrapped-modifier-logic]: wrap modifier logic to reduce code size
+  --> contracts/OWASP_06/MVE_O6_Fixed2.sol:24:5
+   |
+24 | /     modifier onlyOwner() {
+25 | |         if (msg.sender != owner) revert NotOwner();
+26 | |         _;
+27 | |     }
+   | |_____^
+   |
+help: wrap modifier logic to reduce code size
+   |
+24 ~     modifier onlyOwner() {
+25 +         _onlyOwner();
+26 +         _;
+27 +     }
+28 + 
+29 +     function _onlyOwner() internal {
+30 +         if (msg.sender != owner) revert NotOwner();
+31 +     }
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#unwrapped-modifier-logic
+
+note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
+  --> contracts/OWASP_03/MVE_O3_Vuln.sol:18:35
+   |
+18 |     MockSpotPool public immutable pool;
+   |                                   ^^^^ help: consider using: `POOL`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#screaming-snake-case-immutable
+
+note[screaming-snake-case-const]: constants should use SCREAMING_SNAKE_CASE
+ --> contracts/OWASP_09/MVE_O9_Fixed.sol:5:28
+  |
+5 |     string public constant name = "Safe Cap Token";
+  |                            ^^^^ help: consider using: `NAME`
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#screaming-snake-case-const
+
+note[asm-keccak256]: use of inefficient hashing mechanism; consider using inline assembly
+  --> contracts/OWASP_05/MVE_O5_Fixed.sol:30:26
+   |
+30 |           bytes32 digest = keccak256(
+   |  __________________________^
+31 | |             abi.encodePacked(address(this), block.chainid, to, amount, deadline, nonce)
+32 | |         );
+   | |_________^
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#asm-keccak256
+
+note[screaming-snake-case-const]: constants should use SCREAMING_SNAKE_CASE
+ --> contracts/OWASP_09/MVE_O9_Vuln.sol:7:27
+  |
+7 |     uint8 public constant decimals = 18;
+  |                           ^^^^^^^^ help: consider using: `DECIMALS`
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#screaming-snake-case-const
+
+note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
+  --> contracts/OWASP_06/MVE_O6_Vuln2.sol:14:36
+   |
+14 |     IERC20Minimal public immutable token;
+   |                                    ^^^^^ help: consider using: `TOKEN`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#screaming-snake-case-immutable
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_01_Halmos.sol:5:8
+  |
+5 | import "../contracts/OWASP_01/MVE_O1_Fixed.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_01_Halmos.sol:57:14
+   |
+57 |     function check_non_owner_cannot_change_treasury(address payable newTreasury) public {
+   |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `checkNonOwnerCannotChangeTreasury`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[screaming-snake-case-const]: constants should use SCREAMING_SNAKE_CASE
+ --> contracts/OWASP_09/MVE_O9_Fixed.sol:6:28
+  |
+6 |     string public constant symbol = "SCAP";
+  |                            ^^^^^^ help: consider using: `SYMBOL`
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#screaming-snake-case-const
+
+note[screaming-snake-case-const]: constants should use SCREAMING_SNAKE_CASE
+ --> contracts/OWASP_09/MVE_O9_Fixed.sol:7:27
+  |
+7 |     uint8 public constant decimals = 18;
+  |                           ^^^^^^^^ help: consider using: `DECIMALS`
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#screaming-snake-case-const
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_01_Fuzz.sol:4:8
+  |
+4 | import "../contracts/OWASP_01/MVE_O1_Vuln.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_01_Fuzz.sol:5:8
+  |
+5 | import "../contracts/OWASP_01/MVE_O1_Fixed.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_06_Fuzz.sol:4:8
+  |
+4 | import "../contracts/OWASP_06/MVE_O6_Vuln.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
+ --> contracts/OWASP_05/MVE_O5_Fixed2.sol:9:30
+  |
+9 |     address public immutable trustedSigner;
+  |                              ^^^^^^^^^^^^^ help: consider using: `TRUSTED_SIGNER`
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#screaming-snake-case-immutable
+
+note[screaming-snake-case-const]: constants should use SCREAMING_SNAKE_CASE
+ --> contracts/OWASP_09/MVE_O9_Fixed2.sol:9:28
+  |
+9 |     string public constant name = "Safe Burn Token";
+  |                            ^^^^ help: consider using: `NAME`
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#screaming-snake-case-const
+
+note[screaming-snake-case-const]: constants should use SCREAMING_SNAKE_CASE
+ --> contracts/OWASP_09/MVE_O9_Vuln2.sol:9:28
+  |
+9 |     string public constant name = "Underflow Token";
+  |                            ^^^^ help: consider using: `NAME`
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#screaming-snake-case-const
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_01_Fuzz.sol:6:8
+  |
+6 | import "../contracts/OWASP_01/MVE_O1_Vuln2.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_06_Fuzz.sol:5:8
+  |
+5 | import "../contracts/OWASP_06/MVE_O6_Fixed.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_03_Fuzz.sol:4:8
+  |
+4 | import "../contracts/OWASP_03/MVE_O3_Vuln.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[screaming-snake-case-const]: constants should use SCREAMING_SNAKE_CASE
+  --> contracts/OWASP_09/MVE_O9_Fixed2.sol:10:28
+   |
+10 |     string public constant symbol = "SBURN";
+   |                            ^^^^^^ help: consider using: `SYMBOL`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#screaming-snake-case-const
+
+note[screaming-snake-case-const]: constants should use SCREAMING_SNAKE_CASE
+  --> contracts/OWASP_09/MVE_O9_Vuln2.sol:10:28
+   |
+10 |     string public constant symbol = "UDF";
+   |                            ^^^^^^ help: consider using: `SYMBOL`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#screaming-snake-case-const
+
+note[unwrapped-modifier-logic]: wrap modifier logic to reduce code size
+  --> contracts/OWASP_06/MVE_O6_Vuln2.sol:25:5
+   |
+25 | /     modifier onlyOwner() {
+26 | |         if (msg.sender != owner) revert NotOwner();
+27 | |         _;
+28 | |     }
+   | |_____^
+   |
+help: wrap modifier logic to reduce code size
+   |
+25 ~     modifier onlyOwner() {
+26 +         _onlyOwner();
+27 +         _;
+28 +     }
+29 + 
+30 +     function _onlyOwner() internal {
+31 +         if (msg.sender != owner) revert NotOwner();
+32 +     }
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#unwrapped-modifier-logic
+
+note[asm-keccak256]: use of inefficient hashing mechanism; consider using inline assembly
+  --> contracts/OWASP_05/MVE_O5_Fixed2.sol:31:26
+   |
+31 |         bytes32 digest = keccak256(abi.encodePacked(address(this), to, amount));
+   |                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#asm-keccak256
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_01_Halmos.sol:77:14
+   |
+77 |     function check_non_owner_cannot_change_treasury(address payable newTreasury) public {
+   |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `checkNonOwnerCannotChangeTreasury`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[screaming-snake-case-const]: constants should use SCREAMING_SNAKE_CASE
+  --> contracts/OWASP_09/MVE_O9_Vuln2.sol:11:27
+   |
+11 |     uint8 public constant decimals = 18;
+   |                           ^^^^^^^^ help: consider using: `DECIMALS`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#screaming-snake-case-const
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_01_Fuzz.sol:7:8
+  |
+7 | import "../contracts/OWASP_01/MVE_O1_Fixed2.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_03_Fuzz.sol:5:8
+  |
+5 | import "../contracts/OWASP_03/MVE_O3_Fixed.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
+ --> contracts/OWASP_05/MVE_O5_Vuln.sol:5:30
+  |
+5 |     address public immutable trustedSigner;
+  |                              ^^^^^^^^^^^^^ help: consider using: `TRUSTED_SIGNER`
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#screaming-snake-case-immutable
+
+warning[erc20-unchecked-transfer]: ERC20 'transfer' and 'transferFrom' calls should check the return value
+  --> contracts/OWASP_06/MVE_O6_Vuln2.sol:42:9
+   |
+42 |         token.transfer(msg.sender, amount);
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#erc20-unchecked-transfer
+
+warning[divide-before-multiply]: multiplication should occur before division to avoid loss of precision
+  --> contracts/OWASP_07/MVE_O7_Vuln.sol:27:24
+   |
+27 |         uint256 burn = (assets / address(this).balance) * totalShares;
+   |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#divide-before-multiply
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_06_Fuzz.sol:31:14
+   |
+31 |     function echidna_no_phantom_credit() external view returns (bool) {
+   |              ^^^^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaNoPhantomCredit`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[screaming-snake-case-const]: constants should use SCREAMING_SNAKE_CASE
+  --> contracts/OWASP_09/MVE_O9_Fixed2.sol:11:27
+   |
+11 |     uint8 public constant decimals = 18;
+   |                           ^^^^^^^^ help: consider using: `DECIMALS`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#screaming-snake-case-const
+
+note[unwrapped-modifier-logic]: wrap modifier logic to reduce code size
+  --> contracts/OWASP_08/MVE_O8_Fixed.sol:8:5
+   |
+ 8 | /     modifier nonReentrant() {
+ 9 | |         require(!locked, "reentrant call");
+10 | |         locked = true;
+11 | |         _;
+12 | |         locked = false;
+13 | |     }
+   | |_____^
+   |
+help: wrap modifier logic to reduce code size
+   |
+ 8 ~     modifier nonReentrant() {
+ 9 +         _nonReentrantBefore();
+10 +         _;
+11 +         _nonReentrantAfter();
+12 +     }
+13 + 
+14 +     function _nonReentrantBefore() internal {
+15 +         require(!locked, "reentrant call");
+16 +         locked = true;
+17 +     }
+18 + 
+19 +     function _nonReentrantAfter() internal {
+20 +         locked = false;
+21 +     }
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#unwrapped-modifier-logic
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_03_Fuzz.sol:38:14
+   |
+38 |     function echidna_no_overborrow() external view returns (bool) {
+   |              ^^^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaNoOverborrow`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_09_Fuzz.sol:4:8
+  |
+4 | import "../contracts/OWASP_09/MVE_O9_Vuln.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[asm-keccak256]: use of inefficient hashing mechanism; consider using inline assembly
+  --> contracts/OWASP_05/MVE_O5_Vuln.sol:20:26
+   |
+20 |         bytes32 digest = keccak256(abi.encodePacked(address(this), to, amount));
+   |                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#asm-keccak256
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_01_Fuzz.sol:28:14
+   |
+28 |     function echidna_treasury_unchanged() external view returns (bool) {
+   |              ^^^^^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaTreasuryUnchanged`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_01_Fuzz.sol:45:14
+   |
+45 |     function echidna_treasury_unchanged() external view returns (bool) {
+   |              ^^^^^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaTreasuryUnchanged`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_02_Fuzz.sol:4:8
+  |
+4 | import "../contracts/OWASP_02/MVE_O2_Vuln.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[screaming-snake-case-immutable]: immutables should use SCREAMING_SNAKE_CASE
+  --> contracts/OWASP_05/MVE_O5_Vuln2.sol:10:30
+   |
+10 |     address public immutable trustedSigner;
+   |                              ^^^^^^^^^^^^^ help: consider using: `TRUSTED_SIGNER`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#screaming-snake-case-immutable
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_03_Fuzz.sol:66:14
+   |
+66 |     function echidna_no_overborrow() external view returns (bool) {
+   |              ^^^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaNoOverborrow`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_06_Fuzz.sol:52:14
+   |
+52 |     function echidna_no_phantom_credit() external view returns (bool) {
+   |              ^^^^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaNoPhantomCredit`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_01_Fuzz.sol:80:14
+   |
+80 |     function echidna_no_inflation() external view returns (bool) {
+   |              ^^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaNoInflation`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_04_Fuzz.sol:4:8
+  |
+4 | import "../contracts/OWASP_04/MVE_O4_Vuln.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_05_Fuzz.sol:4:8
+  |
+4 | import "../contracts/OWASP_05/MVE_O5_Vuln.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_05_Fuzz.sol:5:8
+  |
+5 | import "../contracts/OWASP_05/MVE_O5_Fixed.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_09_Fuzz.sol:5:8
+  |
+5 | import "../contracts/OWASP_09/MVE_O9_Fixed.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_04_Fuzz.sol:5:8
+  |
+5 | import "../contracts/OWASP_04/MVE_O4_Fixed.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[asm-keccak256]: use of inefficient hashing mechanism; consider using inline assembly
+  --> contracts/OWASP_05/MVE_O5_Vuln2.sol:25:26
+   |
+25 |         bytes32 digest = keccak256(abi.encodePacked(address(this), to, amount));
+   |                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#asm-keccak256
+
+note[mixed-case-function]: function names should use mixedCase
+   --> test/OWASP_01_Fuzz.sol:105:14
+    |
+105 |     function echidna_no_inflation() external view returns (bool) {
+    |              ^^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaNoInflation`
+    |
+    = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_05_Fuzz.sol:6:8
+  |
+6 | import "../contracts/OWASP_05/MVE_O5_Vuln2.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_05_Fuzz.sol:7:8
+  |
+7 | import "../contracts/OWASP_05/MVE_O5_Fixed2.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_07_Fuzz.sol:4:8
+  |
+4 | import "../contracts/OWASP_07/MVE_O7_Vuln.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_07_Fuzz.sol:5:8
+  |
+5 | import "../contracts/OWASP_07/MVE_O7_Fixed.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_09_Fuzz.sol:6:8
+  |
+6 | import "../contracts/OWASP_09/MVE_O9_Vuln2.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_04_Fuzz.sol:36:14
+   |
+36 |     function echidna_no_atomic_drain() external view returns (bool) {
+   |              ^^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaNoAtomicDrain`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_06_Fuzz.sol:96:14
+   |
+96 |     function echidna_allocation_preserved_on_failed_transfer() external view returns (bool) {
+   |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaAllocationPreservedOnFailedTransfer`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+   --> test/OWASP_06_Fuzz.sol:116:14
+    |
+116 |     function echidna_allocation_preserved_on_failed_transfer() external view returns (bool) {
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaAllocationPreservedOnFailedTransfer`
+    |
+    = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_09_Fuzz.sol:7:8
+  |
+7 | import "../contracts/OWASP_09/MVE_O9_Fixed2.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_05_Fuzz.sol:41:14
+   |
+41 |     function echidna_no_replay() external view returns (bool) {
+   |              ^^^^^^^^^^^^^^^^^ help: consider using: `echidnaNoReplay`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_07_Fuzz.sol:27:14
+   |
+27 |     function echidna_shares_decrease_on_withdraw() external view returns (bool) {
+   |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaSharesDecreaseOnWithdraw`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_09_Halmos.sol:4:8
+  |
+4 | import "../contracts/OWASP_09/MVE_O9_Vuln.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_09_Fuzz.sol:31:14
+   |
+31 |     function echidna_supply_cap() external view returns (bool) {
+   |              ^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaSupplyCap`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_09_Fuzz.sol:37:14
+   |
+37 |     function echidna_supply_never_decreases() external view returns (bool) {
+   |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaSupplyNeverDecreases`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_04_Fuzz.sol:61:14
+   |
+61 |     function echidna_no_atomic_drain() external view returns (bool) {
+   |              ^^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaNoAtomicDrain`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_07_Fuzz.sol:52:14
+   |
+52 |     function echidna_shares_decrease_on_withdraw() external view returns (bool) {
+   |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaSharesDecreaseOnWithdraw`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_10_Fuzz.sol:4:8
+  |
+4 | import "../contracts/OWASP_10/MVE_O10_Vuln.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_02_Fuzz.sol:5:8
+  |
+5 | import "../contracts/OWASP_02/MVE_O2_Fixed.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[unused-import]: unused imports should be removed
+ --> test/OWASP_06_Fuzz.sol:6:23
+  |
+6 | import {MVE_O6_Vuln2, IERC20Minimal} from "../contracts/OWASP_06/MVE_O6_Vuln2.sol";
+  |                       ^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unused-import
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_09_Halmos.sol:5:8
+  |
+5 | import "../contracts/OWASP_09/MVE_O9_Fixed.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_08_Fuzz.sol:4:8
+  |
+4 | import "../contracts/OWASP_08/MVE_O8_Vuln.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_02_Fuzz.sol:26:14
+   |
+26 |     function echidna_bonus_claimed_once() external returns (bool) {
+   |              ^^^^^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaBonusClaimedOnce`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_02_Fuzz.sol:44:14
+   |
+44 |     function echidna_bonus_claimed_once() external returns (bool) {
+   |              ^^^^^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaBonusClaimedOnce`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_05_Fuzz.sol:65:14
+   |
+65 |     function echidna_no_replay() external view returns (bool) {
+   |              ^^^^^^^^^^^^^^^^^ help: consider using: `echidnaNoReplay`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_05_Fuzz.sol:71:14
+   |
+71 |     function echidna_nonce_monotonic() external view returns (bool) {
+   |              ^^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaNonceMonotonic`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_10_Fuzz.sol:5:8
+  |
+5 | import "../contracts/OWASP_10/MVE_O10_Fixed.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_09_Fuzz.sol:56:14
+   |
+56 |     function echidna_supply_cap() external view returns (bool) {
+   |              ^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaSupplyCap`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_09_Halmos.sol:65:14
+   |
+65 |     function check_supply_monotonic(uint256 a1, uint256 a2) public {
+   |              ^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `checkSupplyMonotonic`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_08_Fuzz.sol:5:8
+  |
+5 | import "../contracts/OWASP_08/MVE_O8_Fixed.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_08_Fuzz.sol:6:8
+  |
+6 | import "../contracts/OWASP_08/MVE_O8_Vuln2.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[unaliased-plain-import]: use named imports '{A, B}' or alias 'import ".." as X'
+ --> test/OWASP_08_Fuzz.sol:7:8
+  |
+7 | import "../contracts/OWASP_08/MVE_O8_Fixed2.sol";
+  |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: https://book.getfoundry.sh/reference/forge/forge-lint#unaliased-plain-import
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_05_Fuzz.sol:95:14
+   |
+95 |     function echidna_zero_address_balance_empty() external view returns (bool) {
+   |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaZeroAddressBalanceEmpty`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_09_Halmos.sol:86:14
+   |
+86 |     function check_supply_monotonic(uint256 a1, uint256 a2) public {
+   |              ^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `checkSupplyMonotonic`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_10_Fuzz.sol:25:14
+   |
+25 |     function echidna_owner_not_attacker() external view returns (bool) {
+   |              ^^^^^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaOwnerNotAttacker`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_09_Fuzz.sol:60:14
+   |
+60 |     function echidna_supply_never_decreases() external view returns (bool) {
+   |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaSupplyNeverDecreases`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_08_Fuzz.sol:32:14
+   |
+32 |     function echidna_solvency() external view returns (bool) {
+   |              ^^^^^^^^^^^^^^^^ help: consider using: `echidnaSolvency`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_09_Fuzz.sol:90:14
+   |
+90 |     function echidna_balance_le_supply() external view returns (bool) {
+   |              ^^^^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaBalanceLeSupply`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_09_Fuzz.sol:95:14
+   |
+95 |     function echidna_no_underflow_wrap() external view returns (bool) {
+   |              ^^^^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaNoUnderflowWrap`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+   --> test/OWASP_05_Fuzz.sol:100:14
+    |
+100 |     function echidna_no_balance_without_valid_sig() external view returns (bool) {
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaNoBalanceWithoutValidSig`
+    |
+    = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_08_Fuzz.sol:80:14
+   |
+80 |     function echidna_no_drain() external view returns (bool) {
+   |              ^^^^^^^^^^^^^^^^ help: consider using: `echidnaNoDrain`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_10_Fuzz.sol:30:14
+   |
+30 |     function echidna_owner_is_deployer() external view returns (bool) {
+   |              ^^^^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaOwnerIsDeployer`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+   --> test/OWASP_09_Fuzz.sol:116:14
+    |
+116 |     function echidna_balance_le_supply() external view returns (bool) {
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaBalanceLeSupply`
+    |
+    = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+   --> test/OWASP_09_Fuzz.sol:120:14
+    |
+120 |     function echidna_no_underflow_wrap() external view returns (bool) {
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaNoUnderflowWrap`
+    |
+    = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+   --> test/OWASP_05_Fuzz.sol:116:14
+    |
+116 |     function echidna_zero_address_balance_empty() external view returns (bool) {
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaZeroAddressBalanceEmpty`
+    |
+    = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_08_Fuzz.sol:86:14
+   |
+86 |     function echidna_seed_backed() external view returns (bool) {
+   |              ^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaSeedBacked`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+   --> test/OWASP_05_Fuzz.sol:120:14
+    |
+120 |     function echidna_no_balance_without_valid_sig() external view returns (bool) {
+    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaNoBalanceWithoutValidSig`
+    |
+    = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_10_Fuzz.sol:47:14
+   |
+47 |     function echidna_owner_is_deployer() external view returns (bool) {
+   |              ^^^^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaOwnerIsDeployer`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+  --> test/OWASP_10_Fuzz.sol:52:14
+   |
+52 |     function echidna_impl_controlled() external view returns (bool) {
+   |              ^^^^^^^^^^^^^^^^^^^^^^^ help: consider using: `echidnaImplControlled`
+   |
+   = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+   --> test/OWASP_08_Fuzz.sol:106:14
+    |
+106 |     function echidna_solvency() external view returns (bool) {
+    |              ^^^^^^^^^^^^^^^^ help: consider using: `echidnaSolvency`
+    |
+    = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+   --> test/OWASP_08_Fuzz.sol:175:14
+    |
+175 |     function echidna_solvency() external view returns (bool) {
+    |              ^^^^^^^^^^^^^^^^ help: consider using: `echidnaSolvency`
+    |
+    = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+note[mixed-case-function]: function names should use mixedCase
+   --> test/OWASP_08_Fuzz.sol:199:14
+    |
+199 |     function echidna_solvency() external view returns (bool) {
+    |              ^^^^^^^^^^^^^^^^ help: consider using: `echidnaSolvency`
+    |
+    = help: https://book.getfoundry.sh/reference/forge/forge-lint#mixed-case-function
+
+[31mError: No tests with --match-contract '^MVE_O6_Fixed2$' --match-test '^check_.*'[0m

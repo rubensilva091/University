@@ -1,0 +1,13 @@
+A new version of Solhint is available: 6.2.1
+Please consider updating your Solhint package.
+
+/mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/contracts/OWASP_04/MVE_O4_Fixed.sol
+   4:1   warning  Contract, Structs and Enums should be in CamelCase   contract-name-camelcase
+   9:42  warning  Code contains empty blocks                           no-empty-blocks
+  22:9   warning  GC: Use Custom Errors instead of require statements  gas-custom-errors
+  25:9   warning  GC: Use Custom Errors instead of require statements  gas-custom-errors
+  26:9   warning  GC: Use Custom Errors instead of require statements  gas-custom-errors
+  33:9   warning  GC: Use Custom Errors instead of require statements  gas-custom-errors
+
+✖ 6 problems (0 errors, 6 warnings)
+

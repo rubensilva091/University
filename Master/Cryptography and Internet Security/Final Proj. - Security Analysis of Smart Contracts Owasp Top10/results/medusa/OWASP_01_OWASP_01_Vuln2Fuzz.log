@@ -1,0 +1,41 @@
+[1m[32m⇾[0m[0m [1mReading the configuration file at: [1m/tmp/medusa_OWASP_01_Vuln2Fuzz.json[0m[0m
+⇾ Compiling targets with crytic-compile
+⇾ Running command:
+/home/martim/.local/bin/crytic-compile /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/test/OWASP_01_Fuzz.sol --export-format solc
+⇾ Finished compiling targets in 1s
+⇾ artifacts: Medusa is running against a new set of build artifacts
+⇾ Running with a timeout of 60 seconds
+⇾ Setting up test chain
+⇾ Finished setting up test chain
+⇾ Creating corpus...
+⇾ Initializing corpus...
+⇾ Fuzzing with 4 workers
+⇾ [NOT STARTED] Property Test: OWASP_01_Vuln2Fuzz.echidna_no_inflation()
+⇾ fuzz: elapsed:       0s, calls:          0 (     0/sec), seq/s:      0, branches:     18, corpus:     0, failures: 0/0, gas/s:            0
+⇾ [NOT STARTED] Property Test: OWASP_01_VulnFuzz.echidna_treasury_unchanged()
+⇾ [NOT STARTED] Property Test: OWASP_01_Fixed2Fuzz.echidna_no_inflation()
+⇾ [NOT STARTED] Property Test: OWASP_01_FixedFuzz.echidna_treasury_unchanged()
+⇾ [Worker 2] Shrinking call sequence for Property Test: OWASP_01_Vuln2Fuzz.echidna_no_inflation() with 62 call(s)
+⇾ [Worker 0] Shrinking call sequence for Property Test: OWASP_01_Vuln2Fuzz.echidna_no_inflation() with 48 call(s)
+⇾ [Worker 2] Shrinking complete after 95 attempts (limit: 5000)
+⇾ [Worker 0] Shrinking complete after 5000 attempts (limit: 5000)
+⇾ Fuzzer stopped, test results follow below ...
+⇾ [NOT STARTED] Property Test: OWASP_01_Fixed2Fuzz.echidna_no_inflation()
+⇾ [NOT STARTED] Property Test: OWASP_01_FixedFuzz.echidna_treasury_unchanged()
+⇾ [NOT STARTED] Property Test: OWASP_01_VulnFuzz.echidna_treasury_unchanged()
+⇾ [FAILED] Property Test: OWASP_01_Vuln2Fuzz.echidna_no_inflation()
+Test for method "OWASP_01_Vuln2Fuzz.echidna_no_inflation()" failed after the following call sequence:
+[Call Sequence]
+1) OWASP_01_Vuln2Fuzz.receive() (block=2, time=2, gas=12500000, gasprice=0, value=1000000000000000000, sender=0x30000)
+2) OWASP_01_Vuln2Fuzz.receive() (block=2, time=2, gas=12500000, gasprice=0, value=1002283980255121825, sender=0x20000)
+[Execution Trace]
+ => [call] OWASP_01_Vuln2Fuzz.<unresolved method>(msg_data=) (addr=0xA647ff3c36cFab592509E13860ab8c4F28781a66, value=1002283980255121825, sender=0x20000)
+	 => [return]
+
+[Property Test Execution Trace]
+[Execution Trace]
+ => [call] OWASP_01_Vuln2Fuzz.echidna_no_inflation()() (addr=0xA647ff3c36cFab592509E13860ab8c4F28781a66, value=0, sender=0x10000)
+	 => [return (false)]
+
+⇾ Test summary: 0 test(s) passed, 1 test(s) failed
+⇾ lcov report(s) saved to: /mnt/c/Users/MSI/Desktop/Uni/Project-CSI/Final-Project-CSI-main/corpus/medusa/OWASP_01_Vuln2Fuzz/coverage/lcov.info
